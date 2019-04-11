@@ -5,66 +5,55 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class AES {
+    private final static String cKey = "3F4A87608229F403";
+    private final static String cIv = "7264D046017897C7";
+
+    /**
+     * 加密
+     */
+    public static String pack(String source) throws Exception {
+        return AES.Encrypt(source, cKey, cIv);
+    }
+
+    /**
+     * 解密
+     */
+    public static String unPack(String source) throws Exception {
+        return AES.Decrypt(source, cKey, cIv);
+    }
+
     public static void main(String args[]) throws Exception {
-        // app_key
-        String cKey = "1234567890123456";
-        // 需要加密的字串
         String cSrc = "{\"code\":\"0\",\"error_msg\":\"密码错误\",\"weixiao_openid\":\"12345678\",\"student_num\":\"888888888888\",\"name\":\"洪丹丹测试\",\"sign\":\"5C6E844C23C8F0C15AF382081D0663DC\"}";
-        // app_secret 取前16位;
-        String cIv = "0123456789123456";
-        System.out.println(cSrc);
-        // 加密
-        long lStart = System.currentTimeMillis();
-        String enString = AES.Encrypt(cSrc, cKey, cIv);
-        System.out.println("加密后的字串是：" + enString);
-
-        long lUseTime = System.currentTimeMillis() - lStart;
-        System.out.println("加密耗时：" + lUseTime + "毫秒");
-        // 解密
-        lStart = System.currentTimeMillis();
-        String DeString = AES.Decrypt(enString, cKey, cIv);
-        System.out.println("解密后的字串是：" + DeString);
-        lUseTime = System.currentTimeMillis() - lStart;
-        System.out.println("解密耗时：" + lUseTime + "毫秒");
-
+        String pack =  pack(cSrc);
+        System.out.println(pack);
+        System.out.println(unPack(pack));
     }
 
     public static String Encrypt(String sSrc, String sKey, String sIv) throws Exception {
-
         Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
         int blockSize = cipher.getBlockSize();
-
         byte[] dataBytes = sSrc.getBytes();
         int plaintextLength = dataBytes.length;
         if (plaintextLength % blockSize != 0) {
             plaintextLength = plaintextLength + (blockSize - (plaintextLength % blockSize));
         }
-
         byte[] plaintext = new byte[plaintextLength];
         System.arraycopy(dataBytes, 0, plaintext, 0, dataBytes.length);
-
         SecretKeySpec keyspec = new SecretKeySpec(sKey.getBytes(), "AES");
         IvParameterSpec ivspec = new IvParameterSpec(sIv.getBytes());
-
         cipher.init(Cipher.ENCRYPT_MODE, keyspec, ivspec);
         byte[] encrypted = cipher.doFinal(plaintext);
-
         return byte2hex(encrypted).toLowerCase();
     }
 
     public static String Decrypt(String sSrc, String sKey, String sIv) throws Exception {
-
         byte[] encrypted1 = hex2byte(sSrc);
-
         Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
         SecretKeySpec keyspec = new SecretKeySpec(sKey.getBytes(), "AES");
         IvParameterSpec ivspec = new IvParameterSpec(sIv.getBytes());
-
         cipher.init(Cipher.DECRYPT_MODE, keyspec, ivspec);
-
         byte[] original = cipher.doFinal(encrypted1);
         String originalString = new String(original);
-
         return originalString;
     }
 
@@ -81,7 +70,6 @@ public class AES {
             b[i] = (byte) Integer.parseInt(strhex.substring(i * 2, i * 2 + 2),
                     16);
         }
-
         return b;
     }
 

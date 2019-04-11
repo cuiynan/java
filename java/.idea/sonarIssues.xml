@@ -33,7 +33,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ClassBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ClassBeans.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ClassResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ClassResult.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/Score.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ScoreRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/utils/AES.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/vo/BaseResponse.java">
           <value>
             <set />
           </value>
@@ -53,7 +88,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/vo/CommonResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/vo/RealRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/vo/Request.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/vo/Response.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/vo/ScoreRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/homeDoctor/middle-platform/common-utils/src/test/java/com/bohui/commonutils/CommonUtilsApplicationTests.java">
           <value>
             <set />
           </value>

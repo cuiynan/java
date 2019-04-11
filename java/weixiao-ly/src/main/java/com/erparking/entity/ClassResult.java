@@ -1,5 +1,6 @@
-package com.erparking.vo;
+package com.erparking.entity;
 
+import com.erparking.entity.ClassBean;
 import lombok.Data;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  * @DATE 2019/4/11 18:59
  **/
 @Data
-public class ClassResponse {
+public class ClassResult {
     String card_number;
     String type;
     String session;

@@ -1,4 +1,4 @@
-package com.erparking.vo;
+package com.erparking.entity;
 
 import lombok.Data;
 
