@@ -9,6 +9,6 @@ import lombok.Data;
  **/
 @Data
 public class Request {
-    String raw_data;
     String app_key;
+    String raw_data;
 }

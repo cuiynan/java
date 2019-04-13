@@ -10,6 +10,7 @@ import com.erparking.vo.Request;
 import com.erparking.vo.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,7 +28,7 @@ import java.util.List;
 public class ClassController {
 
     @PostMapping("")
-    public Response getClasses(Request request) {
+    public Response getClasses(@RequestBody Request request) {
         Response response = new Response();
         String responseValue = "";
         String R = request.getRaw_data();

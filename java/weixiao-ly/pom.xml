@@ -12,7 +12,7 @@
     <artifactId>weixiao-ly</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>weixiao-ly</name>
-    <description>Demo project for Spring Boot</description>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
