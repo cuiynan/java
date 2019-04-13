@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/config/LoggerAspect.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/controller/ClassController.java">
           <value>
             <set />
@@ -64,6 +69,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/utils/AES.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/utils/Constants.java">
           <value>
             <set />
           </value>
@@ -114,6 +124,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/homeDoctor/middle-platform/api/src/main/java/com/bohui/gps/config/GloableExceptionHandler.java">
           <value>
             <set />
           </value>

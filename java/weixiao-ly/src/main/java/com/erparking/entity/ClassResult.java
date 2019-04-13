@@ -12,8 +12,8 @@ import java.util.List;
  **/
 @Data
 public class ClassResult {
-    String card_number;
-    String type;
-    String session;
+    String card_number = "07302590";
+    String type = "0";
+    String session = "201601";
     List<ClassBean> timetable;
 }

@@ -5,8 +5,8 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class AES {
-    private final static String cKey = "3F4A87608229F403";
-    private final static String cIv = "7264D046017897C7";
+    private final static String cKey = Constants.appKey;
+    private final static String cIv = Constants.secretKey;
 
     /**
      * 加密
@@ -24,7 +24,7 @@ public class AES {
 
     public static void main(String args[]) throws Exception {
         String cSrc = "{\"code\":\"0\",\"error_msg\":\"密码错误\",\"weixiao_openid\":\"12345678\",\"student_num\":\"888888888888\",\"name\":\"洪丹丹测试\",\"sign\":\"5C6E844C23C8F0C15AF382081D0663DC\"}";
-        String pack =  pack(cSrc);
+        String pack = pack(cSrc);
         System.out.println(pack);
         System.out.println(unPack(pack));
     }

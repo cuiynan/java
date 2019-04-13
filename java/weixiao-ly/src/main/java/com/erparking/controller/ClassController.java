@@ -1,6 +1,9 @@
 package com.erparking.controller;
 
+import com.erparking.entity.ClassBean;
+import com.erparking.entity.ClassResult;
 import com.erparking.utils.AES;
+import com.erparking.utils.Constants;
 import com.erparking.utils.JsonUtils;
 import com.erparking.vo.RealRequest;
 import com.erparking.vo.Request;
@@ -9,6 +12,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Description 课表
@@ -23,20 +29,32 @@ public class ClassController {
     @PostMapping("")
     public Response getClasses(Request request) {
         Response response = new Response();
-
+        String responseValue = "";
         String R = request.getRaw_data();
-        log.info("getClass得到请求：{}", R);
+        log.debug("getClass得到请求：{}", R);
         try {
             String json = AES.unPack(R);
-            log.info("getClass R'：{}", json);
+            log.debug("getClass R'：{}", json);
             RealRequest realRequest = JsonUtils.json2Obj(json, RealRequest.class);
-            log.info("真实request:{}", realRequest);
+            log.debug("真实request:{}", realRequest);
 
+            ClassResult result = new ClassResult();
+            List classBean = new ArrayList<>();
+            for (int i = 0; i < 5; i++) {
+                ClassBean bean = new ClassBean();
+                bean.setCourse_id("0000" + i);
+                bean.setDay(i + "");
+                bean.setWeek(i + "");
+                classBean.add(bean);
+            }
+            result.setTimetable(classBean);
+            result.setTimetable(classBean);
+            responseValue = AES.pack(JsonUtils.obj2Json(result));
         } catch (Exception e) {
             log.error("getClass异常", e);
         }
 
-        return response.success("", request.getApp_key());
+        return response.success(responseValue, response.getApp_key());
     }
 
 }

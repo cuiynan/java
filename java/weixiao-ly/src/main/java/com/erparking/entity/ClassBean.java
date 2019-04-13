@@ -9,15 +9,15 @@ import lombok.Data;
  **/
 @Data
 public class ClassBean {
-    String course_id;
-    String course_class;
-    String begin_time;
-    String end_time;
-    String course_name;
-    String teacher;
-    String day;
-    String class_name;
-    String week;
-    String address;
-    String required_course;
+    String course_id = "672364823";
+    String course_class = "1";
+    String begin_time = "08:00";
+    String end_time = "12:00";
+    String course_name = "数值分析";
+    String teacher = "ax";
+    String day = "1";
+    String class_name = "数学";
+    String week = "5";
+    String address = "研学楼2层201";
+    String required_course = "1";
 }
