@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/config/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/config/LoggerAspect.java">
           <value>
             <set />
@@ -68,7 +73,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ScoreBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ScoreRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ScoreResult.java">
           <value>
             <set />
           </value>

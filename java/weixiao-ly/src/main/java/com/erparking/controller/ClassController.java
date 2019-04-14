@@ -3,7 +3,6 @@ package com.erparking.controller;
 import com.erparking.entity.ClassBean;
 import com.erparking.entity.ClassResult;
 import com.erparking.utils.AES;
-import com.erparking.utils.Constants;
 import com.erparking.utils.JsonUtils;
 import com.erparking.vo.RealRequest;
 import com.erparking.vo.Request;
@@ -32,12 +31,12 @@ public class ClassController {
         Response response = new Response();
         String responseValue = "";
         String R = request.getRaw_data();
-        log.debug("getClass得到请求：{}", R);
+        log.info("课表getClass得到请求：{}", R);
         try {
             String json = AES.unPack(R);
-            log.debug("getClass R'：{}", json);
+            log.info("getClass R'：{}", json);
             RealRequest realRequest = JsonUtils.json2Obj(json, RealRequest.class);
-            log.debug("真实request:{}", realRequest);
+            log.info("真实request:{}", realRequest);
 
             ClassResult result = new ClassResult();
             List classBean = new ArrayList<>();
@@ -49,12 +48,10 @@ public class ClassController {
                 classBean.add(bean);
             }
             result.setTimetable(classBean);
-            result.setTimetable(classBean);
             responseValue = AES.pack(JsonUtils.obj2Json(result));
         } catch (Exception e) {
             log.error("getClass异常", e);
         }
-
         return response.success(responseValue, response.getApp_key());
     }
 
