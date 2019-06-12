@@ -48,6 +48,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/controller/TestController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/weixiao-ly/src/main/java/com/erparking/entity/ClassBean.java">
           <value>
             <set />
@@ -149,6 +154,16 @@
           </value>
         </entry>
         <entry key="D:/work/homeDoctor/middle-platform/api/src/main/java/com/bohui/gps/config/GloableExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/homeDoctor/middle-platform/api/src/main/java/com/bohui/gps/services/TestController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/work/homeDoctor/middle-platform/api/src/main/resources/application.properties">
           <value>
             <set />
           </value>
