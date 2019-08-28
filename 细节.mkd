@@ -1,0 +1,41 @@
+### 用户名密码
+docker.com 18612526681  nan2
+
+
+### 学习
+    1，哈夫曼编码视频（最优的设计二叉树或者是一个算法，用途比较广）
+    
+### 面试相关
+1. springMvc中，@ReposeBody返回xml或json时按下述代码进行接入和返回的依据。
+    
+    requestHeaders.set("Accept", "application/json");
+	requestHeaders.set("Content-Type", "application/json");
+
+ * 根据request header中的Content-Type自动转换XML/JSON->UserDTOX对象
+ * 根据request header中的Accept自动选择返回XML or JSON
+	
+1. 
+
+
+
+### SpringDataJpa
+
+- 自定义Repository  
+   使用extends JPARepository来实现，如下图：
+
+``` 
+     @NoRepositoryBean
+    interface MyBaseRepository<T, ID extends Serializable> extends Repository<T, ID> {
+    
+      Optional<T> findById(ID id);
+    
+      <S extends T> S save(S entity);
+    }
+    
+    interface UserRepository extends MyBaseRepository<User, Long> {
+      User findByEmailAddress(EmailAddress emailAddress);
+    }
+
+``` 
+    
+  
