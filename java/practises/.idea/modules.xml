@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diagnose/diagnose.iml" filepath="$PROJECT_DIR$/diagnose/diagnose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-consumer/euraka-consumer.iml" filepath="$PROJECT_DIR$/euraka-consumer/euraka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-consumer-feign/euraka-consumer-feign.iml" filepath="$PROJECT_DIR$/euraka-consumer-feign/euraka-consumer-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-provider/euraka-provider.iml" filepath="$PROJECT_DIR$/euraka-provider/euraka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-provider-feign/euraka-provider-feign.iml" filepath="$PROJECT_DIR$/euraka-provider-feign/euraka-provider-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-server/euraka-server.iml" filepath="$PROJECT_DIR$/euraka-server/euraka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/homework.iml" filepath="$PROJECT_DIR$/.idea/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign/springcloud-feign.iml" filepath="$PROJECT_DIR$/springcloud-feign/springcloud-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-provider/springcloud-feign-provider.iml" filepath="$PROJECT_DIR$/springcloud-feign-provider/springcloud-feign-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-feign-provider-api/springcloud-feign-provider-api.iml" filepath="$PROJECT_DIR$/springcloud-feign-provider-api/springcloud-feign-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springsource/springsource.iml" filepath="$PROJECT_DIR$/springsource/springsource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swagger/swagger.iml" filepath="$PROJECT_DIR$/swagger/swagger.iml" />
+    </modules>
+  </component>
+</project>

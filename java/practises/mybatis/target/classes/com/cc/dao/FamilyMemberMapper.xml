@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cc.dao.FamilyMemberMapper" >
+  <resultMap id="BaseResultMap" type="com.cc.domain.FamilyMember" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="DATE" />
+    <result column="family_relationships" property="familyRelationships" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="id_number" property="idNumber" jdbcType="VARCHAR" />
+    <result column="telphone" property="telphone" jdbcType="VARCHAR" />
+    <result column="height" property="height" jdbcType="VARCHAR" />
+    <result column="weight" property="weight" jdbcType="VARCHAR" />
+    <result column="blood_type" property="bloodType" jdbcType="VARCHAR" />
+    <result column="img1_url" property="img1Url" jdbcType="VARCHAR" />
+    <result column="chronic_history" property="chronicHistory" jdbcType="CHAR" />
+    <result column="allergy_history" property="allergyHistory" jdbcType="CHAR" />
+    <result column="operation_history" property="operationHistory" jdbcType="VARCHAR" />
+    <result column="family_history" property="familyHistory" jdbcType="CHAR" />
+    <result column="additional_info" property="additionalInfo" jdbcType="VARCHAR" />
+    <result column="del_flag" property="delFlag" jdbcType="CHAR" />
+    <result column="create_user" property="createUser" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_user" property="updateUser" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="img2_url" property="img2Url" jdbcType="VARCHAR" />
+    <result column="img3_url" property="img3Url" jdbcType="VARCHAR" />
+    <result column="pet_name" property="petName" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="district" property="district" jdbcType="VARCHAR" />
+    <result column="street" property="street" jdbcType="VARCHAR" />
+    <result column="detail_address" property="detailAddress" jdbcType="VARCHAR" />
+    <result column="born_hospital" property="bornHospital" jdbcType="VARCHAR" />
+    <result column="child_No" property="childNo" jdbcType="INTEGER" />
+    <result column="born_after_pregnant" property="bornAfterPregnant" jdbcType="INTEGER" />
+    <result column="born_way" property="bornWay" jdbcType="CHAR" />
+    <result column="born_smoothly" property="bornSmoothly" jdbcType="CHAR" />
+    <result column="feed_way" property="feedWay" jdbcType="CHAR" />
+    <result column="sidedish_week" property="sidedishWeek" jdbcType="INTEGER" />
+    <result column="rise_week" property="riseWeek" jdbcType="INTEGER" />
+    <result column="sit_week" property="sitWeek" jdbcType="INTEGER" />
+    <result column="walk_age" property="walkAge" jdbcType="INTEGER" />
+    <result column="speak_age" property="speakAge" jdbcType="INTEGER" />
+    <result column="born_province" property="bornProvince" jdbcType="VARCHAR" />
+    <result column="born_city" property="bornCity" jdbcType="VARCHAR" />
+    <result column="born_district" property="bornDistrict" jdbcType="VARCHAR" />
+    <result column="profession" property="profession" jdbcType="CHAR" />
+    <result column="head_cir" property="headCir" jdbcType="DOUBLE" />
+    <result column="born_weight" property="bornWeight" jdbcType="DOUBLE" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, user_id, sex, birthday, family_relationships, name, id_number, telphone, height, 
+    weight, blood_type, img1_url, chronic_history, allergy_history, operation_history, 
+    family_history, additional_info, del_flag, create_user, create_time, update_user, 
+    update_time, img2_url, img3_url, pet_name, city, province, district, street, detail_address, 
+    born_hospital, child_No, born_after_pregnant, born_way, born_smoothly, feed_way, 
+    sidedish_week, rise_week, sit_week, walk_age, speak_age, born_province, born_city, 
+    born_district, profession, head_cir, born_weight
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.cc.domain.FamilyMemberExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from family_member
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from family_member
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from family_member
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.cc.domain.FamilyMemberExample" >
+    delete from family_member
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.cc.domain.FamilyMember" >
+    insert into family_member (id, user_id, sex, 
+      birthday, family_relationships, name, 
+      id_number, telphone, height, 
+      weight, blood_type, img1_url, 
+      chronic_history, allergy_history, operation_history, 
+      family_history, additional_info, del_flag, 
+      create_user, create_time, update_user, 
+      update_time, img2_url, img3_url, 
+      pet_name, city, province, 
+      district, street, detail_address, 
+      born_hospital, child_No, born_after_pregnant, 
+      born_way, born_smoothly, feed_way, 
+      sidedish_week, rise_week, sit_week, 
+      walk_age, speak_age, born_province, 
+      born_city, born_district, profession, 
+      head_cir, born_weight)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{sex,jdbcType=VARCHAR}, 
+      #{birthday,jdbcType=DATE}, #{familyRelationships,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
+      #{idNumber,jdbcType=VARCHAR}, #{telphone,jdbcType=VARCHAR}, #{height,jdbcType=VARCHAR}, 
+      #{weight,jdbcType=VARCHAR}, #{bloodType,jdbcType=VARCHAR}, #{img1Url,jdbcType=VARCHAR}, 
+      #{chronicHistory,jdbcType=CHAR}, #{allergyHistory,jdbcType=CHAR}, #{operationHistory,jdbcType=VARCHAR}, 
+      #{familyHistory,jdbcType=CHAR}, #{additionalInfo,jdbcType=VARCHAR}, #{delFlag,jdbcType=CHAR}, 
+      #{createUser,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=INTEGER}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{img2Url,jdbcType=VARCHAR}, #{img3Url,jdbcType=VARCHAR}, 
+      #{petName,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, 
+      #{district,jdbcType=VARCHAR}, #{street,jdbcType=VARCHAR}, #{detailAddress,jdbcType=VARCHAR}, 
+      #{bornHospital,jdbcType=VARCHAR}, #{childNo,jdbcType=INTEGER}, #{bornAfterPregnant,jdbcType=INTEGER}, 
+      #{bornWay,jdbcType=CHAR}, #{bornSmoothly,jdbcType=CHAR}, #{feedWay,jdbcType=CHAR}, 
+      #{sidedishWeek,jdbcType=INTEGER}, #{riseWeek,jdbcType=INTEGER}, #{sitWeek,jdbcType=INTEGER}, 
+      #{walkAge,jdbcType=INTEGER}, #{speakAge,jdbcType=INTEGER}, #{bornProvince,jdbcType=VARCHAR}, 
+      #{bornCity,jdbcType=VARCHAR}, #{bornDistrict,jdbcType=VARCHAR}, #{profession,jdbcType=CHAR}, 
+      #{headCir,jdbcType=DOUBLE}, #{bornWeight,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cc.domain.FamilyMember" >
+    insert into family_member
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="birthday != null" >
+        birthday,
+      </if>
+      <if test="familyRelationships != null" >
+        family_relationships,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="idNumber != null" >
+        id_number,
+      </if>
+      <if test="telphone != null" >
+        telphone,
+      </if>
+      <if test="height != null" >
+        height,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="bloodType != null" >
+        blood_type,
+      </if>
+      <if test="img1Url != null" >
+        img1_url,
+      </if>
+      <if test="chronicHistory != null" >
+        chronic_history,
+      </if>
+      <if test="allergyHistory != null" >
+        allergy_history,
+      </if>
+      <if test="operationHistory != null" >
+        operation_history,
+      </if>
+      <if test="familyHistory != null" >
+        family_history,
+      </if>
+      <if test="additionalInfo != null" >
+        additional_info,
+      </if>
+      <if test="delFlag != null" >
+        del_flag,
+      </if>
+      <if test="createUser != null" >
+        create_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateUser != null" >
+        update_user,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="img2Url != null" >
+        img2_url,
+      </if>
+      <if test="img3Url != null" >
+        img3_url,
+      </if>
+      <if test="petName != null" >
+        pet_name,
+      </if>
+      <if test="city != null" >
+        city,
+      </if>
+      <if test="province != null" >
+        province,
+      </if>
+      <if test="district != null" >
+        district,
+      </if>
+      <if test="street != null" >
+        street,
+      </if>
+      <if test="detailAddress != null" >
+        detail_address,
+      </if>
+      <if test="bornHospital != null" >
+        born_hospital,
+      </if>
+      <if test="childNo != null" >
+        child_No,
+      </if>
+      <if test="bornAfterPregnant != null" >
+        born_after_pregnant,
+      </if>
+      <if test="bornWay != null" >
+        born_way,
+      </if>
+      <if test="bornSmoothly != null" >
+        born_smoothly,
+      </if>
+      <if test="feedWay != null" >
+        feed_way,
+      </if>
+      <if test="sidedishWeek != null" >
+        sidedish_week,
+      </if>
+      <if test="riseWeek != null" >
+        rise_week,
+      </if>
+      <if test="sitWeek != null" >
+        sit_week,
+      </if>
+      <if test="walkAge != null" >
+        walk_age,
+      </if>
+      <if test="speakAge != null" >
+        speak_age,
+      </if>
+      <if test="bornProvince != null" >
+        born_province,
+      </if>
+      <if test="bornCity != null" >
+        born_city,
+      </if>
+      <if test="bornDistrict != null" >
+        born_district,
+      </if>
+      <if test="profession != null" >
+        profession,
+      </if>
+      <if test="headCir != null" >
+        head_cir,
+      </if>
+      <if test="bornWeight != null" >
+        born_weight,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="familyRelationships != null" >
+        #{familyRelationships,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="idNumber != null" >
+        #{idNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="telphone != null" >
+        #{telphone,jdbcType=VARCHAR},
+      </if>
+      <if test="height != null" >
+        #{height,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodType != null" >
+        #{bloodType,jdbcType=VARCHAR},
+      </if>
+      <if test="img1Url != null" >
+        #{img1Url,jdbcType=VARCHAR},
+      </if>
+      <if test="chronicHistory != null" >
+        #{chronicHistory,jdbcType=CHAR},
+      </if>
+      <if test="allergyHistory != null" >
+        #{allergyHistory,jdbcType=CHAR},
+      </if>
+      <if test="operationHistory != null" >
+        #{operationHistory,jdbcType=VARCHAR},
+      </if>
+      <if test="familyHistory != null" >
+        #{familyHistory,jdbcType=CHAR},
+      </if>
+      <if test="additionalInfo != null" >
+        #{additionalInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null" >
+        #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="createUser != null" >
+        #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null" >
+        #{updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="img2Url != null" >
+        #{img2Url,jdbcType=VARCHAR},
+      </if>
+      <if test="img3Url != null" >
+        #{img3Url,jdbcType=VARCHAR},
+      </if>
+      <if test="petName != null" >
+        #{petName,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null" >
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="district != null" >
+        #{district,jdbcType=VARCHAR},
+      </if>
+      <if test="street != null" >
+        #{street,jdbcType=VARCHAR},
+      </if>
+      <if test="detailAddress != null" >
+        #{detailAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="bornHospital != null" >
+        #{bornHospital,jdbcType=VARCHAR},
+      </if>
+      <if test="childNo != null" >
+        #{childNo,jdbcType=INTEGER},
+      </if>
+      <if test="bornAfterPregnant != null" >
+        #{bornAfterPregnant,jdbcType=INTEGER},
+      </if>
+      <if test="bornWay != null" >
+        #{bornWay,jdbcType=CHAR},
+      </if>
+      <if test="bornSmoothly != null" >
+        #{bornSmoothly,jdbcType=CHAR},
+      </if>
+      <if test="feedWay != null" >
+        #{feedWay,jdbcType=CHAR},
+      </if>
+      <if test="sidedishWeek != null" >
+        #{sidedishWeek,jdbcType=INTEGER},
+      </if>
+      <if test="riseWeek != null" >
+        #{riseWeek,jdbcType=INTEGER},
+      </if>
+      <if test="sitWeek != null" >
+        #{sitWeek,jdbcType=INTEGER},
+      </if>
+      <if test="walkAge != null" >
+        #{walkAge,jdbcType=INTEGER},
+      </if>
+      <if test="speakAge != null" >
+        #{speakAge,jdbcType=INTEGER},
+      </if>
+      <if test="bornProvince != null" >
+        #{bornProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="bornCity != null" >
+        #{bornCity,jdbcType=VARCHAR},
+      </if>
+      <if test="bornDistrict != null" >
+        #{bornDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="profession != null" >
+        #{profession,jdbcType=CHAR},
+      </if>
+      <if test="headCir != null" >
+        #{headCir,jdbcType=DOUBLE},
+      </if>
+      <if test="bornWeight != null" >
+        #{bornWeight,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.cc.domain.FamilyMemberExample" resultType="java.lang.Integer" >
+    select count(*) from family_member
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update family_member
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null" >
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.sex != null" >
+        sex = #{record.sex,jdbcType=VARCHAR},
+      </if>
+      <if test="record.birthday != null" >
+        birthday = #{record.birthday,jdbcType=DATE},
+      </if>
+      <if test="record.familyRelationships != null" >
+        family_relationships = #{record.familyRelationships,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null" >
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.idNumber != null" >
+        id_number = #{record.idNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.telphone != null" >
+        telphone = #{record.telphone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.height != null" >
+        height = #{record.height,jdbcType=VARCHAR},
+      </if>
+      <if test="record.weight != null" >
+        weight = #{record.weight,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bloodType != null" >
+        blood_type = #{record.bloodType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.img1Url != null" >
+        img1_url = #{record.img1Url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.chronicHistory != null" >
+        chronic_history = #{record.chronicHistory,jdbcType=CHAR},
+      </if>
+      <if test="record.allergyHistory != null" >
+        allergy_history = #{record.allergyHistory,jdbcType=CHAR},
+      </if>
+      <if test="record.operationHistory != null" >
+        operation_history = #{record.operationHistory,jdbcType=VARCHAR},
+      </if>
+      <if test="record.familyHistory != null" >
+        family_history = #{record.familyHistory,jdbcType=CHAR},
+      </if>
+      <if test="record.additionalInfo != null" >
+        additional_info = #{record.additionalInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.delFlag != null" >
+        del_flag = #{record.delFlag,jdbcType=CHAR},
+      </if>
+      <if test="record.createUser != null" >
+        create_user = #{record.createUser,jdbcType=INTEGER},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateUser != null" >
+        update_user = #{record.updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="record.updateTime != null" >
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.img2Url != null" >
+        img2_url = #{record.img2Url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.img3Url != null" >
+        img3_url = #{record.img3Url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.petName != null" >
+        pet_name = #{record.petName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.city != null" >
+        city = #{record.city,jdbcType=VARCHAR},
+      </if>
+      <if test="record.province != null" >
+        province = #{record.province,jdbcType=VARCHAR},
+      </if>
+      <if test="record.district != null" >
+        district = #{record.district,jdbcType=VARCHAR},
+      </if>
+      <if test="record.street != null" >
+        street = #{record.street,jdbcType=VARCHAR},
+      </if>
+      <if test="record.detailAddress != null" >
+        detail_address = #{record.detailAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bornHospital != null" >
+        born_hospital = #{record.bornHospital,jdbcType=VARCHAR},
+      </if>
+      <if test="record.childNo != null" >
+        child_No = #{record.childNo,jdbcType=INTEGER},
+      </if>
+      <if test="record.bornAfterPregnant != null" >
+        born_after_pregnant = #{record.bornAfterPregnant,jdbcType=INTEGER},
+      </if>
+      <if test="record.bornWay != null" >
+        born_way = #{record.bornWay,jdbcType=CHAR},
+      </if>
+      <if test="record.bornSmoothly != null" >
+        born_smoothly = #{record.bornSmoothly,jdbcType=CHAR},
+      </if>
+      <if test="record.feedWay != null" >
+        feed_way = #{record.feedWay,jdbcType=CHAR},
+      </if>
+      <if test="record.sidedishWeek != null" >
+        sidedish_week = #{record.sidedishWeek,jdbcType=INTEGER},
+      </if>
+      <if test="record.riseWeek != null" >
+        rise_week = #{record.riseWeek,jdbcType=INTEGER},
+      </if>
+      <if test="record.sitWeek != null" >
+        sit_week = #{record.sitWeek,jdbcType=INTEGER},
+      </if>
+      <if test="record.walkAge != null" >
+        walk_age = #{record.walkAge,jdbcType=INTEGER},
+      </if>
+      <if test="record.speakAge != null" >
+        speak_age = #{record.speakAge,jdbcType=INTEGER},
+      </if>
+      <if test="record.bornProvince != null" >
+        born_province = #{record.bornProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bornCity != null" >
+        born_city = #{record.bornCity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bornDistrict != null" >
+        born_district = #{record.bornDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="record.profession != null" >
+        profession = #{record.profession,jdbcType=CHAR},
+      </if>
+      <if test="record.headCir != null" >
+        head_cir = #{record.headCir,jdbcType=DOUBLE},
+      </if>
+      <if test="record.bornWeight != null" >
+        born_weight = #{record.bornWeight,jdbcType=DOUBLE},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update family_member
+    set id = #{record.id,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      sex = #{record.sex,jdbcType=VARCHAR},
+      birthday = #{record.birthday,jdbcType=DATE},
+      family_relationships = #{record.familyRelationships,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      id_number = #{record.idNumber,jdbcType=VARCHAR},
+      telphone = #{record.telphone,jdbcType=VARCHAR},
+      height = #{record.height,jdbcType=VARCHAR},
+      weight = #{record.weight,jdbcType=VARCHAR},
+      blood_type = #{record.bloodType,jdbcType=VARCHAR},
+      img1_url = #{record.img1Url,jdbcType=VARCHAR},
+      chronic_history = #{record.chronicHistory,jdbcType=CHAR},
+      allergy_history = #{record.allergyHistory,jdbcType=CHAR},
+      operation_history = #{record.operationHistory,jdbcType=VARCHAR},
+      family_history = #{record.familyHistory,jdbcType=CHAR},
+      additional_info = #{record.additionalInfo,jdbcType=VARCHAR},
+      del_flag = #{record.delFlag,jdbcType=CHAR},
+      create_user = #{record.createUser,jdbcType=INTEGER},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      update_user = #{record.updateUser,jdbcType=INTEGER},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      img2_url = #{record.img2Url,jdbcType=VARCHAR},
+      img3_url = #{record.img3Url,jdbcType=VARCHAR},
+      pet_name = #{record.petName,jdbcType=VARCHAR},
+      city = #{record.city,jdbcType=VARCHAR},
+      province = #{record.province,jdbcType=VARCHAR},
+      district = #{record.district,jdbcType=VARCHAR},
+      street = #{record.street,jdbcType=VARCHAR},
+      detail_address = #{record.detailAddress,jdbcType=VARCHAR},
+      born_hospital = #{record.bornHospital,jdbcType=VARCHAR},
+      child_No = #{record.childNo,jdbcType=INTEGER},
+      born_after_pregnant = #{record.bornAfterPregnant,jdbcType=INTEGER},
+      born_way = #{record.bornWay,jdbcType=CHAR},
+      born_smoothly = #{record.bornSmoothly,jdbcType=CHAR},
+      feed_way = #{record.feedWay,jdbcType=CHAR},
+      sidedish_week = #{record.sidedishWeek,jdbcType=INTEGER},
+      rise_week = #{record.riseWeek,jdbcType=INTEGER},
+      sit_week = #{record.sitWeek,jdbcType=INTEGER},
+      walk_age = #{record.walkAge,jdbcType=INTEGER},
+      speak_age = #{record.speakAge,jdbcType=INTEGER},
+      born_province = #{record.bornProvince,jdbcType=VARCHAR},
+      born_city = #{record.bornCity,jdbcType=VARCHAR},
+      born_district = #{record.bornDistrict,jdbcType=VARCHAR},
+      profession = #{record.profession,jdbcType=CHAR},
+      head_cir = #{record.headCir,jdbcType=DOUBLE},
+      born_weight = #{record.bornWeight,jdbcType=DOUBLE}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cc.domain.FamilyMember" >
+    update family_member
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="familyRelationships != null" >
+        family_relationships = #{familyRelationships,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="idNumber != null" >
+        id_number = #{idNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="telphone != null" >
+        telphone = #{telphone,jdbcType=VARCHAR},
+      </if>
+      <if test="height != null" >
+        height = #{height,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=VARCHAR},
+      </if>
+      <if test="bloodType != null" >
+        blood_type = #{bloodType,jdbcType=VARCHAR},
+      </if>
+      <if test="img1Url != null" >
+        img1_url = #{img1Url,jdbcType=VARCHAR},
+      </if>
+      <if test="chronicHistory != null" >
+        chronic_history = #{chronicHistory,jdbcType=CHAR},
+      </if>
+      <if test="allergyHistory != null" >
+        allergy_history = #{allergyHistory,jdbcType=CHAR},
+      </if>
+      <if test="operationHistory != null" >
+        operation_history = #{operationHistory,jdbcType=VARCHAR},
+      </if>
+      <if test="familyHistory != null" >
+        family_history = #{familyHistory,jdbcType=CHAR},
+      </if>
+      <if test="additionalInfo != null" >
+        additional_info = #{additionalInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null" >
+        del_flag = #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="createUser != null" >
+        create_user = #{createUser,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null" >
+        update_user = #{updateUser,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="img2Url != null" >
+        img2_url = #{img2Url,jdbcType=VARCHAR},
+      </if>
+      <if test="img3Url != null" >
+        img3_url = #{img3Url,jdbcType=VARCHAR},
+      </if>
+      <if test="petName != null" >
+        pet_name = #{petName,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null" >
+        province = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="district != null" >
+        district = #{district,jdbcType=VARCHAR},
+      </if>
+      <if test="street != null" >
+        street = #{street,jdbcType=VARCHAR},
+      </if>
+      <if test="detailAddress != null" >
+        detail_address = #{detailAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="bornHospital != null" >
+        born_hospital = #{bornHospital,jdbcType=VARCHAR},
+      </if>
+      <if test="childNo != null" >
+        child_No = #{childNo,jdbcType=INTEGER},
+      </if>
+      <if test="bornAfterPregnant != null" >
+        born_after_pregnant = #{bornAfterPregnant,jdbcType=INTEGER},
+      </if>
+      <if test="bornWay != null" >
+        born_way = #{bornWay,jdbcType=CHAR},
+      </if>
+      <if test="bornSmoothly != null" >
+        born_smoothly = #{bornSmoothly,jdbcType=CHAR},
+      </if>
+      <if test="feedWay != null" >
+        feed_way = #{feedWay,jdbcType=CHAR},
+      </if>
+      <if test="sidedishWeek != null" >
+        sidedish_week = #{sidedishWeek,jdbcType=INTEGER},
+      </if>
+      <if test="riseWeek != null" >
+        rise_week = #{riseWeek,jdbcType=INTEGER},
+      </if>
+      <if test="sitWeek != null" >
+        sit_week = #{sitWeek,jdbcType=INTEGER},
+      </if>
+      <if test="walkAge != null" >
+        walk_age = #{walkAge,jdbcType=INTEGER},
+      </if>
+      <if test="speakAge != null" >
+        speak_age = #{speakAge,jdbcType=INTEGER},
+      </if>
+      <if test="bornProvince != null" >
+        born_province = #{bornProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="bornCity != null" >
+        born_city = #{bornCity,jdbcType=VARCHAR},
+      </if>
+      <if test="bornDistrict != null" >
+        born_district = #{bornDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="profession != null" >
+        profession = #{profession,jdbcType=CHAR},
+      </if>
+      <if test="headCir != null" >
+        head_cir = #{headCir,jdbcType=DOUBLE},
+      </if>
+      <if test="bornWeight != null" >
+        born_weight = #{bornWeight,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cc.domain.FamilyMember" >
+    update family_member
+    set user_id = #{userId,jdbcType=INTEGER},
+      sex = #{sex,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      family_relationships = #{familyRelationships,jdbcType=INTEGER},
+      name = #{name,jdbcType=VARCHAR},
+      id_number = #{idNumber,jdbcType=VARCHAR},
+      telphone = #{telphone,jdbcType=VARCHAR},
+      height = #{height,jdbcType=VARCHAR},
+      weight = #{weight,jdbcType=VARCHAR},
+      blood_type = #{bloodType,jdbcType=VARCHAR},
+      img1_url = #{img1Url,jdbcType=VARCHAR},
+      chronic_history = #{chronicHistory,jdbcType=CHAR},
+      allergy_history = #{allergyHistory,jdbcType=CHAR},
+      operation_history = #{operationHistory,jdbcType=VARCHAR},
+      family_history = #{familyHistory,jdbcType=CHAR},
+      additional_info = #{additionalInfo,jdbcType=VARCHAR},
+      del_flag = #{delFlag,jdbcType=CHAR},
+      create_user = #{createUser,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=INTEGER},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      img2_url = #{img2Url,jdbcType=VARCHAR},
+      img3_url = #{img3Url,jdbcType=VARCHAR},
+      pet_name = #{petName,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      province = #{province,jdbcType=VARCHAR},
+      district = #{district,jdbcType=VARCHAR},
+      street = #{street,jdbcType=VARCHAR},
+      detail_address = #{detailAddress,jdbcType=VARCHAR},
+      born_hospital = #{bornHospital,jdbcType=VARCHAR},
+      child_No = #{childNo,jdbcType=INTEGER},
+      born_after_pregnant = #{bornAfterPregnant,jdbcType=INTEGER},
+      born_way = #{bornWay,jdbcType=CHAR},
+      born_smoothly = #{bornSmoothly,jdbcType=CHAR},
+      feed_way = #{feedWay,jdbcType=CHAR},
+      sidedish_week = #{sidedishWeek,jdbcType=INTEGER},
+      rise_week = #{riseWeek,jdbcType=INTEGER},
+      sit_week = #{sitWeek,jdbcType=INTEGER},
+      walk_age = #{walkAge,jdbcType=INTEGER},
+      speak_age = #{speakAge,jdbcType=INTEGER},
+      born_province = #{bornProvince,jdbcType=VARCHAR},
+      born_city = #{bornCity,jdbcType=VARCHAR},
+      born_district = #{bornDistrict,jdbcType=VARCHAR},
+      profession = #{profession,jdbcType=CHAR},
+      head_cir = #{headCir,jdbcType=DOUBLE},
+      born_weight = #{bornWeight,jdbcType=DOUBLE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

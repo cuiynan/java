@@ -1,0 +1,4 @@
+
+osquid:UselessImportCheck"?Remove this unused import 'org.apache.juli.logging.LogFactory'.(ËÃ‹»üÿÿÿÿ8ˆÓ¡¶²-
+bsquid:UselessImportCheck"8Remove this unused import 'org.apache.juli.logging.Log'.(¨´“78ˆÓ¡¶²-
+Zsquid:S2166"CRename this class to remove "Exception" or correct its inheritance.(ÇÒüí

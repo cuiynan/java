@@ -1,0 +1,6 @@
+
+lsquid:S1149
+"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(€®½U
+psquid:ModifiersOrderCheck
+"EReorder the modifiers to comply with the Java Language Specification.(€®½U8›Æ¦Ó´-
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(×÷ç«ùÿÿÿÿ

@@ -1,0 +1,29 @@
+Index: springboot/src/main/java/com/cc/config/CorsFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.cc.config;\r\n\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.core.Ordered;\r\nimport org.springframework.core.annotation.Order;\r\nimport org.springframework.core.env.Environment;\r\nimport org.springframework.stereotype.Component;\r\n\r\nimport javax.servlet.*;\r\nimport javax.servlet.http.HttpServletRequest;\r\nimport javax.servlet.http.HttpServletResponse;\r\nimport java.io.IOException;\r\n\r\n/**\r\n * 用于跨域\r\n */\r\n@Component\r\n@Order(Ordered.HIGHEST_PRECEDENCE)\r\npublic class CorsFilter implements Filter {\r\n\r\n    @Autowired\r\n    private Environment env;\r\n\r\n    @Override\r\n    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)\r\n            throws IOException, ServletException {\r\n        final HttpServletResponse response = (HttpServletResponse) res;\r\n        final HttpServletRequest request = (HttpServletRequest) req;\r\n        response.setHeader(\"Access-Control-Allow-Credentials\", \"true\");\r\n        if (env.getProperty(\"spring.profiles.active\") != null\r\n                && env.getProperty(\"spring.profiles.active\").equals(\"prod\")) {\r\n            response.setHeader(\"Access-Control-Allow-Origin\", \"http://localhost:9001\");\r\n        } else {\r\n            // 动态获取前端接口\r\n            response.setHeader(\"Access-Control-Allow-Origin\", request.getHeader(\"Origin\"));\r\n        }\r\n        response.setHeader(\"Access-Control-Allow-Methods\", \"POST, PUT, GET, OPTIONS, DELETE\");\r\n        response.setHeader(\"Access-Control-Allow-Headers\",\r\n                \"Authorization, Content-Type, X_Requested_With\");\r\n        response.setHeader(\"Access-Control-Max-Age\", \"3600\");\r\n        if (\"OPTIONS\".equalsIgnoreCase(((HttpServletRequest) req).getMethod())) {\r\n            response.setStatus(HttpServletResponse.SC_OK);\r\n        } else {\r\n            chain.doFilter(req, res);\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public void destroy() {\r\n    }\r\n\r\n    @Override\r\n    public void init(FilterConfig config) throws ServletException {\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- springboot/src/main/java/com/cc/config/CorsFilter.java	(revision 810d0e2a4426857f3f9203aed1df9e189dbc86cc)
++++ springboot/src/main/java/com/cc/config/CorsFilter.java	(date 1564639598883)
+@@ -22,8 +22,7 @@
+     private Environment env;
+ 
+     @Override
+-    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
+-            throws IOException, ServletException {
++    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
+         final HttpServletResponse response = (HttpServletResponse) res;
+         final HttpServletRequest request = (HttpServletRequest) req;
+         response.setHeader("Access-Control-Allow-Credentials", "true");
+@@ -35,8 +34,7 @@
+             response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
+         }
+         response.setHeader("Access-Control-Allow-Methods", "POST, PUT, GET, OPTIONS, DELETE");
+-        response.setHeader("Access-Control-Allow-Headers",
+-                "Authorization, Content-Type, X_Requested_With");
++        response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, X_Requested_With");
+         response.setHeader("Access-Control-Max-Age", "3600");
+         if ("OPTIONS".equalsIgnoreCase(((HttpServletRequest) req).getMethod())) {
+             response.setStatus(HttpServletResponse.SC_OK);

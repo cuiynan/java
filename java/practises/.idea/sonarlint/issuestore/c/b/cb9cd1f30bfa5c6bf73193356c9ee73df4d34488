@@ -1,0 +1,19 @@
+
+esquid:S00112E"FDefine and throw a dedicated exception instead of using a generic one.(ù•ä8§¿˜€É-
+esquid:S00112I"FDefine and throw a dedicated exception instead of using a generic one.(ˆÁ8§¿˜€É-
+º%squid:RedundantThrowsDeclarationCheck6"}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(Íı¼ûÿÿÿÿ8§¿˜€É-
+º%squid:RedundantThrowsDeclarationCheck,"}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(£™Á‚şÿÿÿÿ8§¿˜€É-
+Ksquid:S11856"(Remove this method to simply inherit it.(Íı¼ûÿÿÿÿ8§¿˜€É-
+º%squid:RedundantThrowsDeclarationCheck"}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(«æĞüÿÿÿÿ8§¿˜€É-
+Ksquid:S1185'"(Remove this method to simply inherit it.(¹ÍÛ”ıÿÿÿÿ8§¿˜€É-
+Ksquid:S1185""(Remove this method to simply inherit it.(¢³ˆÄÿÿÿÿÿ8§¿˜€É-
+´%squid:RedundantThrowsDeclarationCheck1"}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(”§ê8§¿˜€É-
+º%squid:RedundantThrowsDeclarationCheck'"}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(¹ÍÛ”ıÿÿÿÿ8§¿˜€É-
+Ksquid:S1185"(Remove this method to simply inherit it.(«æĞüÿÿÿÿ8§¿˜€É-
+Esquid:S11851"(Remove this method to simply inherit it.(”§ê8§¿˜€É-
+º%squid:RedundantThrowsDeclarationCheck"}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(¯Ò£äşÿÿÿÿ8§¿˜€É-
+Ksquid:S1185,"(Remove this method to simply inherit it.(£™Á‚şÿÿÿÿ8§¿˜€É-
+esquid:S00112O"FDefine and throw a dedicated exception instead of using a generic one.(œˆ‹‹8§¿˜€É-
+Ksquid:S1185"(Remove this method to simply inherit it.(¯Ò£äşÿÿÿÿ8§¿˜€É-
+jsquid:S00112="FDefine and throw a dedicated exception instead of using a generic one.(ßµÉ»şÿÿÿÿ8§¿˜€É-
+º%squid:RedundantThrowsDeclarationCheck""}Remove the declaration of thrown exception 'org.springframework.web.client.RestClientException' which is a runtime exception.(¢³ˆÄÿÿÿÿÿ8§¿˜€É-

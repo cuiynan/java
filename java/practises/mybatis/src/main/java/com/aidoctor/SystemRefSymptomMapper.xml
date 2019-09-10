@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidoctor.decisiontree.reponsitory.SystemRefSymptomMapper" >
+  <resultMap id="BaseResultMap" type="com.aidoctor.decisiontree.entity.SystemRefSymptom" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="sympyom_code" property="sympyomCode" jdbcType="CHAR" />
+    <result column="sympyom_name" property="sympyomName" jdbcType="VARCHAR" />
+    <result column="decision_tree_num" property="decisionTreeNum" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, sympyom_code, sympyom_name, decision_tree_num
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptomExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from decision_system_ref_symptom
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from decision_system_ref_symptom
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from decision_system_ref_symptom
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptomExample" >
+    delete from decision_system_ref_symptom
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptom" >
+    insert into decision_system_ref_symptom (id, sympyom_code, sympyom_name, 
+      decision_tree_num)
+    values (#{id,jdbcType=INTEGER}, #{sympyomCode,jdbcType=CHAR}, #{sympyomName,jdbcType=VARCHAR}, 
+      #{decisionTreeNum,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptom" >
+    insert into decision_system_ref_symptom
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="sympyomCode != null" >
+        sympyom_code,
+      </if>
+      <if test="sympyomName != null" >
+        sympyom_name,
+      </if>
+      <if test="decisionTreeNum != null" >
+        decision_tree_num,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="sympyomCode != null" >
+        #{sympyomCode,jdbcType=CHAR},
+      </if>
+      <if test="sympyomName != null" >
+        #{sympyomName,jdbcType=VARCHAR},
+      </if>
+      <if test="decisionTreeNum != null" >
+        #{decisionTreeNum,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptomExample" resultType="java.lang.Integer" >
+    select count(*) from decision_system_ref_symptom
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update decision_system_ref_symptom
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.sympyomCode != null" >
+        sympyom_code = #{record.sympyomCode,jdbcType=CHAR},
+      </if>
+      <if test="record.sympyomName != null" >
+        sympyom_name = #{record.sympyomName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.decisionTreeNum != null" >
+        decision_tree_num = #{record.decisionTreeNum,jdbcType=CHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update decision_system_ref_symptom
+    set id = #{record.id,jdbcType=INTEGER},
+      sympyom_code = #{record.sympyomCode,jdbcType=CHAR},
+      sympyom_name = #{record.sympyomName,jdbcType=VARCHAR},
+      decision_tree_num = #{record.decisionTreeNum,jdbcType=CHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptom" >
+    update decision_system_ref_symptom
+    <set >
+      <if test="sympyomCode != null" >
+        sympyom_code = #{sympyomCode,jdbcType=CHAR},
+      </if>
+      <if test="sympyomName != null" >
+        sympyom_name = #{sympyomName,jdbcType=VARCHAR},
+      </if>
+      <if test="decisionTreeNum != null" >
+        decision_tree_num = #{decisionTreeNum,jdbcType=CHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aidoctor.decisiontree.entity.SystemRefSymptom" >
+    update decision_system_ref_symptom
+    set sympyom_code = #{sympyomCode,jdbcType=CHAR},
+      sympyom_name = #{sympyomName,jdbcType=VARCHAR},
+      decision_tree_num = #{decisionTreeNum,jdbcType=CHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

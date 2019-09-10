@@ -1,0 +1,13 @@
+
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(χΨÒ
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(·μƒόÿÿÿÿ
+osquid:ModifiersOrderCheck	"EReorder the modifiers to comply with the Java Language Specification.(Ζεχόÿÿÿÿ
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ΚΟ¬ώÿÿÿÿ
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(χΨÒ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(·μƒόÿÿÿÿ
+wsquid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ζεχόÿÿÿÿ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ΚΟ¬ώÿÿÿÿ
+osquid:ModifiersOrderCheck
+"EReorder the modifiers to comply with the Java Language Specification.(ωξηψÿÿÿÿ
+wsquid:S00115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ωξηψÿÿÿÿ

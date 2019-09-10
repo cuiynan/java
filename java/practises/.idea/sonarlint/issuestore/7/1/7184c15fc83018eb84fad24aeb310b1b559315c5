@@ -1,0 +1,7 @@
+
+qsquid:ModifiersOrderCheck3"EReorder the modifiers to comply with the Java Language Specification.(¨¡·»8“›õÓ´-
+]squid:S11181":Add a private constructor to hide the implicit public one.(ô¾èœýÿÿÿÿ8…¯ôÓ´-
+vsquid:ModifiersOrderCheck4"EReorder the modifiers to comply with the Java Language Specification.(ÑíñÏþÿÿÿÿ8“›õÓ´-
+qsquid:ModifiersOrderCheck2"EReorder the modifiers to comply with the Java Language Specification.(¤²§Â8…¯ôÓ´-
+hsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(¶•‡S8Á¤Óò´-
+ysquid:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(š£•Åøÿÿÿÿ8‘–£Ó´-
