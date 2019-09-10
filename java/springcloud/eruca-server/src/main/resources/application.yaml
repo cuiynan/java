@@ -7,7 +7,7 @@ spring:
 
 eureka:
   server:
-    ip: 127.0.0.1
+    ip: 192.168.23.15
 
   client:
     #取消自我注册
@@ -16,3 +16,7 @@ eureka:
     service-url:
       defaultZone: http://${eureka.server.ip}:${server.port}/eureka/
 
+# 跳过安全检查
+management:
+  cloudfoundry:
+    skip-ssl-validation: false

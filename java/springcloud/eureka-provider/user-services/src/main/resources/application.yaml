@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: user-services
+
+# 与服务端一致
+eureka:
+  server:
+    ip: 192.168.23.15:8761
+
+  client:
+    #####需要去检索服务信息
+    fetch-registry: false
+    #需要将服务注册到eureka上
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.server.ip}/eureka/
+
+# 跳过安全检查
+management:
+  cloudfoundry:
+    skip-ssl-validation: false
