@@ -18,12 +18,19 @@ eureka:
     service-url:
       defaultZone: http://${eureka.server.ip}/eureka/
 
+    # 刷出无效provider
+    eureka-connection-idle-timeout-seconds: 30
+
 feign:
   hystrix:
     enabled: false
+
 
 # 开启DEBUG模式
 logging:
   level:
     root: info
 
+ribbon:
+  eureka:
+    enabled: true

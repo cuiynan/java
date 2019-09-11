@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping
     public List<User> getUsers() {
-        return userApi.getUsers();
+        return userApi.getUsers("1234");
     }
 
     @PostMapping

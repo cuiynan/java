@@ -11,6 +11,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients(basePackages = "com")
 @EnableDiscoveryClient
 @SpringBootApplication
+//@EnableDiscoveryClient
+//@SpringBootApplication
+////这里也可以指定自己的实现
+//@RibbonClient(value = "user-services", configuration = RandomRule.class)
 public class EurekaConsumerApplication {
 
     public static void main(String[] args) {
