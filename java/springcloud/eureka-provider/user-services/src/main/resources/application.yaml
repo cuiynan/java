@@ -1,6 +1,6 @@
 server:
   port: 9001
-
+#  port:  ${random.int(9050,9999)}
 spring:
   application:
     name: user-services

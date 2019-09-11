@@ -16,6 +16,9 @@ eureka:
     service-url:
       defaultZone: http://${eureka.server.ip}:${server.port}/eureka/
 
+    # 刷出无效provider
+    eureka-connection-idle-timeout-seconds: 30
+
 # 跳过安全检查
 management:
   cloudfoundry:
