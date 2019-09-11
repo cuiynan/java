@@ -2,10 +2,7 @@ package com.cc.api;
 
 import com.cc.domain.User;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,10 +15,10 @@ import java.util.List;
 @RestController
 public interface UserApi {
 
-    @RequestMapping(value = "user", method = RequestMethod.GET)
-    List<User> getUsers();
+    @GetMapping("user/{id}")
+    List<User> getUsers(@PathVariable("id") String id);
 
     @PostMapping(path = "user")
-    boolean saveUser(User user);
+    boolean saveUser(@RequestBody User user);
 
 }
