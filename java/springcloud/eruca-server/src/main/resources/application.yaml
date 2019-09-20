@@ -7,7 +7,7 @@ spring:
 
 eureka:
   server:
-    ip: 192.168.23.15
+    ip: 192.168.23.94
 
   client:
     #取消自我注册
