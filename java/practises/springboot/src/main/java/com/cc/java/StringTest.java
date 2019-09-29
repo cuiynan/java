@@ -14,6 +14,8 @@ public class StringTest {
         System.out.println(a.hashCode() == b.hashCode());
         System.out.println(a.equals(b));
         System.out.println(a == b);
+
+        System.gc();
     }
 
     public static void hash(){

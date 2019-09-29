@@ -1,24 +1,25 @@
 
-V
-squid:S106 "9Replace this use of System.out or System.err by a logger.(–Øå–8±îË…Í-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÃÖÌŞ8œÿÓ„Í-
-Csquid:S2129" Remove this "String" constructor(àŠíóúÿÿÿÿ8™ˆÕ…Í-
-isquid:S1192"FDefine a constant instead of duplicating this literal "hello" 3 times.(ü³êÑşÿÿÿÿ8‹°Ò„Í-
-Csquid:S2116"%Use "Arrays.hashCode(array)" instead.(ã’ÁÙ8ƒ¶à„Í-
-Csquid:S2129" Remove this "String" constructor(Íã’÷øÿÿÿÿ8‹°Ò„Í-
-Csquid:S2129" Remove this "String" constructor(»º™€ùÿÿÿÿ8‹°Ò„Í-
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ8œÿÓ„Í-
+squid:S106"9Replace this use of System.out or System.err by a logger.(Çµß§úÿÿÿÿ8ö°Õ…Í-
+Csquid:S2129" Remove this "String" constructor(»º™€ùÿÿÿÿ8‹°Ò„Í-
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ã’ÁÙ8ƒ¶à„Í-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(†Á¸ÿÿÿÿÿ8™ˆÕ…Í-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ìíâ­8œÿÓ„Í-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(—¬Êûÿÿÿÿ8œÿÓ„Í-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ã’ÁÙ8ƒ¶à„Í-
 [
 squid:S106"9Replace this use of System.out or System.err by a logger.(×Ù ûÿÿÿÿ8™ˆÕ…Í-
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(Çµß§úÿÿÿÿ8ö°Õ…Í-
+squid:S106"9Replace this use of System.out or System.err by a logger.(—¬Êûÿÿÿÿ8œÿÓ„Í-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(†Á¸ÿÿÿÿÿ8™ˆÕ…Í-
+V
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ìíâ­8œÿÓ„Í-
+Csquid:S2116"%Use "Arrays.hashCode(array)" instead.(ã’ÁÙ8ƒ¶à„Í-
+Csquid:S2129" Remove this "String" constructor(àŠíóúÿÿÿÿ8™ˆÕ…Í-
+isquid:S1192"FDefine a constant instead of duplicating this literal "hello" 3 times.(ü³êÑşÿÿÿÿ8‹°Ò„Í-
+V
+squid:S106""9Replace this use of System.out or System.err by a logger.(–Øå–8±îË…Í-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÃÖÌŞ8œÿÓ„Í-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ8œÿÓ„Í-
+Csquid:S2129" Remove this "String" constructor(Íã’÷øÿÿÿÿ8‹°Ò„Í-
+rsquid:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“8ˆïÈ½Ö-

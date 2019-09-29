@@ -8,22 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d10813c7-2b71-42bd-a2e3-06f4a0560008" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/homework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37ccf856f3271a6806f554b0f63796cf9c5c93c7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37ccf856f3271a6806f554b0f63796cf9c5c93c7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d98665ede65d0968c6825b500e21de12a767938" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d98665ede65d0968c6825b500e21de12a767938" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442cd8ea33c2e0930f285c6680dcb445e3403e7b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442cd8ea33c2e0930f285c6680dcb445e3403e7b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e4c776ffbc35b89b0330a21d8cdc6c4ca67a87" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e4c776ffbc35b89b0330a21d8cdc6c4ca67a87" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/942729ef63101d56f3e487518b6b4221410b8495" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/942729ef63101d56f3e487518b6b4221410b8495" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/9453ca8b9359889ff38b40af9a2a37d82d3e8de4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/9453ca8b9359889ff38b40af9a2a37d82d3e8de4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1c2c99448e5aa0cb29d04634327bdec33865163" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1c2c99448e5aa0cb29d04634327bdec33865163" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb9cd1f30bfa5c6bf73193356c9ee73df4d34488" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb9cd1f30bfa5c6bf73193356c9ee73df4d34488" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee36297da145f9acdb52136825818e9cad20ff07" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee36297da145f9acdb52136825818e9cad20ff07" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/860b07803ee9de6d18a342f3949e32f7e5ed89eb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/860b07803ee9de6d18a342f3949e32f7e5ed89eb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc91e0afeb4f7706252c84c59554e7182a6f3aa0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/mybatis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/cc/config/ExpandWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/cc/config/ExpandWebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mybatis/target/" />
     <ignored path="$PROJECT_DIR$/demo/target/" />
@@ -51,6 +45,7 @@
     <ignored path="$PROJECT_DIR$/../../../../opensource/spring-boot.zip!/spring-boot/target/" />
     <ignored path="$PROJECT_DIR$/springmvc/target/" />
     <ignored path="$PROJECT_DIR$/springcloud/target/" />
+    <ignored path="D:\myhomework\github\java\java\practises\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,64 +85,68 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-consumer-feign/src/main/java/com/cui/service/ITest.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Runtime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11229">
+              <caret line="619" column="17" selection-start-line="619" selection-start-column="17" selection-end-line="619" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/ProcessBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18525">
+              <caret line="1031" column="26" selection-start-line="1031" selection-start-column="26" selection-end-line="1031" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/SpringbootApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/euraka-consumer-feign/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-provider/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/java/com/cui/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-consumer-feign/src/main/java/com/cui/ClientController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/resources/application.yml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="344">
+              <caret line="305" column="33" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-consumer-feign/src/main/java/com/cui/EurakaConsumerFeignApplication.java">
+        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/MyThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="133">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -155,7 +154,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/euraka-provider-feign/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="475">
               <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
             </state>
           </provider>
@@ -196,7 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xml</find>
       <find>adddef</find>
       <find>adapter</find>
       <find>messagecon</find>
@@ -226,6 +224,7 @@
       <find>headless</find>
       <find>-----converters</find>
       <find>event</find>
+      <find>bb</find>
     </findStrings>
     <replaceStrings>
       <replace>\&quot;</replace>
@@ -237,12 +236,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/src/main/java/com/cui/net/Response.java" />
         <option value="$PROJECT_DIR$/diagnose/src/main/java/com/aidoctor/DiagnoseApplication.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
@@ -263,7 +261,6 @@
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/aop/LoggerAspect.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/vo/User.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/controller/SampleController.java" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" />
         <option value="$PROJECT_DIR$/springmvc/src/main/java/com/cc/SpringmvcApplication.java" />
         <option value="$PROJECT_DIR$/springmvc/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/springmvc/src/main/java/com/cc/intercepter/SecondIntercepter.java" />
@@ -280,7 +277,6 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/cui/string/CCStringUtils.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/Asynchronouse.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/ArraysList.java" />
-        <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/Subscribe.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/subscribeobserve/jdk/Subscribe.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/subscribeobserve/springboot/SpirngSubscribeOberserve.java" />
@@ -293,6 +289,9 @@
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/config/ExpandWebMvcConfigurer.java" />
         <option value="$PROJECT_DIR$/euraka-provider-feign/src/main/resources/application.yml" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java" />
       </list>
     </option>
   </component>
@@ -323,10 +322,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1505" />
-    <option name="height" value="882" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1911" />
+    <option name="y" value="-9" />
+    <option name="width" value="1845" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -336,160 +336,75 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-consumer-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-consumer-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-consumer-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-consumer-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-consumer-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-consumer-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cui" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cui" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cui" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-provider-feign" type="462c0819:PsiDirectoryNode" />
+              <item name="practises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practises" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practis" type="462c0819:PsiDirectoryNode" />
-              <item name="euraka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.boot:spring-boot:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.boot:spring-boot:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-boot-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.boot:spring-boot:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-boot-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.boot:spring-boot-test:2.1.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="practis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.boot:spring-boot-test:2.1.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-boot-test-2.1.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -503,12 +418,12 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567151656428" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569723643042" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcloud" />
+    <property name="last_opened_file_path" value="D:/work/workcode/ai/decision-tree" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -520,10 +435,6 @@
     <property name="settings.editor.splitter.proportion" value="0.2031122" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.aidoctor.diagnose.core" />
-      <recent name="com.models.struct.proxy.dynamic" />
-    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.springsource.cglib" />
       <recent name="com.bohui.gps.redis" />
@@ -545,6 +456,11 @@
       <recent name="com.springsource" />
       <recent name="com.cc" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\homework\springboot\src\main\java\com\models\struct\flyweight" />
+      <recent name="D:\homework\springboot\src\main\java\com\models\struct\composite" />
+      <recent name="D:\homework\euraka-client\src\main\java\com" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cc.intercepter" />
       <recent name="com.cui.net" />
@@ -559,10 +475,9 @@
       <recent name="D:\homework\springboot\src\main\java\com\models\behavior\state" />
       <recent name="D:\homework\springboot\src\main\java\com\models\behavior\commond\other" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\homework\springboot\src\main\java\com\models\struct\flyweight" />
-      <recent name="D:\homework\springboot\src\main\java\com\models\struct\composite" />
-      <recent name="D:\homework\euraka-client\src\main\java\com" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.aidoctor.diagnose.core" />
+      <recent name="com.models.struct.proxy.dynamic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -577,7 +492,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
+  <component name="RunManager" selected="Application.TestVoliatile">
     <configuration name="SpirngSubscribeOberserve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.subscribeobserve.springboot.SpirngSubscribeOberserve" />
       <module name="springboot" />
@@ -617,12 +532,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Subscribe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.subscribeobserve.jdk.Subscribe" />
+    <configuration name="TestVoliatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cc.thread.TestVoliatile" />
       <module name="springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.subscribeobserve.jdk.*" />
+          <option name="PATTERN" value="com.cc.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -778,7 +693,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Subscribe" />
       <item itemvalue="Application.SpirngSubscribeOberserve" />
       <item itemvalue="Application.SpringSubscribeOberserve" />
       <item itemvalue="Application.SpringcloudApplication" />
@@ -802,14 +716,15 @@
       <item itemvalue="Spring Boot.SpringMVCApplication" />
       <item itemvalue="Spring Boot.SpringcloudApplication" />
       <item itemvalue="TestNG.D:/myhomework/github/java/java/practis/springcloud/src/main/resources/application.yaml" />
+      <item itemvalue="Application.TestVoliatile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestVoliatile" />
         <item itemvalue="TestNG.D:/myhomework/github/java/java/practis/springcloud/src/main/resources/application.yaml" />
         <item itemvalue="Application.SpringcloudApplication" />
         <item itemvalue="Application.SpringSubscribeOberserve" />
         <item itemvalue="Application.SpirngSubscribeOberserve" />
-        <item itemvalue="Application.Subscribe" />
       </list>
     </recent_temporary>
   </component>
@@ -975,6 +890,10 @@
       <workItem from="1567151928593" duration="470000" />
       <workItem from="1567152609993" duration="100000" />
       <workItem from="1567152820891" duration="59000" />
+      <workItem from="1568792019666" duration="2482000" />
+      <workItem from="1569218931340" duration="603000" />
+      <workItem from="1569402714707" duration="2101000" />
+      <workItem from="1569722843652" duration="800000" />
     </task>
     <task id="LOCAL-00001" summary="丰富架构相关配置">
       <created>1551856397608</created>
@@ -1054,7 +973,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591302000" />
+    <option name="totallyTimeSpent" value="597288000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1066,10 +985,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1501" height="886" extended-state="6" />
+    <frame x="1913" y="-7" width="1488" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.52929294" visible="true" weight="0.2400835" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52929294" visible="true" weight="0.25702247" />
       <window_info id="Structure" order="1" sideWeight="0.47070706" side_tool="true" weight="0.20613742" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1079,7 +998,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5471448" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49756438" weight="0.49003986" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49756438" visible="true" weight="0.3997344" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49894884" weight="0.42762285" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1102,7 +1021,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24947295" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.26791927" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49933067" weight="0.2512178" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49933067" visible="true" weight="0.24789326" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Database" order="7" sideWeight="0.14588235" weight="0.32846206" />
@@ -1361,12 +1280,6 @@
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringApplication.class</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -1397,77 +1310,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/EventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ConfigurableApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar!/org/springframework/core/env/SimpleCommandLinePropertySource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/DefaultApplicationArguments.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#1529#1530#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.3.RELEASE/spring-boot-2.1.3.RELEASE-sources.jar!/org/springframework/boot/builder/SpringApplicationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="199" column="42" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.2.RELEASE/spring-boot-2.1.2.RELEASE-sources.jar!/org/springframework/boot/builder/SpringApplicationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringApplicationRunListeners.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/batch/JobLauncherCommandLineRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/CommandLineRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1649,24 +1491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/SpringbootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20919">
-          <caret line="1211" column="49" selection-start-line="1211" selection-start-column="49" selection-end-line="1211" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/euraka-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1725,6 +1549,20 @@
     <entry file="file://$PROJECT_DIR$/euraka-provider/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/euraka-consumer-feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/resource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/java/com/cui/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1757,6 +1595,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/InspectionCheckMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17898">
+          <caret line="989" column="30" selection-start-line="989" selection-start-column="30" selection-end-line="989" selection-end-column="30" />
+          <folding>
+            <element signature="e#40749#40750#0" expanded="true" />
+            <element signature="e#40790#40791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Runtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11229">
+          <caret line="619" column="17" selection-start-line="619" selection-start-column="17" selection-end-line="619" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/ProcessBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18525">
+          <caret line="1031" column="26" selection-start-line="1031" selection-start-column="26" selection-end-line="1031" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/SpringbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euraka-provider-feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/java/com/cui/services/ITest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1771,17 +1666,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/euraka-provider-feign/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="344">
+          <caret line="305" column="33" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/euraka-consumer-feign/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/MyThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="133">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1837,7 +1746,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springcloud</last-edited>
+          <last-edited>common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

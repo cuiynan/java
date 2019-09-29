@@ -499,8 +499,6 @@ n
 ,springboot/src/main/java/com/cc/vo/Test.java,d\b\dbae12839b59d7259aaa454abe35d5f195730d96
 r
 Bspringboot/src/main/java/com/cc/config/ExpandWebMvcConfigurer.java,e\9\e95fbb840e6db1cc7df3ff147a09b8f170525690
-m
-=mybatis/src/main/java/com/aidoctor/SystemRefSymptomMapper.xml,f\c\fc91e0afeb4f7706252c84c59554e7182a6f3aa0
 j
 :springmvc/src/main/java/com/cc/config/ErrorController.java,5\0\50b69ce15a7a4a89a35f904f5878dd4de3b93e8e
 k
@@ -533,3 +531,5 @@ M
 euraka-provider-feign/pom.xml,4\6\4639458cecda82e969abafc1178a0ff5834fa838
 G
 euraka-provider/pom.xml,2\b\2becbc8defb970983131ca7b9b8ee715c140aa45
+l
+<mybatis/src/main/java/com/aidoctor/InspectionCheckMapper.xml,c\4\c4eae4c42f9d57eb8ddf89b1b6ce435136b03bef
