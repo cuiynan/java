@@ -40,7 +40,7 @@
         </javaClientGenerator>
 
         <!-- table表生成对应的DoaminObject -->
-        <table tableName="decision_inspection_check" domainObjectName="InspectionCheck"></table>
+        <table tableName="decision_inspection_check_rule" domainObjectName="InspectionCheckRule "></table>
     </context>
 
 </generatorConfiguration>

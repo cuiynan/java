@@ -5,19 +5,23 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/springboot/src/main/java/com/subscribeobserve/jdk/Subscribe.java" line="15" />
+    <bookmark url="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/AutomicXX.java" line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d10813c7-2b71-42bd-a2e3-06f4a0560008" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/PatternTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/ThreadDoor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/860b07803ee9de6d18a342f3949e32f7e5ed89eb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/860b07803ee9de6d18a342f3949e32f7e5ed89eb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc91e0afeb4f7706252c84c59554e7182a6f3aa0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e4c776ffbc35b89b0330a21d8cdc6c4ca67a87" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e4c776ffbc35b89b0330a21d8cdc6c4ca67a87" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/942729ef63101d56f3e487518b6b4221410b8495" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/942729ef63101d56f3e487518b6b4221410b8495" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c4eae4c42f9d57eb8ddf89b1b6ce435136b03bef" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/InspectionCheckMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/decisiontree/entity/InspectionCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/decisiontree/entity/InspectionCheckExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/decisiontree/reponsitory/InspectionCheckMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mybatis/target/" />
     <ignored path="$PROJECT_DIR$/demo/target/" />
@@ -84,96 +88,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Runtime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11229">
-              <caret line="619" column="17" selection-start-line="619" selection-start-column="17" selection-end-line="619" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/ProcessBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18525">
-              <caret line="1031" column="26" selection-start-line="1031" selection-start-column="26" selection-end-line="1031" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/SpringbootApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="305" column="33" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/MyThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java">
+        <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/AutomicXX.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-provider-feign/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/java/com/cui/services/ITest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/java/com/cui/services/TestImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="231">
+              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,9 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/diagnose/src/main/java/com/aidoctor/DiagnoseApplication.java" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/MyThread.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/models/create/cloneable/Test.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/controller/TestController.java" />
@@ -289,9 +210,12 @@
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/config/ExpandWebMvcConfigurer.java" />
         <option value="$PROJECT_DIR$/euraka-provider-feign/src/main/resources/application.yml" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java" />
         <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/ThreadDoor.java" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/java/PatternTest.java" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/resources/resource.xml" />
+        <option value="$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/AutomicXX.java" />
       </list>
     </option>
   </component>
@@ -318,14 +242,30 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1911" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="68" />
     <option name="y" value="-9" />
-    <option name="width" value="1845" />
+    <option name="width" value="1861" />
     <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -418,7 +358,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569723643042" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570779584660" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -435,6 +375,10 @@
     <property name="settings.editor.splitter.proportion" value="0.2031122" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.aidoctor.diagnose.core" />
+      <recent name="com.models.struct.proxy.dynamic" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.springsource.cglib" />
       <recent name="com.bohui.gps.redis" />
@@ -456,11 +400,6 @@
       <recent name="com.springsource" />
       <recent name="com.cc" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\homework\springboot\src\main\java\com\models\struct\flyweight" />
-      <recent name="D:\homework\springboot\src\main\java\com\models\struct\composite" />
-      <recent name="D:\homework\euraka-client\src\main\java\com" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cc.intercepter" />
       <recent name="com.cui.net" />
@@ -475,9 +414,10 @@
       <recent name="D:\homework\springboot\src\main\java\com\models\behavior\state" />
       <recent name="D:\homework\springboot\src\main\java\com\models\behavior\commond\other" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.aidoctor.diagnose.core" />
-      <recent name="com.models.struct.proxy.dynamic" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\homework\springboot\src\main\java\com\models\struct\flyweight" />
+      <recent name="D:\homework\springboot\src\main\java\com\models\struct\composite" />
+      <recent name="D:\homework\euraka-client\src\main\java\com" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -492,13 +432,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestVoliatile">
-    <configuration name="SpirngSubscribeOberserve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.subscribeobserve.springboot.SpirngSubscribeOberserve" />
+  <component name="RunManager" selected="Application.AutomicXX">
+    <configuration name="AutomicXX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cc.thread.AutomicXX" />
       <module name="springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.subscribeobserve.springboot.*" />
+          <option name="PATTERN" value="com.cc.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -506,25 +446,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringSubscribeOberserve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.subscribeobserve.springboot.SpringSubscribeOberserve" />
+    <configuration name="PatternTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cc.java.PatternTest" />
       <module name="springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.subscribeobserve.springboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringcloudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cc.springcloud.SpringcloudApplication" />
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cc.springcloud.*" />
+          <option name="PATTERN" value="com.cc.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -534,6 +461,19 @@
     </configuration>
     <configuration name="TestVoliatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cc.thread.TestVoliatile" />
+      <module name="springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadDoor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cc.thread.ThreadDoor" />
       <module name="springboot" />
       <extension name="coverage">
         <pattern>
@@ -693,9 +633,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SpirngSubscribeOberserve" />
-      <item itemvalue="Application.SpringSubscribeOberserve" />
-      <item itemvalue="Application.SpringcloudApplication" />
+      <item itemvalue="Application.TestVoliatile" />
+      <item itemvalue="Application.ThreadDoor" />
+      <item itemvalue="Application.PatternTest" />
       <item itemvalue="Spring Boot.CapabilityApplication" />
       <item itemvalue="Spring Boot.CommonEntityApplication" />
       <item itemvalue="Spring Boot.DiagnoseApplication" />
@@ -716,15 +656,15 @@
       <item itemvalue="Spring Boot.SpringMVCApplication" />
       <item itemvalue="Spring Boot.SpringcloudApplication" />
       <item itemvalue="TestNG.D:/myhomework/github/java/java/practis/springcloud/src/main/resources/application.yaml" />
-      <item itemvalue="Application.TestVoliatile" />
+      <item itemvalue="Application.AutomicXX" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AutomicXX" />
+        <item itemvalue="Application.PatternTest" />
+        <item itemvalue="Application.ThreadDoor" />
         <item itemvalue="Application.TestVoliatile" />
         <item itemvalue="TestNG.D:/myhomework/github/java/java/practis/springcloud/src/main/resources/application.yaml" />
-        <item itemvalue="Application.SpringcloudApplication" />
-        <item itemvalue="Application.SpringSubscribeOberserve" />
-        <item itemvalue="Application.SpirngSubscribeOberserve" />
       </list>
     </recent_temporary>
   </component>
@@ -893,7 +833,14 @@
       <workItem from="1568792019666" duration="2482000" />
       <workItem from="1569218931340" duration="603000" />
       <workItem from="1569402714707" duration="2101000" />
-      <workItem from="1569722843652" duration="800000" />
+      <workItem from="1569722843652" duration="2912000" />
+      <workItem from="1570497135911" duration="3729000" />
+      <workItem from="1570526367262" duration="1771000" />
+      <workItem from="1570674022692" duration="1609000" />
+      <workItem from="1570688609819" duration="700000" />
+      <workItem from="1570693134711" duration="1955000" />
+      <workItem from="1570759186360" duration="439000" />
+      <workItem from="1570778663866" duration="917000" />
     </task>
     <task id="LOCAL-00001" summary="丰富架构相关配置">
       <created>1551856397608</created>
@@ -973,7 +920,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="597288000" />
+    <option name="totallyTimeSpent" value="610520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -985,10 +932,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="1488" height="886" extended-state="6" />
+    <frame x="55" y="-7" width="1501" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52929294" visible="true" weight="0.25702247" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52929294" visible="true" weight="0.23729993" />
       <window_info id="Structure" order="1" sideWeight="0.47070706" side_tool="true" weight="0.20613742" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1021,7 +968,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24947295" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.26791927" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49933067" visible="true" weight="0.24789326" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49933067" weight="0.25" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Database" order="7" sideWeight="0.14588235" weight="0.32846206" />
@@ -1030,49 +977,6 @@
       <window_info anchor="right" id="aiXcoder" order="10" sideWeight="0.85411763" side_tool="true" weight="0.3281799" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.116214335" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52929294" visible="true" weight="0.21990258" />
-      <window_info id="Structure" order="1" sideWeight="0.47070706" side_tool="true" weight="0.20613742" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.5471448" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49756438" weight="0.49003986" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49894884" weight="0.42762285" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32802126" />
-      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49965206" weight="0.32802126" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6799469" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024356" side_tool="true" weight="0.29614875" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32802126" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32802126" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4996496" weight="0.4687915" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.6796247" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="16" weight="0.32934928" />
-      <window_info anchor="bottom" id="Analysis" order="17" />
-      <window_info anchor="bottom" id="SonarQube" order="18" weight="0.39759037" />
-      <window_info anchor="bottom" id="SonarLint" order="19" weight="0.32934928" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="20" weight="0.32934928" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50066936" side_tool="true" weight="0.3507307" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.24947295" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.26791927" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49933067" visible="true" weight="0.2512178" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.14588235" weight="0.32846206" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="aiXcoder" order="10" sideWeight="0.85411763" side_tool="true" weight="0.3281799" />
-      <window_info anchor="right" id="Bean Validation" order="11" weight="0.116214335" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1310,76 +1214,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/CommandLineRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/ApplicationRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/WebApplicationType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/Banner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/ansi/AnsiColor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringBootVersion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringBootBanner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringApplicationBannerPrinter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/config/ExpandWebMvcConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ApplicationListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1556,13 +1390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/resource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/euraka-provider-feign/src/main/java/com/cui/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1595,13 +1422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/InspectionCheckMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/aidoctor/InspectionCheckMapper.xml" />
     <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/java/StringTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1645,6 +1466,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="305" column="33" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/MyThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4921">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/euraka-provider-feign/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1666,31 +1515,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/logging/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="305" column="33" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
+        <state relative-caret-position="932">
+          <caret line="162" column="53" lean-forward="true" selection-start-line="162" selection-start-column="53" selection-end-line="162" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/MyThread.java">
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/ThreadDoor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="741">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Thread.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        <state relative-caret-position="20634">
+          <caret line="1131" column="26" selection-start-line="1131" selection-start-column="26" selection-end-line="1131" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/TestVoliatile.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/concurrent/Semaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="4161">
+          <caret line="263" column="11" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
+          <folding>
+            <element signature="e#9084#9085#0" expanded="true" />
+            <element signature="e#9131#9132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3401">
+          <caret line="220" column="7" selection-start-line="220" selection-start-column="7" selection-end-line="220" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/java/PatternTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/resource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/annotation/RetentionPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/models/struct/adapter/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/annotation/ElementType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot/src/main/java/com/cc/thread/AutomicXX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

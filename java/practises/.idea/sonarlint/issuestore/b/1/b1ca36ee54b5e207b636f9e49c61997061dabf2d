@@ -1,0 +1,16 @@
+
+dsquid:S2142,"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Áé¾Ö×-
+Esquid:S2189%""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8×àªÖ×-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(¿Áóûÿÿÿÿ8É¦Ö×-
+Esquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ë³©Ö×-
+Fsquid:S1604"(Make this anonymous inner class a lambda(ÉãÃ®8ú¹£Ö×-
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(„¡ÔÂıÿÿÿÿ8É¦Ö×-
+[
+squid:S106/"9Replace this use of System.out or System.err by a logger.(„¡ÔÂıÿÿÿÿ8üÖ¼Ö×-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘8Áé¾Ö×-
+Fsquid:S1604""(Make this anonymous inner class a lambda(ÉãÃ®8‚ş¬Ö×-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8È‰®Ö×-
+Fsquid:S1148-"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Áé¾Ö×-
+dsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8È‰®Ö×-
