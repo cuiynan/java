@@ -1,42 +1,0 @@
-
-V
-squid:S106B"9Replace this use of System.out or System.err by a logger.(ˆ„Æ¥8ÿ™†ëË-
-V
-squid:S106@"9Replace this use of System.out or System.err by a logger.(“‹ç8ÿ™†ëË-
-¾%squid:RedundantThrowsDeclarationCheck>"€Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from method's body.(Ÿö¨øÿÿÿÿ8ÑºëË-
-¾%squid:RedundantThrowsDeclarationCheck+"€Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from method's body.(ÊûÑ°øÿÿÿÿ8Ù¸ëË-
-Osquid:S1612",Replace this lambda with a method reference.(’¹û‘øÿÿÿÿ8ª„ÀëË-
-Fsquid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‡ëË-
-[
-squid:S106F"9Replace this use of System.out or System.err by a logger.(ÛìË±ÿÿÿÿÿ8ÿ™†ëË-
-Osquid:S1612",Replace this lambda with a method reference.(»³ì´ùÿÿÿÿ8ª„ÀëË-
-[
-squid:S106-"9Replace this use of System.out or System.err by a logger.(Š°¡­ûÿÿÿÿ8ğß¸ëË-
-[
-squid:S1063"9Replace this use of System.out or System.err by a logger.(•×¢™ıÿÿÿÿ8ğß¸ëË-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(äĞ¹„úÿÿÿÿ8¶ş²ëË-
-[
-squid:S106/"9Replace this use of System.out or System.err by a logger.(ôÍÆ üÿÿÿÿ8ğß¸ëË-
-Msquid:S1611"/Remove the parentheses around the "e" parameter(ÜÒ¶š8ª„ÀëË-
-Rsquid:S1611"/Remove the parentheses around the "e" parameter(»³ì´ùÿÿÿÿ8ª„ÀëË-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Î¢ßœúÿÿÿÿ8ª„ÀëË-
-Osquid:S1612",Replace this lambda with a method reference.(Î¢ßœúÿÿÿÿ8ª„ÀëË-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÜÒ¶š8ª„ÀëË-
-V
-squid:S106""9Replace this use of System.out or System.err by a logger.(–ÃÔ¼8 õœëË-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(»³ì´ùÿÿÿÿ8ª„ÀëË-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(à†Ş‘øÿÿÿÿ8¶ş²ëË-
-´%squid:RedundantThrowsDeclarationCheck>"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(Ÿö¨øÿÿÿÿ8ÑºëË-
-Jsquid:S1612",Replace this lambda with a method reference.(ÜÒ¶š8ª„ÀëË-
-Rsquid:S1611"/Remove the parentheses around the "e" parameter(Î¢ßœúÿÿÿÿ8ª„ÀëË-
-Rsquid:S1611"/Remove the parentheses around the "e" parameter(’¹û‘øÿÿÿÿ8ª„ÀëË-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(’¹û‘øÿÿÿÿ8ª„ÀëË-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ì‚©ï8úí´ëË-
-´%squid:RedundantThrowsDeclarationCheck+"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(ÊûÑ°øÿÿÿÿ8Ù¸ëË-

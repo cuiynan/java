@@ -1,11 +1,0 @@
-
-Zsquid:S3518/"CMake sure this expression can't be zero before doing this division.(ŠÒ‡ı
-=squid:S1481/"&Remove this unused "a" local variable.(ŠÒ‡ı
-Tsquid:UselessImportCheck
-"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
-Lsquid:S1854/"5Remove this useless assignment to local variable "a".(ŠÒ‡ı
-Osquid:UselessImportCheck	"+Remove this unused import 'java.util.Date'.(¸…¼ü
-vsquid:UselessImportCheck"FRemove this unused import 'org.springframework.stereotype.Repository'.(¦ıÍıüÿÿÿÿ8‹ß µ-
-[
-squid:S106&"9Replace this use of System.out or System.err by a logger.(»«Åûÿÿÿÿ8ö¹›§È-
-Tsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ

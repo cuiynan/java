@@ -1,8 +1,0 @@
-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(‰¯×øÿÿÿÿ
-V
-squid:S106&"9Replace this use of System.out or System.err by a logger.(¨Ô…‹8¯Šë¤-
-nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ÅÌ§çÿÿÿÿÿ8†ÔÏâ±-
-ysquid:S2159%"VRemove this call to "equals"; comparisons between unrelated types always return false.(ğ»ª‘úÿÿÿÿ8¼Ñ¬ë¤-
-Zsquid:UnusedPrivateMethod#")Remove this unused private "fore" method.(Òçïíùÿÿÿÿ8¯Šë¤-

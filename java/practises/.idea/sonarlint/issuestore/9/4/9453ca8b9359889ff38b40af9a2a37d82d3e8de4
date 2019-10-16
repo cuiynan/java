@@ -1,8 +1,0 @@
-
-?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-~squid:UselessImportCheck"URemove this unused import 'org.springframework.web.bind.annotation.ControllerAdvice'.(¶Í„áüÿÿÿÿ
-]squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-nsquid:UselessImportCheck"ERemove this unused import 'org.springframework.stereotype.Component'.(Þ÷Ñ¸ÿÿÿÿÿ
-osquid:UselessImportCheck"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ
-{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÝÑÞËüÿÿÿÿ
-usquid:UselessImportCheck"LRemove this unused import 'org.springframework.scheduling.annotation.Async'.(Ýë€Ûúÿÿÿÿ

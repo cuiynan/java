@@ -1,15 +1,0 @@
-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÄÉ£Ü8úÃñó´-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(•Šß”8ïİùó´-
-Esquid:S1068"'Remove this unused "str" private field.(•Šß”8ïİùó´-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•Šß”8ïİùó´-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ßË´¯8ˆÚúó´-
-[
-squid:S106""9Replace this use of System.out or System.err by a logger.(¨­èŒüÿÿÿÿ8Ôõó´-
-isquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(°Ñ¡µ8©†ÿó´-
-}squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ßË´¯8ˆÚúó´-
-Fsquid:S1481$"(Remove this unused "tmp" local variable.(Šåˆ8íı÷ó´-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(¨Ô…‹8ş–ôó´-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ñ”éºøÿÿÿÿ8ş–ôó´-
