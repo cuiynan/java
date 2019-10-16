@@ -537,3 +537,9 @@ f
 6springboot/src/main/java/com/cc/thread/ThreadDoor.java,a\6\a65998aea46a630aef3d5a1489267e0864d26b20
 e
 5springboot/src/main/java/com/cc/java/PatternTest.java,f\7\f78d8540bee93fe41b69dbe4cd59115a95f4e221
+e
+5springboot/src/main/java/com/cc/thread/AutomicXX.java,2\6\26009296950db12654d5c69fdad015f9cfa006de
+n
+>springboot/src/main/java/com/models/create/template/Cruze.java,3\6\36eeac4cd365d7a81eb18eab7681269e8a040446
+m
+=springboot/src/main/java/com/models/create/template/Audi.java,9\0\900f5441e6c3b730e9811008224b821bf92a85bb

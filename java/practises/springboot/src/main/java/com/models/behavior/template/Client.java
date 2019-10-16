@@ -14,6 +14,9 @@ public class Client {
 
         PayTmplate zfb = new ZFB();
         zfb.pay();
+
+        CarTemplate car = new Audi();
+        car.create();
     }
 
 }

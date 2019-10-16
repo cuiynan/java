@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidoctor.decisiontree.reponsitory.InspectionCheckMapper" >
+  <resultMap id="BaseResultMap" type="com.aidoctor.decisiontree.entity.InspectionCheck" >
+    <id column="id" property="id" jdbcType="SMALLINT" />
+    <result column="disease_code" property="diseaseCode" jdbcType="CHAR" />
+    <result column="disease_name" property="diseaseName" jdbcType="CHAR" />
+    <result column="son_code" property="sonCode" jdbcType="VARCHAR" />
+    <result column="son_name" property="sonName" jdbcType="VARCHAR" />
+    <result column="TZ1" property="tz1" jdbcType="SMALLINT" />
+    <result column="TZ2" property="tz2" jdbcType="SMALLINT" />
+    <result column="TZ3" property="tz3" jdbcType="SMALLINT" />
+    <result column="TZ4" property="tz4" jdbcType="SMALLINT" />
+    <result column="XCG1" property="xcg1" jdbcType="SMALLINT" />
+    <result column="XCG2" property="xcg2" jdbcType="SMALLINT" />
+    <result column="XCG3" property="xcg3" jdbcType="SMALLINT" />
+    <result column="X1" property="x1" jdbcType="SMALLINT" />
+    <result column="X2" property="x2" jdbcType="SMALLINT" />
+    <result column="X3" property="x3" jdbcType="SMALLINT" />
+    <result column="X4" property="x4" jdbcType="SMALLINT" />
+    <result column="X5" property="x5" jdbcType="SMALLINT" />
+    <result column="X6" property="x6" jdbcType="SMALLINT" />
+    <result column="X7" property="x7" jdbcType="SMALLINT" />
+    <result column="X8" property="x8" jdbcType="SMALLINT" />
+    <result column="X9" property="x9" jdbcType="SMALLINT" />
+    <result column="CT1" property="ct1" jdbcType="SMALLINT" />
+    <result column="CT2" property="ct2" jdbcType="SMALLINT" />
+    <result column="CT3" property="ct3" jdbcType="SMALLINT" />
+    <result column="CT4" property="ct4" jdbcType="SMALLINT" />
+    <result column="CT5" property="ct5" jdbcType="SMALLINT" />
+    <result column="CT6" property="ct6" jdbcType="SMALLINT" />
+    <result column="CT7" property="ct7" jdbcType="SMALLINT" />
+    <result column="CT8" property="ct8" jdbcType="SMALLINT" />
+    <result column="CT9" property="ct9" jdbcType="SMALLINT" />
+    <result column="FTQ1" property="ftq1" jdbcType="SMALLINT" />
+    <result column="FTQ2" property="ftq2" jdbcType="SMALLINT" />
+    <result column="BYT1" property="byt1" jdbcType="SMALLINT" />
+    <result column="BYT2" property="byt2" jdbcType="SMALLINT" />
+    <result column="BYT3" property="byt3" jdbcType="SMALLINT" />
+    <result column="BYT4" property="byt4" jdbcType="SMALLINT" />
+    <result column="BYT5" property="byt5" jdbcType="SMALLINT" />
+    <result column="BYT6" property="byt6" jdbcType="SMALLINT" />
+    <result column="BYT7" property="byt7" jdbcType="SMALLINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, disease_code, disease_name, son_code, son_name, TZ1, TZ2, TZ3, TZ4, XCG1, XCG2, 
+    XCG3, X1, X2, X3, X4, X5, X6, X7, X8, X9, CT1, CT2, CT3, CT4, CT5, CT6, CT7, CT8, 
+    CT9, FTQ1, FTQ2, BYT1, BYT2, BYT3, BYT4, BYT5, BYT6, BYT7
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aidoctor.decisiontree.entity.InspectionCheckExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from decision_inspection_check
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Short" >
+    select 
+    <include refid="Base_Column_List" />
+    from decision_inspection_check
+    where id = #{id,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short" >
+    delete from decision_inspection_check
+    where id = #{id,jdbcType=SMALLINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.aidoctor.decisiontree.entity.InspectionCheckExample" >
+    delete from decision_inspection_check
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.aidoctor.decisiontree.entity.InspectionCheck" >
+    insert into decision_inspection_check (id, disease_code, disease_name, 
+      son_code, son_name, TZ1, 
+      TZ2, TZ3, TZ4, XCG1, 
+      XCG2, XCG3, X1, 
+      X2, X3, X4, X5, 
+      X6, X7, X8, X9, 
+      CT1, CT2, CT3, CT4, 
+      CT5, CT6, CT7, CT8, 
+      CT9, FTQ1, FTQ2, 
+      BYT1, BYT2, BYT3, 
+      BYT4, BYT5, BYT6, 
+      BYT7)
+    values (#{id,jdbcType=SMALLINT}, #{diseaseCode,jdbcType=CHAR}, #{diseaseName,jdbcType=CHAR}, 
+      #{sonCode,jdbcType=VARCHAR}, #{sonName,jdbcType=VARCHAR}, #{tz1,jdbcType=SMALLINT}, 
+      #{tz2,jdbcType=SMALLINT}, #{tz3,jdbcType=SMALLINT}, #{tz4,jdbcType=SMALLINT}, #{xcg1,jdbcType=SMALLINT}, 
+      #{xcg2,jdbcType=SMALLINT}, #{xcg3,jdbcType=SMALLINT}, #{x1,jdbcType=SMALLINT}, 
+      #{x2,jdbcType=SMALLINT}, #{x3,jdbcType=SMALLINT}, #{x4,jdbcType=SMALLINT}, #{x5,jdbcType=SMALLINT}, 
+      #{x6,jdbcType=SMALLINT}, #{x7,jdbcType=SMALLINT}, #{x8,jdbcType=SMALLINT}, #{x9,jdbcType=SMALLINT}, 
+      #{ct1,jdbcType=SMALLINT}, #{ct2,jdbcType=SMALLINT}, #{ct3,jdbcType=SMALLINT}, #{ct4,jdbcType=SMALLINT}, 
+      #{ct5,jdbcType=SMALLINT}, #{ct6,jdbcType=SMALLINT}, #{ct7,jdbcType=SMALLINT}, #{ct8,jdbcType=SMALLINT}, 
+      #{ct9,jdbcType=SMALLINT}, #{ftq1,jdbcType=SMALLINT}, #{ftq2,jdbcType=SMALLINT}, 
+      #{byt1,jdbcType=SMALLINT}, #{byt2,jdbcType=SMALLINT}, #{byt3,jdbcType=SMALLINT}, 
+      #{byt4,jdbcType=SMALLINT}, #{byt5,jdbcType=SMALLINT}, #{byt6,jdbcType=SMALLINT}, 
+      #{byt7,jdbcType=SMALLINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aidoctor.decisiontree.entity.InspectionCheck" >
+    insert into decision_inspection_check
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="diseaseCode != null" >
+        disease_code,
+      </if>
+      <if test="diseaseName != null" >
+        disease_name,
+      </if>
+      <if test="sonCode != null" >
+        son_code,
+      </if>
+      <if test="sonName != null" >
+        son_name,
+      </if>
+      <if test="tz1 != null" >
+        TZ1,
+      </if>
+      <if test="tz2 != null" >
+        TZ2,
+      </if>
+      <if test="tz3 != null" >
+        TZ3,
+      </if>
+      <if test="tz4 != null" >
+        TZ4,
+      </if>
+      <if test="xcg1 != null" >
+        XCG1,
+      </if>
+      <if test="xcg2 != null" >
+        XCG2,
+      </if>
+      <if test="xcg3 != null" >
+        XCG3,
+      </if>
+      <if test="x1 != null" >
+        X1,
+      </if>
+      <if test="x2 != null" >
+        X2,
+      </if>
+      <if test="x3 != null" >
+        X3,
+      </if>
+      <if test="x4 != null" >
+        X4,
+      </if>
+      <if test="x5 != null" >
+        X5,
+      </if>
+      <if test="x6 != null" >
+        X6,
+      </if>
+      <if test="x7 != null" >
+        X7,
+      </if>
+      <if test="x8 != null" >
+        X8,
+      </if>
+      <if test="x9 != null" >
+        X9,
+      </if>
+      <if test="ct1 != null" >
+        CT1,
+      </if>
+      <if test="ct2 != null" >
+        CT2,
+      </if>
+      <if test="ct3 != null" >
+        CT3,
+      </if>
+      <if test="ct4 != null" >
+        CT4,
+      </if>
+      <if test="ct5 != null" >
+        CT5,
+      </if>
+      <if test="ct6 != null" >
+        CT6,
+      </if>
+      <if test="ct7 != null" >
+        CT7,
+      </if>
+      <if test="ct8 != null" >
+        CT8,
+      </if>
+      <if test="ct9 != null" >
+        CT9,
+      </if>
+      <if test="ftq1 != null" >
+        FTQ1,
+      </if>
+      <if test="ftq2 != null" >
+        FTQ2,
+      </if>
+      <if test="byt1 != null" >
+        BYT1,
+      </if>
+      <if test="byt2 != null" >
+        BYT2,
+      </if>
+      <if test="byt3 != null" >
+        BYT3,
+      </if>
+      <if test="byt4 != null" >
+        BYT4,
+      </if>
+      <if test="byt5 != null" >
+        BYT5,
+      </if>
+      <if test="byt6 != null" >
+        BYT6,
+      </if>
+      <if test="byt7 != null" >
+        BYT7,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=SMALLINT},
+      </if>
+      <if test="diseaseCode != null" >
+        #{diseaseCode,jdbcType=CHAR},
+      </if>
+      <if test="diseaseName != null" >
+        #{diseaseName,jdbcType=CHAR},
+      </if>
+      <if test="sonCode != null" >
+        #{sonCode,jdbcType=VARCHAR},
+      </if>
+      <if test="sonName != null" >
+        #{sonName,jdbcType=VARCHAR},
+      </if>
+      <if test="tz1 != null" >
+        #{tz1,jdbcType=SMALLINT},
+      </if>
+      <if test="tz2 != null" >
+        #{tz2,jdbcType=SMALLINT},
+      </if>
+      <if test="tz3 != null" >
+        #{tz3,jdbcType=SMALLINT},
+      </if>
+      <if test="tz4 != null" >
+        #{tz4,jdbcType=SMALLINT},
+      </if>
+      <if test="xcg1 != null" >
+        #{xcg1,jdbcType=SMALLINT},
+      </if>
+      <if test="xcg2 != null" >
+        #{xcg2,jdbcType=SMALLINT},
+      </if>
+      <if test="xcg3 != null" >
+        #{xcg3,jdbcType=SMALLINT},
+      </if>
+      <if test="x1 != null" >
+        #{x1,jdbcType=SMALLINT},
+      </if>
+      <if test="x2 != null" >
+        #{x2,jdbcType=SMALLINT},
+      </if>
+      <if test="x3 != null" >
+        #{x3,jdbcType=SMALLINT},
+      </if>
+      <if test="x4 != null" >
+        #{x4,jdbcType=SMALLINT},
+      </if>
+      <if test="x5 != null" >
+        #{x5,jdbcType=SMALLINT},
+      </if>
+      <if test="x6 != null" >
+        #{x6,jdbcType=SMALLINT},
+      </if>
+      <if test="x7 != null" >
+        #{x7,jdbcType=SMALLINT},
+      </if>
+      <if test="x8 != null" >
+        #{x8,jdbcType=SMALLINT},
+      </if>
+      <if test="x9 != null" >
+        #{x9,jdbcType=SMALLINT},
+      </if>
+      <if test="ct1 != null" >
+        #{ct1,jdbcType=SMALLINT},
+      </if>
+      <if test="ct2 != null" >
+        #{ct2,jdbcType=SMALLINT},
+      </if>
+      <if test="ct3 != null" >
+        #{ct3,jdbcType=SMALLINT},
+      </if>
+      <if test="ct4 != null" >
+        #{ct4,jdbcType=SMALLINT},
+      </if>
+      <if test="ct5 != null" >
+        #{ct5,jdbcType=SMALLINT},
+      </if>
+      <if test="ct6 != null" >
+        #{ct6,jdbcType=SMALLINT},
+      </if>
+      <if test="ct7 != null" >
+        #{ct7,jdbcType=SMALLINT},
+      </if>
+      <if test="ct8 != null" >
+        #{ct8,jdbcType=SMALLINT},
+      </if>
+      <if test="ct9 != null" >
+        #{ct9,jdbcType=SMALLINT},
+      </if>
+      <if test="ftq1 != null" >
+        #{ftq1,jdbcType=SMALLINT},
+      </if>
+      <if test="ftq2 != null" >
+        #{ftq2,jdbcType=SMALLINT},
+      </if>
+      <if test="byt1 != null" >
+        #{byt1,jdbcType=SMALLINT},
+      </if>
+      <if test="byt2 != null" >
+        #{byt2,jdbcType=SMALLINT},
+      </if>
+      <if test="byt3 != null" >
+        #{byt3,jdbcType=SMALLINT},
+      </if>
+      <if test="byt4 != null" >
+        #{byt4,jdbcType=SMALLINT},
+      </if>
+      <if test="byt5 != null" >
+        #{byt5,jdbcType=SMALLINT},
+      </if>
+      <if test="byt6 != null" >
+        #{byt6,jdbcType=SMALLINT},
+      </if>
+      <if test="byt7 != null" >
+        #{byt7,jdbcType=SMALLINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.aidoctor.decisiontree.entity.InspectionCheckExample" resultType="java.lang.Integer" >
+    select count(*) from decision_inspection_check
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update decision_inspection_check
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=SMALLINT},
+      </if>
+      <if test="record.diseaseCode != null" >
+        disease_code = #{record.diseaseCode,jdbcType=CHAR},
+      </if>
+      <if test="record.diseaseName != null" >
+        disease_name = #{record.diseaseName,jdbcType=CHAR},
+      </if>
+      <if test="record.sonCode != null" >
+        son_code = #{record.sonCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sonName != null" >
+        son_name = #{record.sonName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tz1 != null" >
+        TZ1 = #{record.tz1,jdbcType=SMALLINT},
+      </if>
+      <if test="record.tz2 != null" >
+        TZ2 = #{record.tz2,jdbcType=SMALLINT},
+      </if>
+      <if test="record.tz3 != null" >
+        TZ3 = #{record.tz3,jdbcType=SMALLINT},
+      </if>
+      <if test="record.tz4 != null" >
+        TZ4 = #{record.tz4,jdbcType=SMALLINT},
+      </if>
+      <if test="record.xcg1 != null" >
+        XCG1 = #{record.xcg1,jdbcType=SMALLINT},
+      </if>
+      <if test="record.xcg2 != null" >
+        XCG2 = #{record.xcg2,jdbcType=SMALLINT},
+      </if>
+      <if test="record.xcg3 != null" >
+        XCG3 = #{record.xcg3,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x1 != null" >
+        X1 = #{record.x1,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x2 != null" >
+        X2 = #{record.x2,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x3 != null" >
+        X3 = #{record.x3,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x4 != null" >
+        X4 = #{record.x4,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x5 != null" >
+        X5 = #{record.x5,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x6 != null" >
+        X6 = #{record.x6,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x7 != null" >
+        X7 = #{record.x7,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x8 != null" >
+        X8 = #{record.x8,jdbcType=SMALLINT},
+      </if>
+      <if test="record.x9 != null" >
+        X9 = #{record.x9,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct1 != null" >
+        CT1 = #{record.ct1,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct2 != null" >
+        CT2 = #{record.ct2,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct3 != null" >
+        CT3 = #{record.ct3,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct4 != null" >
+        CT4 = #{record.ct4,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct5 != null" >
+        CT5 = #{record.ct5,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct6 != null" >
+        CT6 = #{record.ct6,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct7 != null" >
+        CT7 = #{record.ct7,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct8 != null" >
+        CT8 = #{record.ct8,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ct9 != null" >
+        CT9 = #{record.ct9,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ftq1 != null" >
+        FTQ1 = #{record.ftq1,jdbcType=SMALLINT},
+      </if>
+      <if test="record.ftq2 != null" >
+        FTQ2 = #{record.ftq2,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt1 != null" >
+        BYT1 = #{record.byt1,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt2 != null" >
+        BYT2 = #{record.byt2,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt3 != null" >
+        BYT3 = #{record.byt3,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt4 != null" >
+        BYT4 = #{record.byt4,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt5 != null" >
+        BYT5 = #{record.byt5,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt6 != null" >
+        BYT6 = #{record.byt6,jdbcType=SMALLINT},
+      </if>
+      <if test="record.byt7 != null" >
+        BYT7 = #{record.byt7,jdbcType=SMALLINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update decision_inspection_check
+    set id = #{record.id,jdbcType=SMALLINT},
+      disease_code = #{record.diseaseCode,jdbcType=CHAR},
+      disease_name = #{record.diseaseName,jdbcType=CHAR},
+      son_code = #{record.sonCode,jdbcType=VARCHAR},
+      son_name = #{record.sonName,jdbcType=VARCHAR},
+      TZ1 = #{record.tz1,jdbcType=SMALLINT},
+      TZ2 = #{record.tz2,jdbcType=SMALLINT},
+      TZ3 = #{record.tz3,jdbcType=SMALLINT},
+      TZ4 = #{record.tz4,jdbcType=SMALLINT},
+      XCG1 = #{record.xcg1,jdbcType=SMALLINT},
+      XCG2 = #{record.xcg2,jdbcType=SMALLINT},
+      XCG3 = #{record.xcg3,jdbcType=SMALLINT},
+      X1 = #{record.x1,jdbcType=SMALLINT},
+      X2 = #{record.x2,jdbcType=SMALLINT},
+      X3 = #{record.x3,jdbcType=SMALLINT},
+      X4 = #{record.x4,jdbcType=SMALLINT},
+      X5 = #{record.x5,jdbcType=SMALLINT},
+      X6 = #{record.x6,jdbcType=SMALLINT},
+      X7 = #{record.x7,jdbcType=SMALLINT},
+      X8 = #{record.x8,jdbcType=SMALLINT},
+      X9 = #{record.x9,jdbcType=SMALLINT},
+      CT1 = #{record.ct1,jdbcType=SMALLINT},
+      CT2 = #{record.ct2,jdbcType=SMALLINT},
+      CT3 = #{record.ct3,jdbcType=SMALLINT},
+      CT4 = #{record.ct4,jdbcType=SMALLINT},
+      CT5 = #{record.ct5,jdbcType=SMALLINT},
+      CT6 = #{record.ct6,jdbcType=SMALLINT},
+      CT7 = #{record.ct7,jdbcType=SMALLINT},
+      CT8 = #{record.ct8,jdbcType=SMALLINT},
+      CT9 = #{record.ct9,jdbcType=SMALLINT},
+      FTQ1 = #{record.ftq1,jdbcType=SMALLINT},
+      FTQ2 = #{record.ftq2,jdbcType=SMALLINT},
+      BYT1 = #{record.byt1,jdbcType=SMALLINT},
+      BYT2 = #{record.byt2,jdbcType=SMALLINT},
+      BYT3 = #{record.byt3,jdbcType=SMALLINT},
+      BYT4 = #{record.byt4,jdbcType=SMALLINT},
+      BYT5 = #{record.byt5,jdbcType=SMALLINT},
+      BYT6 = #{record.byt6,jdbcType=SMALLINT},
+      BYT7 = #{record.byt7,jdbcType=SMALLINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aidoctor.decisiontree.entity.InspectionCheck" >
+    update decision_inspection_check
+    <set >
+      <if test="diseaseCode != null" >
+        disease_code = #{diseaseCode,jdbcType=CHAR},
+      </if>
+      <if test="diseaseName != null" >
+        disease_name = #{diseaseName,jdbcType=CHAR},
+      </if>
+      <if test="sonCode != null" >
+        son_code = #{sonCode,jdbcType=VARCHAR},
+      </if>
+      <if test="sonName != null" >
+        son_name = #{sonName,jdbcType=VARCHAR},
+      </if>
+      <if test="tz1 != null" >
+        TZ1 = #{tz1,jdbcType=SMALLINT},
+      </if>
+      <if test="tz2 != null" >
+        TZ2 = #{tz2,jdbcType=SMALLINT},
+      </if>
+      <if test="tz3 != null" >
+        TZ3 = #{tz3,jdbcType=SMALLINT},
+      </if>
+      <if test="tz4 != null" >
+        TZ4 = #{tz4,jdbcType=SMALLINT},
+      </if>
+      <if test="xcg1 != null" >
+        XCG1 = #{xcg1,jdbcType=SMALLINT},
+      </if>
+      <if test="xcg2 != null" >
+        XCG2 = #{xcg2,jdbcType=SMALLINT},
+      </if>
+      <if test="xcg3 != null" >
+        XCG3 = #{xcg3,jdbcType=SMALLINT},
+      </if>
+      <if test="x1 != null" >
+        X1 = #{x1,jdbcType=SMALLINT},
+      </if>
+      <if test="x2 != null" >
+        X2 = #{x2,jdbcType=SMALLINT},
+      </if>
+      <if test="x3 != null" >
+        X3 = #{x3,jdbcType=SMALLINT},
+      </if>
+      <if test="x4 != null" >
+        X4 = #{x4,jdbcType=SMALLINT},
+      </if>
+      <if test="x5 != null" >
+        X5 = #{x5,jdbcType=SMALLINT},
+      </if>
+      <if test="x6 != null" >
+        X6 = #{x6,jdbcType=SMALLINT},
+      </if>
+      <if test="x7 != null" >
+        X7 = #{x7,jdbcType=SMALLINT},
+      </if>
+      <if test="x8 != null" >
+        X8 = #{x8,jdbcType=SMALLINT},
+      </if>
+      <if test="x9 != null" >
+        X9 = #{x9,jdbcType=SMALLINT},
+      </if>
+      <if test="ct1 != null" >
+        CT1 = #{ct1,jdbcType=SMALLINT},
+      </if>
+      <if test="ct2 != null" >
+        CT2 = #{ct2,jdbcType=SMALLINT},
+      </if>
+      <if test="ct3 != null" >
+        CT3 = #{ct3,jdbcType=SMALLINT},
+      </if>
+      <if test="ct4 != null" >
+        CT4 = #{ct4,jdbcType=SMALLINT},
+      </if>
+      <if test="ct5 != null" >
+        CT5 = #{ct5,jdbcType=SMALLINT},
+      </if>
+      <if test="ct6 != null" >
+        CT6 = #{ct6,jdbcType=SMALLINT},
+      </if>
+      <if test="ct7 != null" >
+        CT7 = #{ct7,jdbcType=SMALLINT},
+      </if>
+      <if test="ct8 != null" >
+        CT8 = #{ct8,jdbcType=SMALLINT},
+      </if>
+      <if test="ct9 != null" >
+        CT9 = #{ct9,jdbcType=SMALLINT},
+      </if>
+      <if test="ftq1 != null" >
+        FTQ1 = #{ftq1,jdbcType=SMALLINT},
+      </if>
+      <if test="ftq2 != null" >
+        FTQ2 = #{ftq2,jdbcType=SMALLINT},
+      </if>
+      <if test="byt1 != null" >
+        BYT1 = #{byt1,jdbcType=SMALLINT},
+      </if>
+      <if test="byt2 != null" >
+        BYT2 = #{byt2,jdbcType=SMALLINT},
+      </if>
+      <if test="byt3 != null" >
+        BYT3 = #{byt3,jdbcType=SMALLINT},
+      </if>
+      <if test="byt4 != null" >
+        BYT4 = #{byt4,jdbcType=SMALLINT},
+      </if>
+      <if test="byt5 != null" >
+        BYT5 = #{byt5,jdbcType=SMALLINT},
+      </if>
+      <if test="byt6 != null" >
+        BYT6 = #{byt6,jdbcType=SMALLINT},
+      </if>
+      <if test="byt7 != null" >
+        BYT7 = #{byt7,jdbcType=SMALLINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aidoctor.decisiontree.entity.InspectionCheck" >
+    update decision_inspection_check
+    set disease_code = #{diseaseCode,jdbcType=CHAR},
+      disease_name = #{diseaseName,jdbcType=CHAR},
+      son_code = #{sonCode,jdbcType=VARCHAR},
+      son_name = #{sonName,jdbcType=VARCHAR},
+      TZ1 = #{tz1,jdbcType=SMALLINT},
+      TZ2 = #{tz2,jdbcType=SMALLINT},
+      TZ3 = #{tz3,jdbcType=SMALLINT},
+      TZ4 = #{tz4,jdbcType=SMALLINT},
+      XCG1 = #{xcg1,jdbcType=SMALLINT},
+      XCG2 = #{xcg2,jdbcType=SMALLINT},
+      XCG3 = #{xcg3,jdbcType=SMALLINT},
+      X1 = #{x1,jdbcType=SMALLINT},
+      X2 = #{x2,jdbcType=SMALLINT},
+      X3 = #{x3,jdbcType=SMALLINT},
+      X4 = #{x4,jdbcType=SMALLINT},
+      X5 = #{x5,jdbcType=SMALLINT},
+      X6 = #{x6,jdbcType=SMALLINT},
+      X7 = #{x7,jdbcType=SMALLINT},
+      X8 = #{x8,jdbcType=SMALLINT},
+      X9 = #{x9,jdbcType=SMALLINT},
+      CT1 = #{ct1,jdbcType=SMALLINT},
+      CT2 = #{ct2,jdbcType=SMALLINT},
+      CT3 = #{ct3,jdbcType=SMALLINT},
+      CT4 = #{ct4,jdbcType=SMALLINT},
+      CT5 = #{ct5,jdbcType=SMALLINT},
+      CT6 = #{ct6,jdbcType=SMALLINT},
+      CT7 = #{ct7,jdbcType=SMALLINT},
+      CT8 = #{ct8,jdbcType=SMALLINT},
+      CT9 = #{ct9,jdbcType=SMALLINT},
+      FTQ1 = #{ftq1,jdbcType=SMALLINT},
+      FTQ2 = #{ftq2,jdbcType=SMALLINT},
+      BYT1 = #{byt1,jdbcType=SMALLINT},
+      BYT2 = #{byt2,jdbcType=SMALLINT},
+      BYT3 = #{byt3,jdbcType=SMALLINT},
+      BYT4 = #{byt4,jdbcType=SMALLINT},
+      BYT5 = #{byt5,jdbcType=SMALLINT},
+      BYT6 = #{byt6,jdbcType=SMALLINT},
+      BYT7 = #{byt7,jdbcType=SMALLINT}
+    where id = #{id,jdbcType=SMALLINT}
+  </update>
+</mapper>

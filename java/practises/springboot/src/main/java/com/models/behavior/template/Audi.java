@@ -1,4 +1,4 @@
-package com.models.create.template;
+package com.models.behavior.template;
 
 import org.springframework.stereotype.Component;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * 
  */
 @Component
-public class Audi extends Template {
+public class Audi extends CarTemplate {
 
     /**
      * Default constructor
@@ -17,21 +17,24 @@ public class Audi extends Template {
     /**
      * 
      */
-    public void oneStep(){
+    @Override
+    protected void oneStep(){
         System.out.println("奥迪组装1");
     }
 
     /**
      * 
      */
-    public void twoStep(){
+    @Override
+    protected void twoStep(){
         System.out.println("奥迪组装2");
     }
 
     /**
      * 
      */
-    public  void threeStep(){
+    @Override
+    protected  void threeStep(){
         System.out.println("奥迪组装3");
     }
 

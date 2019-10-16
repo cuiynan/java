@@ -1,14 +1,14 @@
-package com.models.create.template;
+package com.models.behavior.template;
 
 /**
  * 
  */
-public abstract class Template {
+public abstract class CarTemplate {
 
     /**
      * Default constructor
      */
-    public Template() {
+    public CarTemplate() {
     }
 
     /**
@@ -23,16 +23,16 @@ public abstract class Template {
     /**
      * 
      */
-    public abstract void oneStep();
+    protected abstract void oneStep();
 
     /**
      * 
      */
-    public abstract void twoStep();
+    protected abstract void twoStep();
 
     /**
      * 
      */
-    public abstract void threeStep();
+    protected abstract void threeStep();
 
 }

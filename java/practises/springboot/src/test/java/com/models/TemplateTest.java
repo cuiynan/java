@@ -1,8 +1,8 @@
 package com.models;
 
-import com.models.create.template.Audi;
-import com.models.create.template.Cruze;
-import com.models.create.template.Template;
+import com.models.behavior.template.Audi;
+import com.models.behavior.template.Cruze;
+import com.models.behavior.template.CarTemplate;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class TemplateTest {
 
     @Test
     public void templates(){
-        Template car = audi;
+        CarTemplate car = audi;
         assertNotEquals(null, audi);
         car.create();
 
