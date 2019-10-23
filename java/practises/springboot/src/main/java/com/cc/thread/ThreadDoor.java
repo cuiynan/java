@@ -41,7 +41,7 @@ public class ThreadDoor {
     }
 
 
-    private static void add() {
+    private synchronized static void add() {
         count++;
     }
 }

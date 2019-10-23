@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidoctor.decisiontree.reponsitory.DiseaseMapper" >
+  <resultMap id="BaseResultMap" type="com.aidoctor.decisiontree.entity.Disease" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="disease_code" property="diseaseCode" jdbcType="CHAR" />
+    <result column="disease_name" property="diseaseName" jdbcType="VARCHAR" />
+    <result column="order_num" property="orderNum" jdbcType="SMALLINT" />
+    <result column="team_num" property="teamNum" jdbcType="INTEGER" />
+    <result column="decision_tree_code" property="decisionTreeCode" jdbcType="SMALLINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, disease_code, disease_name, order_num, team_num, decision_tree_code
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aidoctor.decisiontree.entity.DiseaseExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from decision_disease
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from decision_disease
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from decision_disease
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.aidoctor.decisiontree.entity.DiseaseExample" >
+    delete from decision_disease
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.aidoctor.decisiontree.entity.Disease" >
+    insert into decision_disease (id, disease_code, disease_name, 
+      order_num, team_num, decision_tree_code
+      )
+    values (#{id,jdbcType=INTEGER}, #{diseaseCode,jdbcType=CHAR}, #{diseaseName,jdbcType=VARCHAR}, 
+      #{orderNum,jdbcType=SMALLINT}, #{teamNum,jdbcType=INTEGER}, #{decisionTreeCode,jdbcType=SMALLINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.aidoctor.decisiontree.entity.Disease" >
+    insert into decision_disease
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="diseaseCode != null" >
+        disease_code,
+      </if>
+      <if test="diseaseName != null" >
+        disease_name,
+      </if>
+      <if test="orderNum != null" >
+        order_num,
+      </if>
+      <if test="teamNum != null" >
+        team_num,
+      </if>
+      <if test="decisionTreeCode != null" >
+        decision_tree_code,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="diseaseCode != null" >
+        #{diseaseCode,jdbcType=CHAR},
+      </if>
+      <if test="diseaseName != null" >
+        #{diseaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNum != null" >
+        #{orderNum,jdbcType=SMALLINT},
+      </if>
+      <if test="teamNum != null" >
+        #{teamNum,jdbcType=INTEGER},
+      </if>
+      <if test="decisionTreeCode != null" >
+        #{decisionTreeCode,jdbcType=SMALLINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.aidoctor.decisiontree.entity.DiseaseExample" resultType="java.lang.Integer" >
+    select count(*) from decision_disease
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update decision_disease
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.diseaseCode != null" >
+        disease_code = #{record.diseaseCode,jdbcType=CHAR},
+      </if>
+      <if test="record.diseaseName != null" >
+        disease_name = #{record.diseaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderNum != null" >
+        order_num = #{record.orderNum,jdbcType=SMALLINT},
+      </if>
+      <if test="record.teamNum != null" >
+        team_num = #{record.teamNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.decisionTreeCode != null" >
+        decision_tree_code = #{record.decisionTreeCode,jdbcType=SMALLINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update decision_disease
+    set id = #{record.id,jdbcType=INTEGER},
+      disease_code = #{record.diseaseCode,jdbcType=CHAR},
+      disease_name = #{record.diseaseName,jdbcType=VARCHAR},
+      order_num = #{record.orderNum,jdbcType=SMALLINT},
+      team_num = #{record.teamNum,jdbcType=INTEGER},
+      decision_tree_code = #{record.decisionTreeCode,jdbcType=SMALLINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aidoctor.decisiontree.entity.Disease" >
+    update decision_disease
+    <set >
+      <if test="diseaseCode != null" >
+        disease_code = #{diseaseCode,jdbcType=CHAR},
+      </if>
+      <if test="diseaseName != null" >
+        disease_name = #{diseaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNum != null" >
+        order_num = #{orderNum,jdbcType=SMALLINT},
+      </if>
+      <if test="teamNum != null" >
+        team_num = #{teamNum,jdbcType=INTEGER},
+      </if>
+      <if test="decisionTreeCode != null" >
+        decision_tree_code = #{decisionTreeCode,jdbcType=SMALLINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aidoctor.decisiontree.entity.Disease" >
+    update decision_disease
+    set disease_code = #{diseaseCode,jdbcType=CHAR},
+      disease_name = #{diseaseName,jdbcType=VARCHAR},
+      order_num = #{orderNum,jdbcType=SMALLINT},
+      team_num = #{teamNum,jdbcType=INTEGER},
+      decision_tree_code = #{decisionTreeCode,jdbcType=SMALLINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
