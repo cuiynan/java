@@ -59,8 +59,8 @@ public class AutomicXX {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                countDownLatch.countDown();
             });
-            countDownLatch.countDown();
         }
         countDownLatch.await();
         executorService.shutdown();
