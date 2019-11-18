@@ -1,4 +1,4 @@
-package com.cc.thread;
+package thread;
 
 import com.cc.vo.User;
 

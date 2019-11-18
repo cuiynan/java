@@ -1,4 +1,4 @@
-package com.cc.thread;
+package thread;
 
 public class VolatileTest {
     volatile int a = 1;

@@ -1,4 +1,4 @@
-package com.cc.thread;
+package thread;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.target.ThreadLocalTargetSource;
