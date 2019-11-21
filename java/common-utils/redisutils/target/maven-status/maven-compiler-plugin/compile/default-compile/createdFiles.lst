@@ -1,0 +1,6 @@
+com\test\UserTest$UserTestBuilder.class
+com\RedisClient.class
+com\test\UserTest.class
+com\IRedis.class
+com\RedisClientConfiguration.class
+com\Start.class
