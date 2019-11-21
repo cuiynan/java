@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  * @AUTHOR cuiyingnan
  * @DATE 2019/2/22 19:26
  **/
-@Component
+@Component("redisClient")
 @Data
 public class RedisClient implements IRedis {
 

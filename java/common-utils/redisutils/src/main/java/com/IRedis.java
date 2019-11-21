@@ -1,9 +1,12 @@
 package com;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+@Component
 public interface IRedis {
         boolean expire(String key, long time);
 
