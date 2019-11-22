@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5feb7177-b1f5-4a90-993b-0269c5bc4494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-utils/commonutils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common-utils/commonutils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisutils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisutils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisutils/target/classes/com/test/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisutils/target/classes/com/test/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisutils/target/test-classes/com/RedisClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/redisutils/target/test-classes/com/RedisClientTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/redisutils/target/" />
@@ -21,12 +16,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/IRedis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="1121">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/RedisClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="9842">
+              <caret line="541" column="45" selection-start-line="541" selection-start-column="39" selection-end-line="541" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,84 +54,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.18.RELEASE/spring-data-redis-1.8.18.RELEASE.jar!/org/springframework/data/redis/core/ListOperations.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="513">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8322">
+              <caret line="473" column="11" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#19296#19297#0" expanded="true" />
+                <element signature="e#19379#19380#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/test/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22-sources.jar!/lombok/Builder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/Start.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisutils/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="25" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/redisutils/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/RedisClientConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -151,11 +97,11 @@
         <option value="$PROJECT_DIR$/redisutils/src/main/java/com/RedisClient.java" />
         <option value="$PROJECT_DIR$/redisutils/src/main/java/com/Start.java" />
         <option value="$PROJECT_DIR$/redisutils/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java" />
         <option value="$PROJECT_DIR$/redisutils/src/main/java/com/test/User.java" />
         <option value="$PROJECT_DIR$/redisutils/src/main/java/com/test/UserTest.java" />
         <option value="$PROJECT_DIR$/redisutils/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java" />
       </list>
     </option>
   </component>
@@ -184,10 +130,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2005" />
-    <option name="y" value="-9" />
-    <option name="width" value="1845" />
-    <option name="height" value="1099" />
+    <option name="x" value="2004" />
+    <option name="y" value="-10" />
+    <option name="width" value="1846" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -246,8 +192,24 @@
               <item name="common-utils" type="462c0819:PsiDirectoryNode" />
               <item name="redisutils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="redisutils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="redisutils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +226,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574323299350" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574330099265" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -352,88 +314,126 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574316607096</updated>
-      <workItem from="1574316636832" duration="5342000" />
+      <workItem from="1574316636832" duration="9404000" />
+      <workItem from="1574330621312" duration="604000" />
+      <workItem from="1574386891674" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 31m 38s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 11m 40s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 32m 18s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 15m 14s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 33m 49s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 16m 42s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 35m 08s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 17m 35s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 35m 42s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 46m 53s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 36m 45s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 51m 22s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 37m 32s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 52m 53s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 42m 06s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 53m 03s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 42m 49s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 16h 58m 13s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_get - 2019.11.21 at 15h 43m 26s.xml">
+    <history-entry file="RedisClientTest_get - 2019.11.21 at 17h 00m 45s.xml">
       <configuration name="RedisClientTest.get" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5342000" />
+    <option name="totallyTimeSpent" value="10583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1989" y="-7" width="1488" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25176305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2616361" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" weight="0.329235" />
-      <window_info anchor="bottom" id="Spring" weight="0.329235" />
-      <window_info anchor="bottom" id="Terminal" weight="0.329235" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.329235" />
-      <window_info anchor="bottom" id="SonarLint" weight="0.329235" />
-      <window_info anchor="bottom" id="Java Enterprise" weight="0.329235" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.329235" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5027322" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50136614" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989071" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.32863188" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.329235" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.329235" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329235" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.329235" />
+      <window_info anchor="bottom" id="SonarLint" order="13" weight="0.329235" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.329235" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32863188" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>a</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.get(1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/common-utils/pom.xml">
@@ -477,39 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/RedisClientConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/RedisClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22-sources.jar!/lombok/Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -523,30 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/IRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,8 +510,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redisutils/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state relative-caret-position="282">
           <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22-sources.jar!/lombok/Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisutils/src/test/java/com/RedisClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/IRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisutils/src/main/java/com/RedisClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9842">
+          <caret line="541" column="45" selection-start-line="541" selection-start-column="39" selection-end-line="541" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.18.RELEASE/spring-data-redis-1.8.18.RELEASE.jar!/org/springframework/data/redis/core/ListOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8322">
+          <caret line="473" column="11" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
+          <folding>
+            <element signature="e#19296#19297#0" expanded="true" />
+            <element signature="e#19379#19380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,14 @@
+
+Msquid:S1197"8Move the array designator from the variable to the type.(¤ƒ‘á
+Rsquid:S1197"8Move the array designator from the variable to the type.(ûªş·üÿÿÿÿ
+Isquid:S1066"/Merge this if statement with the enclosing one.(³¯ıúÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ
+Àsquid:S1598"¥This file "Matrix.java" should be located in "com\bohui\commonutils" directory, not in "D:\myhomework\github\java\java\common-utils\common-utils\src\main\java\math".(Õÿ¤Çşÿÿÿÿ
+isquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ÀÓşÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ÀÓşÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ÀÓşÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’ºÜ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’ºÜ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨¦ÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨¦ÿ

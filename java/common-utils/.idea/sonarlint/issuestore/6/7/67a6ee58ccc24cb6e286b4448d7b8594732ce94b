@@ -1,0 +1,32 @@
+
+lsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û
+¨%squid:RedundantThrowsDeclarationCheck"zRemove the declaration of thrown exception 'java.net.SocketTimeoutException' which is a subclass of 'java.lang.Exception'.(æËëv
+®%squid:RedundantThrowsDeclarationCheck"zRemove the declaration of thrown exception 'java.net.SocketTimeoutException' which is a subclass of 'java.lang.Exception'.(ÿæöüÿÿÿÿ
+©%squid:RedundantThrowsDeclarationCheck"zRemove the declaration of thrown exception 'java.net.SocketTimeoutException' which is a subclass of 'java.lang.Exception'.(âÂÅÊ
+©%squid:RedundantThrowsDeclarationCheck"zRemove the declaration of thrown exception 'java.net.SocketTimeoutException' which is a subclass of 'java.lang.Exception'.(âÂÅÊ
+Vsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(âÊğ„
+asquid:S1192"MUse already-defined constant 'charset' instead of duplicating its value here.(šµ„u
+[squid:S1192"FDefine a constant instead of duplicating this literal "https" 4 times.(Òø÷‘
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ó“åÓ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÆòĞÓûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Éš÷•
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÜóÂû
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ı£¦ÿÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(›ãâµûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(‰–·î
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÛÎ¯çøÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(İøì–
+Vsquid:S1126"AReplace this if-then-else statement by a single return statement.(¨ãŒš
+Èsquid:S1598"­This file "HttpClientUtils.java" should be located in "com\bohui\commonutils" directory, not in "D:\myhomework\github\java\java\common-utils\common-utils\src\main\java\net".(Õÿ¤Çşÿÿÿÿ
+\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(âÂÅÊ
+\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(âÂÅÊ
+–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨éÜ¶
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ù…÷Áıÿÿÿÿ
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¢Á“±øÿÿÿÿ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(È€ÇŞ
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(îÊé•
+usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(›«ãÉûÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
