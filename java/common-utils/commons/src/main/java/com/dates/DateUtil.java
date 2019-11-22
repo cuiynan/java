@@ -1,4 +1,4 @@
-package com.bohui.commonutils;
+package com.dates;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

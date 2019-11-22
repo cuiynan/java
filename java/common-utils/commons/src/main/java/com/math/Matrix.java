@@ -1,4 +1,4 @@
-package com.bohui.commonutils;
+package com.math;
 
 /**
  * @author : cuiyingnan

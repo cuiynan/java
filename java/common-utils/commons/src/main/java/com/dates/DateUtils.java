@@ -1,4 +1,4 @@
-package com.aidoctor.common;
+package com.dates;
 
 import org.springframework.util.StringUtils;
 
@@ -41,13 +41,13 @@ public class DateUtils {
     public static double getDays(String unit, double value) {
         if (!StringUtils.isEmpty(unit)) {
             switch (unit) {
-                case DecisionConstant.YEAR:
+                case "年":
                     value = getDayByYear(value);
                     break;
-                case DecisionConstant.MONTH:
+                case "月":
                     value = getDayByMonth(value);
                     break;
-                case DecisionConstant.WEEK:
+                case "周":
                     value = getDayByWeek(value);
                     break;
             }

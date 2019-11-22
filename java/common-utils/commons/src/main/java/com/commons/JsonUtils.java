@@ -1,4 +1,4 @@
-package com.bohui.commonutils;
+package com.commons;
 
 import com.alibaba.fastjson.JSONArray;
 import com.fasterxml.jackson.core.JsonProcessingException;
