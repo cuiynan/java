@@ -1,8 +1,0 @@
-
-msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ìàŸÕøÿÿÿÿ
-tsquid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "strTime".(¥Ñþ×
-vsquid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "date".(ìö¤ƒüÿÿÿÿ
-}squid:S1488"cImmediately return this expression instead of assigning it to the temporary variable "currentTime".(Éò´€øÿÿÿÿ
-Ãsquid:S1598"¨This file "DateUtil.java" should be located in "com\bohui\commonutils" directory, not in "D:\myhomework\github\java\java\common-utils\common-utils\src\main\java\dates".(Õÿ¤Çþÿÿÿÿ
-Osquid:S1118":Add a private constructor to hide the implicit public one.(Ÿÿ¸Ü
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ìàŸÕøÿÿÿÿ
