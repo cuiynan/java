@@ -1,10 +1,6 @@
-package thread;
+package com.cc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,10 +24,11 @@ public class SpringBootAsync {
             springBootAsyncDo.testSync(result);
         } catch (InterruptedException e) {
             e.printStackTrace();
-            result.append( "here is exception") ;
+            result.append("here is exception");
         }
         result.append("here is end");
         return result.toString();
+
     }
 
 

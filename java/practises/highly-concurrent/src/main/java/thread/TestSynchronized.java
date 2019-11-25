@@ -10,7 +10,6 @@ import java.util.concurrent.Executors;
  * @date : 2019/10/23 9:11
  * @desc :
  */
-@Slf4j
 public class TestSynchronized {
 
 
@@ -36,7 +35,7 @@ public class TestSynchronized {
     private void test(int j) {
         synchronized (this) {
             for (int i = 0; i < 10; i++) {
-                log.info("test-{},{}", i,j);
+                //log.info("test-{},{}", i,j);
             }
         }
     }
@@ -44,7 +43,7 @@ public class TestSynchronized {
     private synchronized  void test2(int j){
         System.out.println("test222");
         for (int i = 0; i < 10; i++) {
-            log.info("test2-{},{}", i,j);
+//            log.info("test2-{},{}", i,j);
         }
     }
 }

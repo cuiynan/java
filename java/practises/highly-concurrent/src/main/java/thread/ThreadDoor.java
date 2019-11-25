@@ -1,6 +1,6 @@
 package thread;
 
-import lombok.extern.slf4j.Slf4j;
+
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -11,7 +11,6 @@ import java.util.concurrent.Semaphore;
  * @date : 2019/10/8 9:28
  * @desc : N年后的再次入门
  */
-@Slf4j
 public class ThreadDoor {
 
 
@@ -37,7 +36,6 @@ public class ThreadDoor {
             });
         }
         exec.shutdown();
-        log.info("count:{}", count);
     }
 
 

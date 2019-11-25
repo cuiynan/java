@@ -13,7 +13,6 @@ import java.util.concurrent.*;
  * @date : 2019/10/29 9:42
  * @desc : 用来测试数据结构的原子性是否安全，比较爽。
  */
-@Slf4j
 public class ConcurrentTest {
     //请求数
     private static int clientTotal = 5000;
@@ -56,7 +55,7 @@ public class ConcurrentTest {
 
         countDownLatch.await();
         executorService.shutdown();
-        log.info("count:{}", ex1.size());
+//        log.info("count:{}", ex1.size());
     }
 
     private static void add(int i) {

@@ -1,7 +1,6 @@
 package thread;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -15,7 +14,6 @@ import java.util.concurrent.atomic.AtomicReference;
  * @date : 2019/10/11 15:24
  * @desc : 多线程下，AtomicXX 保证原子性的相关实例
  */
-@Slf4j
 public class AutomicXX {
 
     //
@@ -35,10 +33,10 @@ public class AutomicXX {
         AtomicIntegerFieldUpdater<MyClass> fieldUpdater = AtomicIntegerFieldUpdater.newUpdater(MyClass.class, "age");
         MyClass myClass = new MyClass();
         if (fieldUpdater.compareAndSet(myClass, 10, 20)) {
-            log.info("myclass#age:{}", myClass.getAge());
+//            log.info("myclass#age:{}", myClass.getAge());
         }
         if (fieldUpdater.compareAndSet(myClass, 10, 30)) {
-            log.info("myclass#age:{}", myClass.getAge());
+//            log.info("myclass#age:{}", myClass.getAge());
         }
     }
 
@@ -64,7 +62,7 @@ public class AutomicXX {
         }
         countDownLatch.await();
         executorService.shutdown();
-        log.info("count:{}", count.get());
+//        log.info("count:{}", count.get());
     }
 }
 

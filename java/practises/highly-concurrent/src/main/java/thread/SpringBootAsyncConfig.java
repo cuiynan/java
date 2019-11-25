@@ -17,12 +17,11 @@ import java.util.concurrent.ThreadPoolExecutor;
  **/
 //@Configuration
 //@EnableAsync
-@Slf4j
 public class SpringBootAsyncConfig {
 
     @Bean
     public Executor asyncServiceExecutor() {
-        log.info("这里什么时候执行的？");
+//        log.info("这里什么时候执行的？");
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setAllowCoreThreadTimeOut(false);
         executor.setCorePoolSize(5);

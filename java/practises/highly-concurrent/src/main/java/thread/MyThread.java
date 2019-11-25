@@ -1,6 +1,6 @@
 package thread;
 
-import com.cc.vo.User;
+import po.User;
 
 import java.util.concurrent.TimeUnit;
 
