@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server2:8762/eureka/
+    ###��Ϊ�Լ���ע�����ģ��Ƿ���Ҫ���Լ�ע����Լ�����Ⱥʱ����ҪΪ true)
+    register-with-eureka: false
+    # ����������
+    fetch-registry: false
+
+  server:
+    #���ϵ�ʱ�� һ��Ҫȥ����Ŀ���ǲ�ʹ��cloud�İ�ȫ����
+    enable-self-preservation: false
+
+spring:
+  application:
+    name: eureka-server1

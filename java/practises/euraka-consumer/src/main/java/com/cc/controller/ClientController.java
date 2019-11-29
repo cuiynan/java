@@ -1,7 +1,6 @@
 package com.cc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,8 +20,8 @@ public class ClientController {
     RestTemplate restTemplate;
 
     @GetMapping()
-    public String client(){
+    public String client1() {
         String url = "http://provider1-service/provider";
-        return restTemplate.getForEntity(url,String.class).getBody();
+        return restTemplate.getForEntity(url, String.class).getBody();
     }
 }

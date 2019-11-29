@@ -60,6 +60,12 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.cui</groupId>
+            <artifactId>euraka-provider-feign</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 

@@ -2,7 +2,7 @@ package com.cui;
 
 import com.cui.entity.Address;
 import com.cui.entity.User;
-import com.cui.service.ITest;
+import com.cui.services.ITest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

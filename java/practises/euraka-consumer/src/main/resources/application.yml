@@ -3,11 +3,13 @@ server:
 
 spring:
   application:
-    name: ribbon-consumer
+    name: consumer
 
 eureka:
   client:
     service-url:
       ####当前服务的注册中心地址
-      defaultZone: http://localhost:8000/eureka/
+      defaultZone: http://eureka-server:8761/eureka/,http://eureka-server:8762/eureka/
+  instance:
+    hostname: consumerName
 
