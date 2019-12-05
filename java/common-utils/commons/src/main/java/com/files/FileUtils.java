@@ -1,3 +1,5 @@
+package com.files;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -7,7 +9,6 @@ import java.io.*;
  * @version V1.0
  * @ClassName FileUtil
  * @Description
- * @Author zhangyue
  * @Date 2018/1/9 20:58
  */
 public class FileUtils {

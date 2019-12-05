@@ -1,4 +1,4 @@
-package cn.aiyisheng.utils;
+package com.net;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
