@@ -12,11 +12,10 @@
     <artifactId>euraka-consumer-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>euraka-consumer-feign</name>
-    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -48,9 +47,20 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
+        <!--</dependency>-->
+        <!--链路跟踪-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-sleuth</artifactId>-->
+        <!--</dependency>-->
+
+        <!--链路跟踪工具-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
 
         <dependency>
@@ -65,6 +75,7 @@
             <artifactId>euraka-provider-feign</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
 
     </dependencies>
 

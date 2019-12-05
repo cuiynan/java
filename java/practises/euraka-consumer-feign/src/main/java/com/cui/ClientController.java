@@ -3,6 +3,9 @@ package com.cui;
 import com.cui.entity.Address;
 import com.cui.entity.User;
 import com.cui.services.ITest;
+import com.netflix.hystrix.HystrixCommand;
+import com.netflix.ribbon.proxy.annotation.Hystrix;
+import javafx.beans.DefaultProperty;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,6 +40,8 @@ public class ClientController {
         add.setAddrList(addrList);
         user.setAddr(add);
         user.setPwd("pwd");
-        return test.save(user);
+        User user1 = test.save(user);
+        System.out.println(user1);
+        return user1;
     }
 }
