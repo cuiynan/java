@@ -33,10 +33,10 @@
             <artifactId>lombok</artifactId>
             <version>1.18.4</version>
         </dependency>
-        <dependency>
-            <groupId>com.googlecode.efficient-java-matrix-library</groupId>
-            <artifactId>ejml</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.googlecode.efficient-java-matrix-library</groupId>-->
+            <!--<artifactId>ejml</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-math</artifactId>
