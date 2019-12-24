@@ -1,0 +1,12 @@
+server:
+  port: 8888
+  servlet-path: /trainning/
+
+files:
+  static:
+    accessPath: /files/**
+  upload:
+    # 服务器
+    serverPath: ${FILE_SERVER_PATH:d:\\data\\images\\}
+    serverAthorization: ${#AUTHORIZATION:kKJB7b95HtSx5Y@F@lK5k$kzFZgeWt#*}
+    fileServerFilesAddress: ${#AUTHORIZATION:http://192.168.23.62:8888/trainning/files/}
