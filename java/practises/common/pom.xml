@@ -6,7 +6,7 @@
     <groupId>com.cc</groupId>
     <artifactId>common-entity</artifactId>
     <version>0.0.2-SNAPSHOT</version>
-    <name>common</name>
+    <name>scene</name>
 
     <packaging>jar</packaging>
 
