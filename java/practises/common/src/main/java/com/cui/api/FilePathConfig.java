@@ -1,4 +1,4 @@
-package com.files;
+package com.aidoctor.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -20,11 +20,6 @@ public class FilePathConfig extends WebMvcConfigurerAdapter {
     String serverPath;
 
 
-    /**
-     * 直接将某目录映射出去
-     *
-     * @param registry
-     */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(fileApiPath).addResourceLocations("file:" + serverPath);

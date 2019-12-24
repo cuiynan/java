@@ -1,4 +1,5 @@
 com\files\AESFileUtil.class
+com\files\FilePathConfig.class
 com\dates\DateUtil.class
 com\files\HttpFileUtils.class
 com\files\VerifyCodeUtil.class
