@@ -18,12 +18,12 @@
         </commentGenerator>
         <!-- 配置数据库连接 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://58.87.88.74:3306/gps_decision_tree"
+                        connectionURL="jdbc:mysql://58.87.88.74:3306/gps_training"
                         userId="root"
                         password="Zhuoyuew@killhacker*94@" />
 
         <!-- 指定javaBean生成的位置 -->
-        <javaModelGenerator targetPackage="com.aidoctor.decisiontree.entity" targetProject="src/main/java" >
+        <javaModelGenerator targetPackage="com.aidoctor.entity" targetProject="src/main/java" >
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
             <property name="enableSubPackages" value="true" />
             <!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
@@ -35,12 +35,17 @@
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
         <!-- 指定dao接口生成的位置，mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aidoctor.decisiontree.reponsitory" targetProject="src/main/java" >
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aidoctor.reponsitory" targetProject="src/main/java" >
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
         <!-- table表生成对应的DoaminObject -->
-        <table tableName="decision_gastroenterology_matrix" domainObjectName="GastroenteroloyMatrix"></table>
+
+        <table tableName="train_picture" domainObjectName="Picture"></table>
+        <table tableName="train_test_detail" domainObjectName="Detail"></table>
+        <table tableName="train_test_detail_items" domainObjectName="DetailItems"></table>
+        <table tableName="train_test_record" domainObjectName="Record"></table>
+        <table tableName="train_user" domainObjectName="User"></table>
     </context>
 
 </generatorConfiguration>

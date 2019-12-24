@@ -1,4 +1,4 @@
-package com.aidoctor.config;
+package com.cui.fileupload;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

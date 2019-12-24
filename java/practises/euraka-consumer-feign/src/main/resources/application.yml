@@ -6,7 +6,7 @@ eureka:
   client:
     service-url:
       ####当前服务的注册中心地址
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eureka,http://127.0.0.1:8762/eureka
 
 spring:
   application:

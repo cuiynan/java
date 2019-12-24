@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidoctor.reponsitory.RecordMapper" >
+  <resultMap id="BaseResultMap" type="com.aidoctor.entity.Record" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="picture_id" property="pictureId" jdbcType="VARCHAR" />
+    <result column="rescaleFactor" property="rescalefactor" jdbcType="DOUBLE" />
+    <result column="rotateFactor" property="rotatefactor" jdbcType="INTEGER" />
+    <result column="chklistType" property="chklisttype" jdbcType="VARCHAR" />
+    <result column="checkTime" property="checktime" jdbcType="TIMESTAMP" />
+    <result column="reportTime" property="reporttime" jdbcType="TIMESTAMP" />
+    <result column="checkHospital" property="checkhospital" jdbcType="VARCHAR" />
+    <result column="operator" property="operator" jdbcType="VARCHAR" />
+    <result column="headInfo" property="headinfo" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, picture_id, rescaleFactor, rotateFactor, chklistType, checkTime, reportTime, 
+    checkHospital, operator, headInfo, user_id, update_time
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aidoctor.entity.RecordExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from train_test_record
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from train_test_record
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from train_test_record
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.aidoctor.entity.RecordExample" >
+    delete from train_test_record
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.aidoctor.entity.Record" >
+    insert into train_test_record (id, picture_id, rescaleFactor, 
+      rotateFactor, chklistType, checkTime, 
+      reportTime, checkHospital, operator, 
+      headInfo, user_id, update_time
+      )
+    values (#{id,jdbcType=VARCHAR}, #{pictureId,jdbcType=VARCHAR}, #{rescalefactor,jdbcType=DOUBLE}, 
+      #{rotatefactor,jdbcType=INTEGER}, #{chklisttype,jdbcType=VARCHAR}, #{checktime,jdbcType=TIMESTAMP}, 
+      #{reporttime,jdbcType=TIMESTAMP}, #{checkhospital,jdbcType=VARCHAR}, #{operator,jdbcType=VARCHAR}, 
+      #{headinfo,jdbcType=VARCHAR}, #{userId,jdbcType=INTEGER}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.aidoctor.entity.Record" >
+    insert into train_test_record
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="pictureId != null" >
+        picture_id,
+      </if>
+      <if test="rescalefactor != null" >
+        rescaleFactor,
+      </if>
+      <if test="rotatefactor != null" >
+        rotateFactor,
+      </if>
+      <if test="chklisttype != null" >
+        chklistType,
+      </if>
+      <if test="checktime != null" >
+        checkTime,
+      </if>
+      <if test="reporttime != null" >
+        reportTime,
+      </if>
+      <if test="checkhospital != null" >
+        checkHospital,
+      </if>
+      <if test="operator != null" >
+        operator,
+      </if>
+      <if test="headinfo != null" >
+        headInfo,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="pictureId != null" >
+        #{pictureId,jdbcType=VARCHAR},
+      </if>
+      <if test="rescalefactor != null" >
+        #{rescalefactor,jdbcType=DOUBLE},
+      </if>
+      <if test="rotatefactor != null" >
+        #{rotatefactor,jdbcType=INTEGER},
+      </if>
+      <if test="chklisttype != null" >
+        #{chklisttype,jdbcType=VARCHAR},
+      </if>
+      <if test="checktime != null" >
+        #{checktime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="reporttime != null" >
+        #{reporttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="checkhospital != null" >
+        #{checkhospital,jdbcType=VARCHAR},
+      </if>
+      <if test="operator != null" >
+        #{operator,jdbcType=VARCHAR},
+      </if>
+      <if test="headinfo != null" >
+        #{headinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.aidoctor.entity.RecordExample" resultType="java.lang.Integer" >
+    select count(*) from train_test_record
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update train_test_record
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pictureId != null" >
+        picture_id = #{record.pictureId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.rescalefactor != null" >
+        rescaleFactor = #{record.rescalefactor,jdbcType=DOUBLE},
+      </if>
+      <if test="record.rotatefactor != null" >
+        rotateFactor = #{record.rotatefactor,jdbcType=INTEGER},
+      </if>
+      <if test="record.chklisttype != null" >
+        chklistType = #{record.chklisttype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.checktime != null" >
+        checkTime = #{record.checktime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.reporttime != null" >
+        reportTime = #{record.reporttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.checkhospital != null" >
+        checkHospital = #{record.checkhospital,jdbcType=VARCHAR},
+      </if>
+      <if test="record.operator != null" >
+        operator = #{record.operator,jdbcType=VARCHAR},
+      </if>
+      <if test="record.headinfo != null" >
+        headInfo = #{record.headinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userId != null" >
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.updateTime != null" >
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update train_test_record
+    set id = #{record.id,jdbcType=VARCHAR},
+      picture_id = #{record.pictureId,jdbcType=VARCHAR},
+      rescaleFactor = #{record.rescalefactor,jdbcType=DOUBLE},
+      rotateFactor = #{record.rotatefactor,jdbcType=INTEGER},
+      chklistType = #{record.chklisttype,jdbcType=VARCHAR},
+      checkTime = #{record.checktime,jdbcType=TIMESTAMP},
+      reportTime = #{record.reporttime,jdbcType=TIMESTAMP},
+      checkHospital = #{record.checkhospital,jdbcType=VARCHAR},
+      operator = #{record.operator,jdbcType=VARCHAR},
+      headInfo = #{record.headinfo,jdbcType=VARCHAR},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aidoctor.entity.Record" >
+    update train_test_record
+    <set >
+      <if test="pictureId != null" >
+        picture_id = #{pictureId,jdbcType=VARCHAR},
+      </if>
+      <if test="rescalefactor != null" >
+        rescaleFactor = #{rescalefactor,jdbcType=DOUBLE},
+      </if>
+      <if test="rotatefactor != null" >
+        rotateFactor = #{rotatefactor,jdbcType=INTEGER},
+      </if>
+      <if test="chklisttype != null" >
+        chklistType = #{chklisttype,jdbcType=VARCHAR},
+      </if>
+      <if test="checktime != null" >
+        checkTime = #{checktime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="reporttime != null" >
+        reportTime = #{reporttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="checkhospital != null" >
+        checkHospital = #{checkhospital,jdbcType=VARCHAR},
+      </if>
+      <if test="operator != null" >
+        operator = #{operator,jdbcType=VARCHAR},
+      </if>
+      <if test="headinfo != null" >
+        headInfo = #{headinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aidoctor.entity.Record" >
+    update train_test_record
+    set picture_id = #{pictureId,jdbcType=VARCHAR},
+      rescaleFactor = #{rescalefactor,jdbcType=DOUBLE},
+      rotateFactor = #{rotatefactor,jdbcType=INTEGER},
+      chklistType = #{chklisttype,jdbcType=VARCHAR},
+      checkTime = #{checktime,jdbcType=TIMESTAMP},
+      reportTime = #{reporttime,jdbcType=TIMESTAMP},
+      checkHospital = #{checkhospital,jdbcType=VARCHAR},
+      operator = #{operator,jdbcType=VARCHAR},
+      headInfo = #{headinfo,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=INTEGER},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>
