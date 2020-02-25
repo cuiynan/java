@@ -41,11 +41,7 @@
 
         <!-- table表生成对应的DoaminObject -->
 
-        <table tableName="train_picture" domainObjectName="Picture"></table>
-        <table tableName="train_test_detail" domainObjectName="Detail"></table>
-        <table tableName="train_test_detail_items" domainObjectName="DetailItems"></table>
-        <table tableName="train_test_record" domainObjectName="Record"></table>
-        <table tableName="train_user" domainObjectName="User"></table>
+        <!--<table tableName="train_pictrue_detail" domainObjectName="PictureDetail"></table>-->
     </context>
 
 </generatorConfiguration>
