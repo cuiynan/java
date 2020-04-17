@@ -1,0 +1,17 @@
+
+asquid:S1192"LDefine a constant instead of duplicating this literal "createUser" 10 times.(ú”âæ
+hsquid:S1192"NDefine a constant instead of duplicating this literal "resourceName" 12 times.(ì˜Çåúÿÿÿÿ
+fsquid:S1192"LDefine a constant instead of duplicating this literal "updateDate" 10 times.(ž ‹½ÿÿÿÿÿ
+fsquid:S1192"LDefine a constant instead of duplicating this literal "createDate" 10 times.(ÄÆûáþÿÿÿÿ
+hsquid:S1192"NDefine a constant instead of duplicating this literal "resourcePath" 12 times.(ã öÂùÿÿÿÿ
+fsquid:S1192"LDefine a constant instead of duplicating this literal "updateUser" 10 times.(ü¿Ñ™ùÿÿÿÿ
+bsquid:S1192"HDefine a constant instead of duplicating this literal "status" 12 times.(Æ‹óÁùÿÿÿÿ
+msquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+usquid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºþÿÿÿÿ
+[squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
+
+Rsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+Xsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
