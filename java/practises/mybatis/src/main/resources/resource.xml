@@ -1,47 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
-                 PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
-                "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
-        <generatorConfiguration>
+<generatorConfiguration>
 
     <!--
         出现错误：Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
         解决办法：将本地的MAVEN仓库中的mysql驱动引入进来
     -->
-    <classPathEntry location="C:\Users\cuiyingnan\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>
+    <classPathEntry location="e:\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>
 
     <context id="mysqlgenerator" targetRuntime="MyBatis3">
         <!--不生成注释-->
         <commentGenerator>
-            <property name="suppressAllComments" value="true" />
+            <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!-- 配置数据库连接 -->
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+        <!--connectionURL="jdbc:mysql://192.168.176.128:3306/sys_platform"-->
+        <!--userId="root"-->
+        <!--password="123456" />-->
+
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://58.87.88.74:3306/gps_training"
+                        connectionURL="jdbc:mysql://58.87.88.74:3306/sys_auth"
                         userId="root"
-                        password="Zhuoyuew@killhacker*94@" />
+                        password="Zhuoyuew@killhacker*94@"/>
 
         <!-- 指定javaBean生成的位置 -->
-        <javaModelGenerator targetPackage="com.aidoctor.entity" targetProject="src/main/java" >
+        <javaModelGenerator targetPackage="com.sys.auth.reponsitory" targetProject="src/main/java">
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
-            <property name="enableSubPackages" value="true" />
+            <property name="enableSubPackages" value="true"/>
             <!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
-            <property name="trimStrings" value="true" />
+            <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!--指定sql映射文件生成的位置 -->
-        <sqlMapGenerator targetPackage="com.aidoctor" targetProject="src/main/java" >
-            <property name="enableSubPackages" value="true" />
+        <sqlMapGenerator targetPackage="com.sys.auth" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 指定dao接口生成的位置，mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aidoctor.reponsitory" targetProject="src/main/java" >
-            <property name="enableSubPackages" value="true" />
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.sys.auth.reponsitory" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <!-- table表生成对应的DoaminObject -->
 
-        <!--<table tableName="train_pictrue_detail" domainObjectName="PictureDetail"></table>-->
+        <table tableName="sys_org" domainObjectName="SysOrg"></table>
+        <!--<table tableName="sys_resourse" domainObjectName="SysResource"></table>-->
+        <!--<table tableName="sys_role" domainObjectName="SysRole"></table>-->
+        <!--<table tableName="sys_role_resource" domainObjectName="SysRoleResource"></table>-->
+        <!--<table tableName="sys_user" domainObjectName="SysUser"></table>-->
+        <!--<table tableName="sys_user_org" domainObjectName="SysUserOrg"></table>-->
+        <!--<table tableName="sys_user_role" domainObjectName="SysUserRole"></table>-->
     </context>
 
 </generatorConfiguration>

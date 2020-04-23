@@ -34,6 +34,7 @@ public class FilterChain implements Filter {
         }
         Filter filter = fitlers.get(index);
         index++;
+        System.out.println("源--filterChain:" + request.getParam());
         filter.doFilter(request, resonse, chain);
     }
 

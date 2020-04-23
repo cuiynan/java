@@ -1,4 +1,4 @@
-package com.aidoctor.config;
+package com.sys.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

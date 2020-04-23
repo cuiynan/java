@@ -1,3 +1,19 @@
 
-nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(§ƒÕ¼ùÿÿÿÿ8Î„‚°˜.
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¾‹—Ø8Íý²¯˜.
+Fsquid:S1185l"(Remove this method to simply inherit it.(³ÊÓÉ8ÖÇó¬™.
+jsquid:CallToDeprecatedMethod|";Remove this use of "NoOpPasswordEncoder"; it is deprecated.(¦œÏž8ÖÇó¬™.
+isquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(úâ«é8ÖÇó¬™.
+Fsquid:S1185D"(Remove this method to simply inherit it.(È†‹8ÖÇó¬™.
+Fsquid:S1185b"(Remove this method to simply inherit it.(÷ãù‰8ÖÇó¬™.
+Fsquid:S1185g"(Remove this method to simply inherit it.(éÌ‰á8ÖÇó¬™.
+Fsquid:S1185q"(Remove this method to simply inherit it.(Ýçû¡8ÖÇó¬™.
+Fsquid:S1185N"(Remove this method to simply inherit it.(èé³õ8ÖÇó¬™.
+Ksquid:S1185X"(Remove this method to simply inherit it.(¬çÑÿÿÿÿÿ8ÖÇó¬™.
+Ksquid:S1185I"(Remove this method to simply inherit it.(‡·ëÿÿÿÿÿ8ÖÇó¬™.
+Fsquid:S1185]"(Remove this method to simply inherit it.(í–ÉŒ8ÖÇó¬™.
+nsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(§ƒÕ¼ùÿÿÿÿ8Î„‚°˜.
+nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(Óæáµûÿÿÿÿ8ÖÇó¬™.
+osquid:CallToDeprecatedMethod{";Remove this use of "NoOpPasswordEncoder"; it is deprecated.(ñ˜Ñþÿÿÿÿÿ8ÖÇó¬™.
+jsquid:CallToDeprecatedMethod|";Remove this use of "NoOpPasswordEncoder"; it is deprecated.(¦œÏž8ÖÇó¬™.
+Fsquid:S1185v"(Remove this method to simply inherit it.(´÷ÁŒ8ÖÇó¬™.
+nsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(¯Í±ºüÿÿÿÿ8ÖÇó¬™.
+Fsquid:S1185S"(Remove this method to simply inherit it.(”±Ö 8ÖÇó¬™.

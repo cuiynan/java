@@ -12,11 +12,12 @@ public class SQLFilter implements Filter {
      */
     @Override
     public void doFilter(Request request, Response resonse, FilterChain chain) {
+        System.out.print("SQLFilter--源：" + request.getParam());
         String result = request.getParam().replaceAll("\\,", "");
         resonse.setResult(result);
         request.setParam(result);
         chain.doFilter(request, resonse, chain);
-        System.out.println("-----------sql:" + resonse.getResult());
+        System.out.println("----处理后:" + resonse.getResult());
     }
 
 }

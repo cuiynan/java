@@ -17,7 +17,7 @@ public class Client {
         chain.addFilter(new SQLFilter());
 
         Request request = new Request();
-        request.setParam(",哈。。我#看下最,后的最#后是什么东西");
+        request.setParam(",哈。。我#看下最,后的最.,,,,,#后是什么东西");
         Response response = new Response();
         chain.doFilter(request, response, chain);
 

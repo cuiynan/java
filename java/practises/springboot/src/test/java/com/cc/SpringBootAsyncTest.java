@@ -1,6 +1,6 @@
 package com.cc;
 
-import thread.SpringBootAsync;
+import com.cc.controller.SpringBootAsync;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
