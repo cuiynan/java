@@ -1,5 +1,6 @@
 package com.cc.aop;
 
+import com.cc.utils.ThreadLocalTest;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -40,10 +41,14 @@ public class LoggerAspect {
                 sbuffer.append(object + ",");
             }
         }
+
+        ThreadLocalTest.getThreadLocal().set(1);
+
         log.info("Remote IP:{} |access:{} |params:{}", request.getRemoteAddr(), joinPoint.getTarget().getClass().getName() + "-" + joinPoint.getSignature().getName(), sbuffer.toString());
         Object res = (Object) joinPoint.proceed();
         clock.stop();
         log.info("Run time:{}ms Return:{}", clock.getTotalTimeMillis(), res.toString());
+        log.info("---------threadlocal value:{}", ThreadLocalTest.getThreadLocal().get());
         return res;
     }
 
