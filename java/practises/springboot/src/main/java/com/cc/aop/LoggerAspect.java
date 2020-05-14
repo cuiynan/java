@@ -48,7 +48,11 @@ public class LoggerAspect {
         Object res = (Object) joinPoint.proceed();
         clock.stop();
         log.info("Run time:{}ms Return:{}", clock.getTotalTimeMillis(), res.toString());
+
+        //tomcat存在线程池，单个线程用完后注意 销毁
         log.info("---------threadlocal value:{}", ThreadLocalTest.getThreadLocal().get());
+        ThreadLocalTest.getThreadLocal().remove();
+
         return res;
     }
 
