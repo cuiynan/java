@@ -53,6 +53,12 @@ public class SampleController {
         return user;
     }
 
+    @GetMapping(value = "/user3/{id}")
+    public User json(String id) {
+        System.out.println(id);
+        return getUser("","中文名称");
+    }
+
     private User getUser(String id, String userName) {
         User user = new User();
         user.setChage(1);

@@ -23,12 +23,12 @@
         <!--password="123456" />-->
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://58.87.88.74:3306/sys_auth"
+                        connectionURL="jdbc:mysql://58.87.88.74:3306/dms_bh"
                         userId="root"
                         password="Zhuoyuew@killhacker*94@"/>
 
         <!-- 指定javaBean生成的位置 -->
-        <javaModelGenerator targetPackage="com.sys.auth.reponsitory" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.aidoctor.reponsitory" targetProject="src/main/java">
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
             <property name="enableSubPackages" value="true"/>
             <!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
@@ -36,17 +36,17 @@
         </javaModelGenerator>
 
         <!--指定sql映射文件生成的位置 -->
-        <sqlMapGenerator targetPackage="com.sys.auth" targetProject="src/main/java">
+        <sqlMapGenerator targetPackage="com.aidoctor" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 指定dao接口生成的位置，mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.sys.auth.reponsitory" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aidoctor.reponsitory" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <!-- table表生成对应的DoaminObject -->
 
-        <table tableName="sys_org" domainObjectName="SysOrg"></table>
+        <table tableName="bh_outstock" domainObjectName="OutStore"></table>
         <!--<table tableName="sys_resourse" domainObjectName="SysResource"></table>-->
         <!--<table tableName="sys_role" domainObjectName="SysRole"></table>-->
         <!--<table tableName="sys_role_resource" domainObjectName="SysRoleResource"></table>-->

@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    bh:
+      jdbcUrl: jdbc:sqlserver://192.168.1.242;DatabaseName=${DatabaseName:AIS20140808142834}
+      username: BH
+      password: Bohui1234
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      type: com.alibaba.druid.pool.DruidDataSource
+    ai:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://${DB_HOST:58.87.88.74}:${DB_PORT:3306}/${DB_NAME:dms_bh}?autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+      username: ${DB_USER:root}
+      password: ${DB_PASSWORD:Zhuoyuew@killhacker*94@}
+      type: com.alibaba.druid.pool.DruidDataSource
+
+
+# 日志配置
+logback:
+  level: DEBUG
+  appender: ${project.env:debug}
+# dao层的日志设置为debug，方便查看sql
+logging:
+  level:
+    com.codegen.dao: debug
+

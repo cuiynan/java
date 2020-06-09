@@ -2,10 +2,6 @@ package com.bohui.gps;
 
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
-import com.models.create.strategy.InspirationContext;
-import com.models.create.strategy.One;
-import com.models.create.strategy.Three;
-import com.models.create.strategy.Two;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
