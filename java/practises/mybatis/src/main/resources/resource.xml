@@ -28,7 +28,7 @@
                         password="Zhuoyuew@killhacker*94@"/>
 
         <!-- 指定javaBean生成的位置 -->
-        <javaModelGenerator targetPackage="com.aidoctor.reponsitory" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.aidoctor.entity" targetProject="src/main/java">
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
             <property name="enableSubPackages" value="true"/>
             <!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
@@ -40,19 +40,15 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 指定dao接口生成的位置，mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aidoctor.reponsitory" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.aidoctor.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <!-- table表生成对应的DoaminObject -->
 
-        <table tableName="bh_outstock" domainObjectName="OutStore"></table>
-        <!--<table tableName="sys_resourse" domainObjectName="SysResource"></table>-->
-        <!--<table tableName="sys_role" domainObjectName="SysRole"></table>-->
-        <!--<table tableName="sys_role_resource" domainObjectName="SysRoleResource"></table>-->
-        <!--<table tableName="sys_user" domainObjectName="SysUser"></table>-->
-        <!--<table tableName="sys_user_org" domainObjectName="SysUserOrg"></table>-->
-        <!--<table tableName="sys_user_role" domainObjectName="SysUserRole"></table>-->
+        <table tableName="b_dealer_auth_hospital" domainObjectName="DealerAuthHospital"></table>
+        <table tableName="b_dealer_auth_area" domainObjectName="DealerAuthArea"></table>
+
     </context>
 
 </generatorConfiguration>

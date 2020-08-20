@@ -1,9 +1,11 @@
 package com.aidoctor.math;
 
 import com.aidoctor.math.util.Matrix;
-import org.apache.commons.math.linear.*;
+import org.apache.commons.lang3.ArrayUtils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author : cuiyingnan
@@ -30,12 +32,18 @@ public class Test {
 //        Array2DRowRealMatrix ab  = matrix1.multiply(matrix2);
 //        System.out.println(ab.getData());
 
-        int[] a = new int[]{1, -1, 0 ,1};
-        int[] b = new int[]{1, -1, 0,1};
-        int num  =3 ;
-        int result = Matrix.multiplication_a(a, b);
-        System.out.println(result);
-        System.out.println(result % num == 0);
+//        int[] a = new int[]{1, -1, 0 ,1};
+//        int[] b = new int[]{1, -1, 0,1};
+//        int num  =3 ;
+//        int result = Matrix.multiplication_a(a, b);
+//        System.out.println(result);
+//        System.out.println(result % num == 0);
+
+        List<String> a  = new ArrayList<>();
+        a.add("123");
+        a.add("1243");
+        a.add("12233");
+        System.out.println(ArrayUtils.contains(a.toArray(),"1243"));;
 
     }
 
