@@ -46,8 +46,7 @@
 
         <!-- table表生成对应的DoaminObject -->
 
-        <table tableName="b_dealer_auth_hospital" domainObjectName="DealerAuthHospital"></table>
-        <table tableName="b_dealer_auth_area" domainObjectName="DealerAuthArea"></table>
+        <table tableName="s_user_default_page" domainObjectName="UserTableItem"></table>
 
     </context>
 
