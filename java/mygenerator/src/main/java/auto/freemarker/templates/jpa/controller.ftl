@@ -5,7 +5,6 @@ package ${classPath};
 ${imports}
 import ${Package}.pojo.${T};
 import ${Package}.service.${Service};
-import com.common.ReturnResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -34,56 +33,56 @@ public class ${fileName} {
 
     @ApiOperation("创建${describe}")
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public ReturnResult save(HttpServletRequest request, HttpServletResponse response,${T} record) {
+    public ApiResponse save(HttpServletRequest request, HttpServletResponse response,${T} record) {
         if (record.get<#list newMember as m><#if m.key==true><#if underline==true>${m.humpConlumName ? cap_first}<#else>${m.conlumName ? cap_first}</#if></#if></#list>()==null) {
-            ${Service ? lower_case}.insert(record);
+            ${Service ? lower_case}.save(record);
         } else {
             ${Service ? lower_case}.update(record);
         }
-        return ReturnResult.ok();
+        return ApiResponse.success();
     }
 
     @ApiOperation("根据ID删除${describe}")
     @DeleteMapping("/{id}")
-    public ReturnResult del(@PathVariable <#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>) {
+    public ApiResponse del(@PathVariable <#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>) {
         if (id == null) {
-            return ReturnResult.build("id不能为空");
+            return ApiResponse.error("id不能为空");
         }
 
-        ${Service ? lower_case}.del(id);
-        return ReturnResult.ok();
+        ${Service ? lower_case}.remove(id);
+        return ApiResponse.success();
     }
 
     @GetMapping("/{id}")
     @ApiOperation("根据ID查询详细信息")
-    public ReturnResult selectByPrimaryKey(@PathVariable <#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>) {
+    public ApiResponse<${T}> selectByPrimaryKey(@PathVariable <#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>) {
         if (id == null) {
-            return ReturnResult.build("id不能为空");
+            return ApiResponse.error("id不能为空");
         }
 
-        ${T} info = ${Service ? lower_case}.selectByPrimaryKey(id);
-        return ReturnResult.ok(info);
+        ${T} info = ${Service ? lower_case}.getByPrimaryKey(id);
+        return ApiResponse.success(info);
     }
 
     @ApiOperation("查询全部信息")
     @RequestMapping(value = "/queryList", method = RequestMethod.POST)
-    public ReturnResult getList(HttpServletRequest request, HttpServletResponse response,${T} record) {
+    public ApiResponse<List<${T}>> getList(HttpServletRequest request, HttpServletResponse response,${T} record) {
         /**条件判断**/
 
 
         List<${T}> list = ${Service ? lower_case}.getList(record);
-        return ReturnResult.ok(list);
+        return ApiResponse.success(list);
     }
 
     @ApiOperation("分页列表")
     @RequestMapping(value = "/pageList", method = RequestMethod.POST)
-    public ReturnResult pageList(HttpServletRequest request, HttpServletResponse response,${T} record,
+    public ApiResponse<PageInfo<${T}>> pageList(HttpServletRequest request, HttpServletResponse response,${T} record,
                                  @RequestParam(value="pageNo",defaultValue = "1")Integer pageNo,
                                  @RequestParam(value="pageSize",defaultValue = "20")Integer pageSize) {
         /**条件判断**/
 
 
         PageInfo<${T}> info = ${Service ? lower_case}.pageList(record,pageNo,pageSize);
-        return ReturnResult.ok(info);
+        return ApiResponse.success(info);
     }
 }

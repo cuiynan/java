@@ -14,13 +14,13 @@ import ${Package}.pojo.${T};
  */
 public interface ${fileName} {
 
-    void insert(${T} record);
+    void save(${T} record);
 
     void update(${T} record);
 
-    void del(<#list newMember as m><#if m.key==true>${m.javaType} ${m.conlumName}</#if></#list>);
+    void remove(<#list newMember as m><#if m.key==true>${m.javaType} ${m.conlumName}</#if></#list>);
 
-    ${T} selectByPrimaryKey(<#list newMember as m><#if m.key==true>${m.javaType} ${m.conlumName}</#if></#list>);
+    ${T} getByPrimaryKey(<#list newMember as m><#if m.key==true>${m.javaType} ${m.conlumName}</#if></#list>);
 
     List<${T}> getList(${T} record);
 

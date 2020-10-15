@@ -19,7 +19,7 @@ public class ${fileName} implements ${Service} {
     private ${Mapper} ${Mapper ? uncap_first};
 
     @Override
-    public void insert(${T} record) {
+    public void save(${T} record) {
         ${Mapper ? uncap_first}.insert(record);
     }
 
@@ -29,12 +29,12 @@ public class ${fileName} implements ${Service} {
     }
 
     @Override
-    public void del(<#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>){
+    public void remove(<#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>){
         ${Mapper ? uncap_first}.del(id);
     }
 
     @Override
-    public ${T} selectByPrimaryKey(<#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>){
+    public ${T} getByPrimaryKey(<#list newMember as m><#if m.key==true>${m.javaType} id</#if></#list>){
         return ${Mapper ? uncap_first}.selectByPrimaryKey(id);
     }
 
