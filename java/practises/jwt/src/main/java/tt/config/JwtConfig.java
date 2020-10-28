@@ -9,10 +9,10 @@ package tt.config;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ObjectUtils;
 
 import java.util.Date;
 
@@ -22,6 +22,7 @@ import java.util.Date;
 @PropertySource("application.yml")
 @ConfigurationProperties(prefix = "config.jwt")
 @Component
+@Data
 public class JwtConfig {
 
     private String secret;
@@ -36,13 +37,20 @@ public class JwtConfig {
      */
     public String createToken(String subject) {
         Date nowDate = new Date();
-        Date expireDate = new Date(nowDate.getTime() + expire * 1000);//过期时间
+        Date expireDate = new Date(nowDate.getTime() + expire);//过期时间
 
         return Jwts.builder()
+                //发布者
+                .setHeaderParam("iss", "cui")
+                //token类型
                 .setHeaderParam("typ", "JWT")
+                //主题
                 .setSubject(subject)
+                //发布时间
                 .setIssuedAt(nowDate)
+                //过期时间
                 .setExpiration(expireDate)
+                //签名密钥
                 .signWith(SignatureAlgorithm.HS512, secret)
                 .compact();
     }
@@ -58,7 +66,7 @@ public class JwtConfig {
         try {
             return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
         } catch (Exception e) {
-//            e.printStackTrace();
+            // e.printStackTrace();
             return null;
         }
     }
@@ -70,6 +78,11 @@ public class JwtConfig {
      * @return
      */
     public boolean isTokenExpired(Date expirationTime) {
+        return expirationTime.before(new Date());
+    }
+
+    public boolean isTokenExpired(String token) {
+        Date expirationTime = getExpirationDateFromToken(token);
         return expirationTime.before(new Date());
     }
 
@@ -95,31 +108,5 @@ public class JwtConfig {
      */
     public Date getIssuedAtDateFromToken(String token) {
         return getTokenClaim(token).getIssuedAt();
-    }
-
-    // --------------------- getter & setter ---------------------
-
-    public String getSecret() {
-        return secret;
-    }
-
-    public void setSecret(String secret) {
-        this.secret = secret;
-    }
-
-    public long getExpire() {
-        return expire;
-    }
-
-    public void setExpire(long expire) {
-        this.expire = expire;
-    }
-
-    public String getHeader() {
-        return header;
-    }
-
-    public void setHeader(String header) {
-        this.header = header;
     }
 }

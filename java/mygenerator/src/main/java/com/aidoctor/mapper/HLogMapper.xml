@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aidoctor.mapper.HLogMapper">
+    <resultMap id="BaseResultMap" type="com.aidoctor.pojo.HLog">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="create_date" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="ip" property="ip" jdbcType="VARCHAR"/>
+        <result column="model_name" property="modelName" jdbcType="VARCHAR"/>
+        <result column="model_method" property="modelMethod" jdbcType="VARCHAR"/>
+        <result column="request_param" property="requestParam" jdbcType="VARCHAR"/>
+        <result column="response_param" property="responseParam" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id,create_date,ip,model_name,model_method,request_param,response_param
+    </sql>
+    <sql id="Base_Column_List_Model">
+        id,create_date as createDate,ip,model_name as modelName,model_method as modelMethod,request_param as requestParam,response_param as responseParam
+    </sql>
+    <!-- 根据主键查询 -->
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from h_log
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <!-- 根据对象条件查询 -->
+    <select id="selectByRecord" parameterType="com.aidoctor.pojo.HLog" resultType="com.aidoctor.pojo.HLog">
+        select
+        <include refid="Base_Column_List_Model"/>
+        from h_log
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="createDate != null">
+                and create_date = #{createDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="ip != null">
+                and ip = #{ip,jdbcType=VARCHAR}
+            </if>
+            <if test="modelName != null">
+                and model_name = #{modelName,jdbcType=VARCHAR}
+            </if>
+            <if test="modelMethod != null">
+                and model_method = #{modelMethod,jdbcType=VARCHAR}
+            </if>
+            <if test="requestParam != null">
+                and request_param = #{requestParam,jdbcType=VARCHAR}
+            </if>
+            <if test="responseParam != null">
+                and response_param = #{responseParam,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+    <!-- 根据主键删除 -->
+    <delete id="del" parameterType="java.lang.Integer">
+        delete from h_log
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <!-- 插入数据 -->
+    <insert id="insert" parameterType="com.aidoctor.pojo.HLog" useGeneratedKeys="true" keyColumn="id">
+        insert into h_log
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="createDate != null">
+                create_date,
+            </if>
+            <if test="ip != null">
+                ip,
+            </if>
+            <if test="modelName != null">
+                model_name,
+            </if>
+            <if test="modelMethod != null">
+                model_method,
+            </if>
+            <if test="requestParam != null">
+                request_param,
+            </if>
+            <if test="responseParam != null">
+                response_param,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="ip != null">
+                #{ip,jdbcType=VARCHAR},
+            </if>
+            <if test="modelName != null">
+                #{modelName,jdbcType=VARCHAR},
+            </if>
+            <if test="modelMethod != null">
+                #{modelMethod,jdbcType=VARCHAR},
+            </if>
+            <if test="requestParam != null">
+                #{requestParam,jdbcType=VARCHAR},
+            </if>
+            <if test="responseParam != null">
+                #{responseParam,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <!-- 根据主键修改 -->
+    <update id="update" parameterType="com.aidoctor.pojo.HLog">
+        update h_log
+        <set>
+            <if test="createDate != null">
+                create_date = #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="ip != null">
+                ip = #{ip,jdbcType=VARCHAR},
+            </if>
+            <if test="modelName != null">
+                model_name = #{modelName,jdbcType=VARCHAR},
+            </if>
+            <if test="modelMethod != null">
+                model_method = #{modelMethod,jdbcType=VARCHAR},
+            </if>
+            <if test="requestParam != null">
+                request_param = #{requestParam,jdbcType=VARCHAR},
+            </if>
+            <if test="responseParam != null">
+                response_param = #{responseParam,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>
