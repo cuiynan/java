@@ -12,7 +12,7 @@ config:
 #  application:
 #    name: jwt
 
-#  设置tomcat Header 传输字节大小
+#  设置tomcat Header 传输字节大小，与返回token 大小有关
 server:
   max-http-header-size: 102400
-#
+

@@ -23,4 +23,6 @@ public class ThreadLocalTest {
     public static ThreadLocal<Integer> getThreadLocal() {
         return threadLocal;
     }
+
+
 }
