@@ -1,30 +1,0 @@
-
- %squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(©ûäïÿÿÿÿÿ
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô“¼æùÿÿÿÿ
-nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¾®Ï
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ü×Ğúÿÿÿÿ
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø÷Á¾øÿÿÿÿ
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(³ô©”úÿÿÿÿ
-nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Õ®´
-nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ö³’Ç
-nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦§§
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(®ÃÙÄúÿÿÿÿ
-ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÖëŸ¡ÿÿÿÿÿ
-nsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(†ê²–
-]squid:S3878"CDisambiguate this call by either casting as "Object" or "Object[]".(‡šÖºúÿÿÿÿ
-;squid:S1452"&Remove usage of generic wildcard type.(Óîı³
-;squid:S1452"&Remove usage of generic wildcard type.(§®Ã
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(«şƒ‘üÿÿÿÿ
-^squid:HiddenFieldCheck">Rename "listeners" which hides the field declared at line 209.(å¼³î
-`squid:HiddenFieldCheck"@Rename "environment" which hides the field declared at line 197.(®ËºÚ
-`squid:HiddenFieldCheck"@Rename "environment" which hides the field declared at line 197.(Àè§Ö
-asquid:HiddenFieldCheck"<Rename "sources" which hides the field declared at line 181.(Ğ‚‰úÿÿÿÿ
-\squid:HiddenFieldCheck"<Rename "sources" which hides the field declared at line 181.(“úÄŒ
-csquid:HiddenFieldCheck"CRename "resourceLoader" which hides the field declared at line 193.(†Ç°
-?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
-?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
-?squid:S1181"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
-:squid:S2116"%Use "Arrays.hashCode(array)" instead.(Œò‰¼
-8squid:S1148"#Use a logger to log this exception.(Ç’Çê
