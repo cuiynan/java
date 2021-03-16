@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bohui.technical.register.mapper.registerMapper">
+    <resultMap id="BaseResultMap" type="com.bohui.technical.register.pojo.register">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="cus_name" property="cusName" jdbcType="VARCHAR"/>
+        <result column="cus_type" property="cusType" jdbcType="VARCHAR"/>
+        <result column="cus_kind" property="cusKind" jdbcType="VARCHAR"/>
+        <result column="cus_level" property="cusLevel" jdbcType="VARCHAR"/>
+        <result column="cus_" property="cus" jdbcType="VARCHAR"/>
+        <result column="bh_area" property="bhArea" jdbcType="VARCHAR"/>
+        <result column="cus_province" property="cusProvince" jdbcType="VARCHAR"/>
+        <result column="cus_address" property="cusAddress" jdbcType="VARCHAR"/>
+        <result column="product_line" property="productLine" jdbcType="VARCHAR"/>
+        <result column="product_type" property="productType" jdbcType="VARCHAR"/>
+        <result column="product_sn" property="productSn" jdbcType="VARCHAR"/>
+        <result column="product_install_date" property="productInstallDate" jdbcType="VARCHAR"/>
+        <result column="bh_engineer" property="bhEngineer" jdbcType="VARCHAR"/>
+        <result column="product_state" property="productState" jdbcType="VARCHAR"/>
+        <result column="product_property" property="productProperty" jdbcType="VARCHAR"/>
+        <result column="product_pic_environment" property="productPicEnvironment" jdbcType="VARCHAR"/>
+        <result column="product_pic" property="productPic" jdbcType="VARCHAR"/>
+        <result column="product_other_pic" property="productOtherPic" jdbcType="VARCHAR"/>
+        <result column="product_used_num" property="productUsedNum" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="wechat_no" property="wechatNo" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id,cus_name,cus_type,cus_kind,cus_level,cus_,bh_area,cus_province,cus_address,product_line,product_type,product_sn,product_install_date,bh_engineer,product_state,product_property,product_pic_environment,product_pic,product_other_pic,product_used_num,create_time,wechat_no
+    </sql>
+    <sql id="Base_Column_List_Model">
+        id,cus_name as cusName,cus_type as cusType,cus_kind as cusKind,cus_level as cusLevel,cus_ as cus,bh_area as bhArea,cus_province as cusProvince,cus_address as cusAddress,product_line as productLine,product_type as productType,product_sn as productSn,product_install_date as productInstallDate,bh_engineer as bhEngineer,product_state as productState,product_property as productProperty,product_pic_environment as productPicEnvironment,product_pic as productPic,product_other_pic as productOtherPic,product_used_num as productUsedNum,create_time as createTime,wechat_no as wechatNo
+    </sql>
+    <!-- 根据主键查询 -->
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from product_register_new
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <!-- 根据对象条件查询 -->
+    <select id="selectByRecord" parameterType="com.bohui.technical.register.pojo.register" resultType="com.bohui.technical.register.pojo.register">
+        select
+        <include refid="Base_Column_List_Model"/>
+        from product_register_new
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="cusName != null">
+                and cus_name = #{cusName,jdbcType=VARCHAR}
+            </if>
+            <if test="cusType != null">
+                and cus_type = #{cusType,jdbcType=VARCHAR}
+            </if>
+            <if test="cusKind != null">
+                and cus_kind = #{cusKind,jdbcType=VARCHAR}
+            </if>
+            <if test="cusLevel != null">
+                and cus_level = #{cusLevel,jdbcType=VARCHAR}
+            </if>
+            <if test="cus != null">
+                and cus_ = #{cus,jdbcType=VARCHAR}
+            </if>
+            <if test="bhArea != null">
+                and bh_area = #{bhArea,jdbcType=VARCHAR}
+            </if>
+            <if test="cusProvince != null">
+                and cus_province = #{cusProvince,jdbcType=VARCHAR}
+            </if>
+            <if test="cusAddress != null">
+                and cus_address = #{cusAddress,jdbcType=VARCHAR}
+            </if>
+            <if test="productLine != null">
+                and product_line = #{productLine,jdbcType=VARCHAR}
+            </if>
+            <if test="productType != null">
+                and product_type = #{productType,jdbcType=VARCHAR}
+            </if>
+            <if test="productSn != null">
+                and product_sn = #{productSn,jdbcType=VARCHAR}
+            </if>
+            <if test="productInstallDate != null">
+                and product_install_date = #{productInstallDate,jdbcType=VARCHAR}
+            </if>
+            <if test="bhEngineer != null">
+                and bh_engineer = #{bhEngineer,jdbcType=VARCHAR}
+            </if>
+            <if test="productState != null">
+                and product_state = #{productState,jdbcType=VARCHAR}
+            </if>
+            <if test="productProperty != null">
+                and product_property = #{productProperty,jdbcType=VARCHAR}
+            </if>
+            <if test="productPicEnvironment != null">
+                and product_pic_environment = #{productPicEnvironment,jdbcType=VARCHAR}
+            </if>
+            <if test="productPic != null">
+                and product_pic = #{productPic,jdbcType=VARCHAR}
+            </if>
+            <if test="productOtherPic != null">
+                and product_other_pic = #{productOtherPic,jdbcType=VARCHAR}
+            </if>
+            <if test="productUsedNum != null">
+                and product_used_num = #{productUsedNum,jdbcType=VARCHAR}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime,jdbcType=TIMESTAMP}
+            </if>
+            <if test="wechatNo != null">
+                and wechat_no = #{wechatNo,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+    <!-- 根据主键删除 -->
+    <delete id="del" parameterType="java.lang.Integer">
+        delete from product_register_new
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <!-- 插入数据 -->
+    <insert id="insert" parameterType="com.bohui.technical.register.pojo.register" useGeneratedKeys="true" keyColumn="id">
+        insert into product_register_new
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="cusName != null">
+                cus_name,
+            </if>
+            <if test="cusType != null">
+                cus_type,
+            </if>
+            <if test="cusKind != null">
+                cus_kind,
+            </if>
+            <if test="cusLevel != null">
+                cus_level,
+            </if>
+            <if test="cus != null">
+                cus_,
+            </if>
+            <if test="bhArea != null">
+                bh_area,
+            </if>
+            <if test="cusProvince != null">
+                cus_province,
+            </if>
+            <if test="cusAddress != null">
+                cus_address,
+            </if>
+            <if test="productLine != null">
+                product_line,
+            </if>
+            <if test="productType != null">
+                product_type,
+            </if>
+            <if test="productSn != null">
+                product_sn,
+            </if>
+            <if test="productInstallDate != null">
+                product_install_date,
+            </if>
+            <if test="bhEngineer != null">
+                bh_engineer,
+            </if>
+            <if test="productState != null">
+                product_state,
+            </if>
+            <if test="productProperty != null">
+                product_property,
+            </if>
+            <if test="productPicEnvironment != null">
+                product_pic_environment,
+            </if>
+            <if test="productPic != null">
+                product_pic,
+            </if>
+            <if test="productOtherPic != null">
+                product_other_pic,
+            </if>
+            <if test="productUsedNum != null">
+                product_used_num,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="wechatNo != null">
+                wechat_no,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="cusName != null">
+                #{cusName,jdbcType=VARCHAR},
+            </if>
+            <if test="cusType != null">
+                #{cusType,jdbcType=VARCHAR},
+            </if>
+            <if test="cusKind != null">
+                #{cusKind,jdbcType=VARCHAR},
+            </if>
+            <if test="cusLevel != null">
+                #{cusLevel,jdbcType=VARCHAR},
+            </if>
+            <if test="cus != null">
+                #{cus,jdbcType=VARCHAR},
+            </if>
+            <if test="bhArea != null">
+                #{bhArea,jdbcType=VARCHAR},
+            </if>
+            <if test="cusProvince != null">
+                #{cusProvince,jdbcType=VARCHAR},
+            </if>
+            <if test="cusAddress != null">
+                #{cusAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="productLine != null">
+                #{productLine,jdbcType=VARCHAR},
+            </if>
+            <if test="productType != null">
+                #{productType,jdbcType=VARCHAR},
+            </if>
+            <if test="productSn != null">
+                #{productSn,jdbcType=VARCHAR},
+            </if>
+            <if test="productInstallDate != null">
+                #{productInstallDate,jdbcType=VARCHAR},
+            </if>
+            <if test="bhEngineer != null">
+                #{bhEngineer,jdbcType=VARCHAR},
+            </if>
+            <if test="productState != null">
+                #{productState,jdbcType=VARCHAR},
+            </if>
+            <if test="productProperty != null">
+                #{productProperty,jdbcType=VARCHAR},
+            </if>
+            <if test="productPicEnvironment != null">
+                #{productPicEnvironment,jdbcType=VARCHAR},
+            </if>
+            <if test="productPic != null">
+                #{productPic,jdbcType=VARCHAR},
+            </if>
+            <if test="productOtherPic != null">
+                #{productOtherPic,jdbcType=VARCHAR},
+            </if>
+            <if test="productUsedNum != null">
+                #{productUsedNum,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="wechatNo != null">
+                #{wechatNo,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <!-- 根据主键修改 -->
+    <update id="update" parameterType="com.bohui.technical.register.pojo.register">
+        update product_register_new
+        <set>
+            <if test="cusName != null">
+                cus_name = #{cusName,jdbcType=VARCHAR},
+            </if>
+            <if test="cusType != null">
+                cus_type = #{cusType,jdbcType=VARCHAR},
+            </if>
+            <if test="cusKind != null">
+                cus_kind = #{cusKind,jdbcType=VARCHAR},
+            </if>
+            <if test="cusLevel != null">
+                cus_level = #{cusLevel,jdbcType=VARCHAR},
+            </if>
+            <if test="cus != null">
+                cus_ = #{cus,jdbcType=VARCHAR},
+            </if>
+            <if test="bhArea != null">
+                bh_area = #{bhArea,jdbcType=VARCHAR},
+            </if>
+            <if test="cusProvince != null">
+                cus_province = #{cusProvince,jdbcType=VARCHAR},
+            </if>
+            <if test="cusAddress != null">
+                cus_address = #{cusAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="productLine != null">
+                product_line = #{productLine,jdbcType=VARCHAR},
+            </if>
+            <if test="productType != null">
+                product_type = #{productType,jdbcType=VARCHAR},
+            </if>
+            <if test="productSn != null">
+                product_sn = #{productSn,jdbcType=VARCHAR},
+            </if>
+            <if test="productInstallDate != null">
+                product_install_date = #{productInstallDate,jdbcType=VARCHAR},
+            </if>
+            <if test="bhEngineer != null">
+                bh_engineer = #{bhEngineer,jdbcType=VARCHAR},
+            </if>
+            <if test="productState != null">
+                product_state = #{productState,jdbcType=VARCHAR},
+            </if>
+            <if test="productProperty != null">
+                product_property = #{productProperty,jdbcType=VARCHAR},
+            </if>
+            <if test="productPicEnvironment != null">
+                product_pic_environment = #{productPicEnvironment,jdbcType=VARCHAR},
+            </if>
+            <if test="productPic != null">
+                product_pic = #{productPic,jdbcType=VARCHAR},
+            </if>
+            <if test="productOtherPic != null">
+                product_other_pic = #{productOtherPic,jdbcType=VARCHAR},
+            </if>
+            <if test="productUsedNum != null">
+                product_used_num = #{productUsedNum,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="wechatNo != null">
+                wechat_no = #{wechatNo,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

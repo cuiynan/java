@@ -24,5 +24,5 @@ public interface ${fileName} {
 
     List<${T}> getList(${T} record);
 
-    PageInfo<${T}> pageList(${T} record,Integer pageNo,Integer pageSize);
+    PageInfo<${T}> pageList(PageData<${T}> record);
 }

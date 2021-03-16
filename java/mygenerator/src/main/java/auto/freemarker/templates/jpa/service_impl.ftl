@@ -44,9 +44,9 @@ public class ${fileName} implements ${Service} {
     }
 
     @Override
-    public PageInfo<${T}> pageList(${T} record,Integer pageNo,Integer pageSize){
-        PageHelper.startPage(pageNo, pageSize);
-        List<${T}> list = ${Mapper ? uncap_first}.selectByRecord(record);
+    public PageInfo<${T}> pageList( PageData<${T}> page){
+        PageHelper.startPage(page.getPage(), page.getCapacity());
+        List<${T}> list = ${Mapper ? uncap_first}.selectByRecord(page.getRecords().get(0));
         return new PageInfo<>(list);
     }
 

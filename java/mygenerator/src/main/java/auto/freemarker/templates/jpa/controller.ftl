@@ -33,7 +33,7 @@ public class ${fileName} {
 
     @ApiOperation("创建${describe}")
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public ApiResponse save(HttpServletRequest request, HttpServletResponse response,${T} record) {
+    public ApiResponse save(HttpServletRequest request, HttpServletResponse response,@RequestBody  ${T} record) {
         if (record.get<#list newMember as m><#if m.key==true><#if underline==true>${m.humpConlumName ? cap_first}<#else>${m.conlumName ? cap_first}</#if></#if></#list>()==null) {
             ${Service ? lower_case}.save(record);
         } else {
@@ -66,7 +66,7 @@ public class ${fileName} {
 
     @ApiOperation("查询全部信息")
     @RequestMapping(value = "/queryList", method = RequestMethod.POST)
-    public ApiResponse<List<${T}>> getList(HttpServletRequest request, HttpServletResponse response,${T} record) {
+    public ApiResponse<List<${T}>> getList(HttpServletRequest request, HttpServletResponse response,@RequestBody ${T} record) {
         /**条件判断**/
 
 
@@ -76,13 +76,9 @@ public class ${fileName} {
 
     @ApiOperation("分页列表")
     @RequestMapping(value = "/pageList", method = RequestMethod.POST)
-    public ApiResponse<PageInfo<${T}>> pageList(HttpServletRequest request, HttpServletResponse response,${T} record,
-                                 @RequestParam(value="pageNo",defaultValue = "1")Integer pageNo,
-                                 @RequestParam(value="pageSize",defaultValue = "20")Integer pageSize) {
+    public ApiResponse<PageInfo<${T}>> pageList(HttpServletRequest request, HttpServletResponse response,@RequestBody PageData<${T}> record) {
         /**条件判断**/
-
-
-        PageInfo<${T}> info = ${Service ? lower_case}.pageList(record,pageNo,pageSize);
+        PageInfo<${T}> info = ${Service ? lower_case}.pageList(record);
         return ApiResponse.success(info);
     }
 }

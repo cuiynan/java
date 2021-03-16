@@ -25,12 +25,13 @@ public class JpaUtils {
 
     public static void jpa() throws Exception {
 
+        jpaBase(BeanConfig.JAP_TABLE_NAME,"vue.ftl",BeanConfig.JPA_IMPORTS_BEAN,"","",".html");
+
         jpaBase(BeanConfig.JAP_TABLE_NAME, "bean.ftl", BeanConfig.JPA_IMPORTS_BEAN, "", "pojo", ".java");
         jpaBase(BeanConfig.JAP_TABLE_NAME, "mapper.ftl", BeanConfig.JPA_IMPORTS_CONTROLLER, "Mapper", "mapper", ".java");
         jpaBase(BeanConfig.JAP_TABLE_NAME, "mapper_xml.ftl", BeanConfig.JPA_IMPORTS_CONTROLLER, "Mapper", "mapper", ".xml");
 
-
-        /**
+        /*
          * 可选生成模块
          */
         //生成mapper及xml
@@ -42,7 +43,8 @@ public class JpaUtils {
             jpaBase(BeanConfig.JAP_TABLE_NAME, "controller.ftl", BeanConfig.JPA_IMPORTS_CONTROLLER, "Controller", "controller", ".java");
         }
 
-        jpaBase(BeanConfig.JAP_TABLE_NAME,"html.ftl",BeanConfig.JPA_IMPORTS_BEAN,"","",".html");
+//        jpaBase(BeanConfig.JAP_TABLE_NAME,"html.ftl",BeanConfig.JPA_IMPORTS_BEAN,"","",".html");
+
 
     }
 

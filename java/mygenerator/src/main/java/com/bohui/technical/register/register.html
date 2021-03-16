@@ -73,12 +73,95 @@
             </div>
         </div>
         <div class="main" v-if="addBtnFlag">
-            <div class="addMain"><#list newMember as m> <#if m.key==true>
-                    <div class="inputBox"><span><b class="Btitle">* </b><#else><div class="inputBox"><span></#if>${m.commentName}</span>
+            <div class="addMain"> 
+                    <div class="inputBox"><span><b class="Btitle">* </b>id</span>
                     <a-input placeholder="请输入"
-                             v-model="<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>"/>
+                             v-model="id"/>
                      </div>
-                </#list>
+ <div class="inputBox"><span>客户名称</span>
+                    <a-input placeholder="请输入"
+                             v-model="cusName"/>
+                     </div>
+ <div class="inputBox"><span>客户性质</span>
+                    <a-input placeholder="请输入"
+                             v-model="cusType"/>
+                     </div>
+ <div class="inputBox"><span>专科方向</span>
+                    <a-input placeholder="请输入"
+                             v-model="cusKind"/>
+                     </div>
+ <div class="inputBox"><span>等级</span>
+                    <a-input placeholder="请输入"
+                             v-model="cusLevel"/>
+                     </div>
+ <div class="inputBox"><span>科室</span>
+                    <a-input placeholder="请输入"
+                             v-model="cus"/>
+                     </div>
+ <div class="inputBox"><span>大区</span>
+                    <a-input placeholder="请输入"
+                             v-model="bhArea"/>
+                     </div>
+ <div class="inputBox"><span>省份</span>
+                    <a-input placeholder="请输入"
+                             v-model="cusProvince"/>
+                     </div>
+ <div class="inputBox"><span>地址</span>
+                    <a-input placeholder="请输入"
+                             v-model="cusAddress"/>
+                     </div>
+ <div class="inputBox"><span>产品线</span>
+                    <a-input placeholder="请输入"
+                             v-model="productLine"/>
+                     </div>
+ <div class="inputBox"><span>仪器型号</span>
+                    <a-input placeholder="请输入"
+                             v-model="productType"/>
+                     </div>
+ <div class="inputBox"><span>仪器序列号</span>
+                    <a-input placeholder="请输入"
+                             v-model="productSn"/>
+                     </div>
+ <div class="inputBox"><span>安装时间</span>
+                    <a-input placeholder="请输入"
+                             v-model="productInstallDate"/>
+                     </div>
+ <div class="inputBox"><span>负责工程师</span>
+                    <a-input placeholder="请输入"
+                             v-model="bhEngineer"/>
+                     </div>
+ <div class="inputBox"><span>设备状态</span>
+                    <a-input placeholder="请输入"
+                             v-model="productState"/>
+                     </div>
+ <div class="inputBox"><span>仪器属性</span>
+                    <a-input placeholder="请输入"
+                             v-model="productProperty"/>
+                     </div>
+ <div class="inputBox"><span>使用场地照片</span>
+                    <a-input placeholder="请输入"
+                             v-model="productPicEnvironment"/>
+                     </div>
+ <div class="inputBox"><span>产品服务卡照片或产品铭牌照片</span>
+                    <a-input placeholder="请输入"
+                             v-model="productPic"/>
+                     </div>
+ <div class="inputBox"><span>竞品仪器照片</span>
+                    <a-input placeholder="请输入"
+                             v-model="productOtherPic"/>
+                     </div>
+ <div class="inputBox"><span>月用量信息</span>
+                    <a-input placeholder="请输入"
+                             v-model="productUsedNum"/>
+                     </div>
+ <div class="inputBox"><span>注册时间</span>
+                    <a-input placeholder="请输入"
+                             v-model="createTime"/>
+                     </div>
+ <div class="inputBox"><span>微信号ID openId</span>
+                    <a-input placeholder="请输入"
+                             v-model="wechatNo"/>
+                     </div>
             </div>
         </div>
     </div>
@@ -86,9 +169,28 @@
 <script>
 
     const columns = [
-        <#list newMember as m>
-        {title: '${m.commentName}', dataIndex: '<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>', key: '<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>', align: 'left'},
-        </#list>
+        {title: 'id', dataIndex: 'id', key: 'id', align: 'left'},
+        {title: '客户名称', dataIndex: 'cusName', key: 'cusName', align: 'left'},
+        {title: '客户性质', dataIndex: 'cusType', key: 'cusType', align: 'left'},
+        {title: '专科方向', dataIndex: 'cusKind', key: 'cusKind', align: 'left'},
+        {title: '等级', dataIndex: 'cusLevel', key: 'cusLevel', align: 'left'},
+        {title: '科室', dataIndex: 'cus', key: 'cus', align: 'left'},
+        {title: '大区', dataIndex: 'bhArea', key: 'bhArea', align: 'left'},
+        {title: '省份', dataIndex: 'cusProvince', key: 'cusProvince', align: 'left'},
+        {title: '地址', dataIndex: 'cusAddress', key: 'cusAddress', align: 'left'},
+        {title: '产品线', dataIndex: 'productLine', key: 'productLine', align: 'left'},
+        {title: '仪器型号', dataIndex: 'productType', key: 'productType', align: 'left'},
+        {title: '仪器序列号', dataIndex: 'productSn', key: 'productSn', align: 'left'},
+        {title: '安装时间', dataIndex: 'productInstallDate', key: 'productInstallDate', align: 'left'},
+        {title: '负责工程师', dataIndex: 'bhEngineer', key: 'bhEngineer', align: 'left'},
+        {title: '设备状态', dataIndex: 'productState', key: 'productState', align: 'left'},
+        {title: '仪器属性', dataIndex: 'productProperty', key: 'productProperty', align: 'left'},
+        {title: '使用场地照片', dataIndex: 'productPicEnvironment', key: 'productPicEnvironment', align: 'left'},
+        {title: '产品服务卡照片或产品铭牌照片', dataIndex: 'productPic', key: 'productPic', align: 'left'},
+        {title: '竞品仪器照片', dataIndex: 'productOtherPic', key: 'productOtherPic', align: 'left'},
+        {title: '月用量信息', dataIndex: 'productUsedNum', key: 'productUsedNum', align: 'left'},
+        {title: '注册时间', dataIndex: 'createTime', key: 'createTime', align: 'left'},
+        {title: '微信号ID openId', dataIndex: 'wechatNo', key: 'wechatNo', align: 'left'},
         {
             title: '操作',
             key: 'action',
@@ -121,9 +223,28 @@
                 uploadData: {},
                 focusData: 1,
                 BtnFlag: {},
-                <#list newMember as m>
-                "<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>": "",
-                </#list>
+                "id": "",
+                "cusName": "",
+                "cusType": "",
+                "cusKind": "",
+                "cusLevel": "",
+                "cus": "",
+                "bhArea": "",
+                "cusProvince": "",
+                "cusAddress": "",
+                "productLine": "",
+                "productType": "",
+                "productSn": "",
+                "productInstallDate": "",
+                "bhEngineer": "",
+                "productState": "",
+                "productProperty": "",
+                "productPicEnvironment": "",
+                "productPic": "",
+                "productOtherPic": "",
+                "productUsedNum": "",
+                "createTime": "",
+                "wechatNo": "",
                 loading: false,
 
             }
@@ -144,11 +265,30 @@
                     return;
                 }
 
-                <#list newMember as m>
-                this.uploadData.<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>= this.$utils.trim(this.uploadData.<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>);
-                    </#list>
+                this.uploadData.id= this.$utils.trim(this.uploadData.id);
+                this.uploadData.cusName= this.$utils.trim(this.uploadData.cusName);
+                this.uploadData.cusType= this.$utils.trim(this.uploadData.cusType);
+                this.uploadData.cusKind= this.$utils.trim(this.uploadData.cusKind);
+                this.uploadData.cusLevel= this.$utils.trim(this.uploadData.cusLevel);
+                this.uploadData.cus= this.$utils.trim(this.uploadData.cus);
+                this.uploadData.bhArea= this.$utils.trim(this.uploadData.bhArea);
+                this.uploadData.cusProvince= this.$utils.trim(this.uploadData.cusProvince);
+                this.uploadData.cusAddress= this.$utils.trim(this.uploadData.cusAddress);
+                this.uploadData.productLine= this.$utils.trim(this.uploadData.productLine);
+                this.uploadData.productType= this.$utils.trim(this.uploadData.productType);
+                this.uploadData.productSn= this.$utils.trim(this.uploadData.productSn);
+                this.uploadData.productInstallDate= this.$utils.trim(this.uploadData.productInstallDate);
+                this.uploadData.bhEngineer= this.$utils.trim(this.uploadData.bhEngineer);
+                this.uploadData.productState= this.$utils.trim(this.uploadData.productState);
+                this.uploadData.productProperty= this.$utils.trim(this.uploadData.productProperty);
+                this.uploadData.productPicEnvironment= this.$utils.trim(this.uploadData.productPicEnvironment);
+                this.uploadData.productPic= this.$utils.trim(this.uploadData.productPic);
+                this.uploadData.productOtherPic= this.$utils.trim(this.uploadData.productOtherPic);
+                this.uploadData.productUsedNum= this.$utils.trim(this.uploadData.productUsedNum);
+                this.uploadData.createTime= this.$utils.trim(this.uploadData.createTime);
+                this.uploadData.wechatNo= this.$utils.trim(this.uploadData.wechatNo);
 
-                this.$post(this.url + this.hostTech + '/${Controller}/updateById', this.uploadData).then((result) => {
+                this.$post(this.url + this.hostTech + '/register/updateById', this.uploadData).then((result) => {
                     if(result.message == '请求成功'){
                     this.uploadBtnFlag = false
                     this.mainFlag = true
@@ -183,7 +323,7 @@
                 this.uploadBtnFlag = true
                 this.mainFlag = false
 
-                this.$get(this.url + this.hostTech + '/${Controller}/' + record.id).then((result) => {
+                this.$get(this.url + this.hostTech + '/register/' + record.id).then((result) => {
                     if(result.message == '请求成功'){
                     this.uploadData = result.data
                 }
@@ -203,9 +343,28 @@
             addLlist() {
                 var data = {
 
-                    <#list newMember as m>
-                    "<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>": this.<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>,
-                    </#list>
+                    "id": this.id,
+                    "cusName": this.cusName,
+                    "cusType": this.cusType,
+                    "cusKind": this.cusKind,
+                    "cusLevel": this.cusLevel,
+                    "cus": this.cus,
+                    "bhArea": this.bhArea,
+                    "cusProvince": this.cusProvince,
+                    "cusAddress": this.cusAddress,
+                    "productLine": this.productLine,
+                    "productType": this.productType,
+                    "productSn": this.productSn,
+                    "productInstallDate": this.productInstallDate,
+                    "bhEngineer": this.bhEngineer,
+                    "productState": this.productState,
+                    "productProperty": this.productProperty,
+                    "productPicEnvironment": this.productPicEnvironment,
+                    "productPic": this.productPic,
+                    "productOtherPic": this.productOtherPic,
+                    "productUsedNum": this.productUsedNum,
+                    "createTime": this.createTime,
+                    "wechatNo": this.wechatNo,
                 }
                 if (this.dictionariesCode == "" || this.dictionariesTypeDesc == "" || this.dictionariesValue == "") {
                     this.$message({
@@ -215,7 +374,7 @@
                     return;
                 }
 
-                this.$post(this.url + this.hostTech + '/${Controller}/create', data).then((result) => {
+                this.$post(this.url + this.hostTech + '/register/create', data).then((result) => {
                     if(result.message == '请求成功'){
                     this.dictionariesCode = "";
                     this.dictionariesValue = "";
@@ -251,9 +410,28 @@
             },
             // 新建
             addTableList() {
-                <#list newMember as m>
-                this.<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if> = "";
-                </#list>
+                this.id = "";
+                this.cusName = "";
+                this.cusType = "";
+                this.cusKind = "";
+                this.cusLevel = "";
+                this.cus = "";
+                this.bhArea = "";
+                this.cusProvince = "";
+                this.cusAddress = "";
+                this.productLine = "";
+                this.productType = "";
+                this.productSn = "";
+                this.productInstallDate = "";
+                this.bhEngineer = "";
+                this.productState = "";
+                this.productProperty = "";
+                this.productPicEnvironment = "";
+                this.productPic = "";
+                this.productOtherPic = "";
+                this.productUsedNum = "";
+                this.createTime = "";
+                this.wechatNo = "";
             },
             // 重置
             reset() {
@@ -358,7 +536,7 @@
             // 初始化数据
             initData(data) {
                 this.loading = true
-                this.$post(this.url + this.hostTech +  '/${Controller}/queryList', data).then((result) => {
+                this.$post(this.url + this.hostTech +  '/register/' + queryList', data).then((result) => {
                     this.loading = false
                     if(result.message == '请求成功' ){
                         this.dataList = result.data

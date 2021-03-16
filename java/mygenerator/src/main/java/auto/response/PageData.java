@@ -1,4 +1,4 @@
-package com.aidoctor.utils;
+package auto.response;
 
 import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.ApiModelProperty;
