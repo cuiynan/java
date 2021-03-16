@@ -36,19 +36,15 @@
         table.render({
             elem: '#table'
             , id: "dataTable"
-            , url: '../hLog/pageList'
+            , url: '../${Controller}/pageList'
             , method: 'post'
             , cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
             , cols: [
                 [
                     {type: 'checkbox', fixed: 'left'}
-                    ,{field: 'id',title:''}
-                    ,{field: 'createDate',title:''}
-                    ,{field: 'ip',title:''}
-                    ,{field: 'modelName',title:''}
-                    ,{field: 'modelMethod',title:''}
-                    ,{field: 'requestParam',title:''}
-                    ,{field: 'responseParam',title:''}
+                    <#list newMember as m>
+                    ,{field: '<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>',title:'${m.commentName}'}
+                    </#list>
                 ]
             ]
             , page: true
@@ -79,7 +75,7 @@
 
         var active = {
             reload: function () {
-                reload({id: $("#demoReload").val()});
+                reload({<#list newMember as m><#if m.key == true><#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if></#if></#list>: $("#demoReload").val()});
             }
             , add: function () {
                 //重置表单
@@ -103,7 +99,7 @@
                         var data = form.val('example');
                         console.log(data);
                         $.ajax({
-                            url: '../hLog/save',
+                            url: '../${Controller}/save',
                             type: 'post',
                             dataType: 'json',
                             data: data,
@@ -142,10 +138,10 @@
                         var data = datas[0];
                         //获取数据
                         $.ajax({
-                            url: '../hLog/getById',
+                            url: '../${Controller}/getById',
                             type: 'post',
                             dataType: 'json',
-                            data: {id: data.id},
+                            data: {id: data.<#list newMember as m><#if m.key == true><#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if></#if></#list>},
                             success: function (result) {
                                 if (result.status !== 200) {
                                     layer.close(index);
@@ -171,7 +167,7 @@
                 var data = datas[0];
                 //获取数据
                 $.ajax({
-                    url: '../hLog/del',
+                    url: '../${Controller}/del',
                     type: 'post',
                     dataType: 'json',
                     data: {id: data.userId},
@@ -194,54 +190,18 @@
 </script>
 </body>
 <form class="layui-form" action="" lay-filter="example" id="formDom" style="display: none">
+    <#list newMember as m>
+        <#if m.key==true>
     <div class="layui-form-item layui-margin-top">
-        <label class="layui-form-label"></label>
-        <div class="layui-input-block">
-            <input type="text" name="id" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
-                   autocomplete="off" class="layui-input">
-        </div>
-    </div>
+        <#else>
     <div class="layui-form-item">
-        <label class="layui-form-label"></label>
+        </#if>
+        <label class="layui-form-label">${m.commentName}</label>
         <div class="layui-input-block">
-            <input type="text" name="createDate" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
+            <input type="text" name="<#if underline==true>${m.humpConlumName? uncap_first}<#else>${m.conlumName? uncap_first}</#if>" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
                    autocomplete="off" class="layui-input">
         </div>
     </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label"></label>
-        <div class="layui-input-block">
-            <input type="text" name="ip" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
-                   autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label"></label>
-        <div class="layui-input-block">
-            <input type="text" name="modelName" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
-                   autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label"></label>
-        <div class="layui-input-block">
-            <input type="text" name="modelMethod" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
-                   autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label"></label>
-        <div class="layui-input-block">
-            <input type="text" name="requestParam" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
-                   autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label"></label>
-        <div class="layui-input-block">
-            <input type="text" name="responseParam" lay-verify="required" lay-reqtext="不能为空！" placeholder="请输入"
-                   autocomplete="off" class="layui-input">
-        </div>
-    </div>
+    </#list>
 </form>
 </html>
