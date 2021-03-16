@@ -25,6 +25,7 @@ public class JpaUtils {
 
     public static void jpa() throws Exception {
 
+        //举科使用，后台前端
         jpaBase(BeanConfig.JAP_TABLE_NAME,"vue.ftl",BeanConfig.JPA_IMPORTS_BEAN,"","",".html");
 
         jpaBase(BeanConfig.JAP_TABLE_NAME, "bean.ftl", BeanConfig.JPA_IMPORTS_BEAN, "", "pojo", ".java");
